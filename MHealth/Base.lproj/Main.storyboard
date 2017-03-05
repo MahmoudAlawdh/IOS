@@ -120,6 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="EnglishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKd-w8-JlP"/>
+                                    <segue destination="Ce1-Fj-zeu" kind="push" id="bGn-7o-6wO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VG1-vd-3De">
@@ -131,6 +132,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ArabicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MLx-lt-p6R"/>
+                                    <segue destination="Ce1-Fj-zeu" kind="push" id="MRu-5A-mUd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1944" y="1789"/>
+            <point key="canvasLocation" x="-2456" y="1909"/>
         </scene>
         <!--Item-->
         <scene sceneID="p3T-dv-goQ">
@@ -282,8 +284,70 @@
             </objects>
             <point key="canvasLocation" x="35" y="1839"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Oof-3H-HMN">
+            <objects>
+                <viewController id="Ce1-Fj-zeu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zr9-ka-jwi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hOB-hB-blY">
+                                <rect key="frame" x="102" y="310" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.69525593750000003" blue="0.04479820222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IiK-Fq-X3H">
+                                <rect key="frame" x="102" y="353" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.69525593750000003" blue="0.04479820222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4dQ-tS-yu5">
+                                <rect key="frame" x="102" y="396" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.69525593750000003" blue="0.04479820222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset paswword">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Mhv-pX-mxI">
+                                <rect key="frame" x="82" y="228" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="ppO-Ts-hGa">
+                                <rect key="frame" x="82" y="174" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (1)" id="DDs-J8-DOq">
+                                <rect key="frame" x="109" y="64" width="99" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bXu-Xr-NEi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3b-83-UiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="1916"/>
+        </scene>
     </scenes>
     <resources>
         <image name="mhealth (1)" width="387" height="389"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bGn-7o-6wO"/>
+    </inferredMetricsTieBreakers>
 </document>
