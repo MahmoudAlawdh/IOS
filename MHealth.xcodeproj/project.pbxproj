@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		297122571E6C2AD900705863 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122561E6C2AD900705863 /* EntryViewController.swift */; };
 		297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122581E6C2BB200705863 /* StaticInfoViewController.swift */; };
+		2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971225A1E6C588A00705863 /* LoginViewController.swift */; };
+		2971225D1E6C58C400705863 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971225C1E6C58C400705863 /* RegisterViewController.swift */; };
+		2971225F1E6C58E400705863 /* FogetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971225E1E6C58E400705863 /* FogetPassViewController.swift */; };
+		297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122601E6C598F00705863 /* MyDnationsVC.swift */; };
+		297122631E6C5A2000705863 /* BookAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122621E6C5A2000705863 /* BookAppViewController.swift */; };
+		297122651E6C753A00705863 /* DonorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122641E6C753A00705863 /* DonorProfileVC.swift */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -30,6 +36,12 @@
 		20300A90085D875DF02F3899 /* Pods-MHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.release.xcconfig"; sourceTree = "<group>"; };
 		297122561E6C2AD900705863 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		297122581E6C2BB200705863 /* StaticInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticInfoViewController.swift; sourceTree = "<group>"; };
+		2971225A1E6C588A00705863 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2971225C1E6C58C400705863 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2971225E1E6C58E400705863 /* FogetPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FogetPassViewController.swift; sourceTree = "<group>"; };
+		297122601E6C598F00705863 /* MyDnationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDnationsVC.swift; sourceTree = "<group>"; };
+		297122621E6C5A2000705863 /* BookAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAppViewController.swift; sourceTree = "<group>"; };
+		297122641E6C753A00705863 /* DonorProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorProfileVC.swift; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +114,12 @@
 				52CC04F51E6B2F2400BC93A9 /* ViewController.swift */,
 				297122561E6C2AD900705863 /* EntryViewController.swift */,
 				297122581E6C2BB200705863 /* StaticInfoViewController.swift */,
+				2971225A1E6C588A00705863 /* LoginViewController.swift */,
+				2971225C1E6C58C400705863 /* RegisterViewController.swift */,
+				2971225E1E6C58E400705863 /* FogetPassViewController.swift */,
+				297122601E6C598F00705863 /* MyDnationsVC.swift */,
+				297122621E6C5A2000705863 /* BookAppViewController.swift */,
+				297122641E6C753A00705863 /* DonorProfileVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -280,13 +298,19 @@
 				52CC05101E6B413900BC93A9 /* DataHolder.swift in Sources */,
 				52CC05161E6B4A4100BC93A9 /* UserDH.swift in Sources */,
 				52CC05081E6B407E00BC93A9 /* OutputResult.swift in Sources */,
+				2971225F1E6C58E400705863 /* FogetPassViewController.swift in Sources */,
 				297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */,
 				52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */,
 				52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */,
 				297122571E6C2AD900705863 /* EntryViewController.swift in Sources */,
 				52CC05121E6B41C400BC93A9 /* Validator.swift in Sources */,
+				297122631E6C5A2000705863 /* BookAppViewController.swift in Sources */,
+				297122651E6C753A00705863 /* DonorProfileVC.swift in Sources */,
+				2971225D1E6C58C400705863 /* RegisterViewController.swift in Sources */,
 				52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */,
+				297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */,
 				52CC05141E6B41EC00BC93A9 /* Printer.swift in Sources */,
+				2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */,
 				52CC05181E6B4E1300BC93A9 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
