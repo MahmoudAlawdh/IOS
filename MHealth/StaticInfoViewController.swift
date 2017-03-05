@@ -11,12 +11,16 @@ import UIKit
 class StaticInfoViewController: UIViewController {
 
     @IBOutlet var DonProcess: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    @IBOutlet var CanDon: UIButton!
+    
+    @IBOutlet var BeforDon: UIButton!
+    
+    @IBOutlet var AfterDon: UIButton!
+    
+    @IBOutlet var Questions: UIButton!
 
-        // Do any additional setup after loading the view.
-    }
-
+    @IBOutlet var BloodSafety: UIButton!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -227,7 +227,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="skM-C9-oZA"/>
                     <connections>
-                        <outlet property="DonProcess" destination="Sfa-Sf-8tt" id="Dcj-L4-hW4"/>
+                        <outlet property="AfterDon" destination="laZ-ad-0m1" id="Lmy-nn-lfM"/>
+                        <outlet property="BeforDon" destination="bYr-o3-yur" id="tkJ-ba-fYQ"/>
+                        <outlet property="BloodSafety" destination="a49-Cv-bcC" id="aj7-Ek-13m"/>
+                        <outlet property="CanDon" destination="Gx4-0g-Zb2" id="Bc7-fo-kM9"/>
+                        <outlet property="DonProcess" destination="Sfa-Sf-8tt" id="pRh-8e-WTN"/>
+                        <outlet property="Questions" destination="qxD-0N-rp1" id="qPF-14-ECF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-BR-QWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
