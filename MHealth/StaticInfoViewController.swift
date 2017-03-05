@@ -9,6 +9,7 @@
 import UIKit
 
 class StaticInfoViewController: UIViewController {
+    
 
     @IBOutlet var DonProcess: UIButton!
     
