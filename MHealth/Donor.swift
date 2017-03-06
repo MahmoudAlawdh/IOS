@@ -15,11 +15,11 @@ struct donor {
     static var bloodtype:String = ""
     static var birthDate:String = ""
     static var civilID:String = ""
-    static var donorID:String = ""
+    static var donorID:Int = 0
     static var gender:String = ""
     static var nationality:String = ""
     static var phoneNumber:String = ""
-    static var state:String = ""
+    static var state:Int = 0
 }
 
 

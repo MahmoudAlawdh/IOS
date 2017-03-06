@@ -37,18 +37,17 @@ class LoginViewController: UIViewController , NetworkCaller {
             if Donor.valueForKey("email")! as! String == username.text! && Donor.valueForKey("password")! as! String == password.text! {
                 print(Donor)
                 donor.firstName = Donor.valueForKey("firstName")! as! String
-                donor.lastName = Donor.valueForKey("firstName")! as! String
-                donor.birthDate = Donor.valueForKey("firstName")! as! String
-                donor.bloodtype = Donor.valueForKey("firstName")! as! String
-                donor.civilID = Donor.valueForKey("firstName")! as! String
-                donor.donorID = Donor.valueForKey("firstName")! as! String
-                donor.email = Donor.valueForKey("firstName")! as! String
-                donor.gender = Donor.valueForKey("firstName")! as! String
-                donor.lastName = Donor.valueForKey("firstName")! as! String
-                donor.nationality = Donor.valueForKey("firstName")! as! String
-                donor.password = Donor.valueForKey("firstName")! as! String
-                donor.phoneNumber = Donor.valueForKey("firstName")! as! String
-                donor.state = Donor.valueForKey("firstName")! as! String
+                donor.lastName = Donor.valueForKey("lastName")! as! String
+                donor.birthDate = Donor.valueForKey("birthDate")! as! String
+                donor.bloodtype = Donor.valueForKey("bloodType")! as! String
+                donor.civilID = Donor.valueForKey("civilId")! as! String
+                donor.donorID = Donor.valueForKey("donorId")! as! Int
+                donor.email = Donor.valueForKey("email")! as! String
+                donor.gender = Donor.valueForKey("gender")! as! String
+                donor.nationality = Donor.valueForKey("nationality")! as! String
+                donor.password = Donor.valueForKey("password")! as! String
+                donor.phoneNumber = Donor.valueForKey("phoneNumber")! as! String
+                donor.state = Donor.valueForKey("status")! as! Int
             }
             
         }
