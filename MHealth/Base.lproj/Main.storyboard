@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="-1104.5" y="1867.5"/>
         </scene>
-        <!--Item2-->
+        <!--Book-->
         <scene sceneID="oEJ-KE-O68">
             <objects>
                 <navigationController id="LmI-C5-Pfy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item2" id="NPf-ZA-pxf"/>
+                    <tabBarItem key="tabBarItem" title="Book" id="NPf-ZA-pxf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZJ-0y-QJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mtx-Uh-LqY">
-                                <rect key="frame" x="112" y="329" width="150" height="30"/>
+                                <rect key="frame" x="6" y="366" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Branch">
@@ -61,7 +61,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kig-Ae-diK">
-                                <rect key="frame" x="112" y="431" width="150" height="30"/>
+                                <rect key="frame" x="6" y="436" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Day">
@@ -69,7 +69,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6X1-Uo-5Wg">
-                                <rect key="frame" x="112" y="469" width="150" height="30"/>
+                                <rect key="frame" x="6" y="509" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Time">
@@ -77,7 +77,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oee-Yh-Ce5">
-                                <rect key="frame" x="87" y="535" width="200" height="40"/>
+                                <rect key="frame" x="87" y="559" width="200" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Confirm">
@@ -97,27 +97,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NZh-in-Vf6">
-                                <rect key="frame" x="112" y="291" width="150" height="30"/>
+                                <rect key="frame" x="6" y="291" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Donation type">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <pickerView tag="1" contentMode="scaleToFill" id="Gsh-Rs-UJM">
+                                <rect key="frame" x="164" y="282" width="204" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="2" contentMode="scaleToFill" id="LWx-Pw-udc">
+                                <rect key="frame" x="164" y="359" width="204" height="43"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="3" contentMode="scaleToFill" id="etk-Zl-As4">
+                                <rect key="frame" x="164" y="429" width="204" height="43"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="4" contentMode="scaleToFill" id="JVx-9o-UXQ">
+                                <rect key="frame" x="164" y="503" width="204" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YeA-wi-uhk"/>
+                    <connections>
+                        <outlet property="Branchs" destination="LWx-Pw-udc" id="tfm-bJ-mIw"/>
+                        <outlet property="Day" destination="etk-Zl-As4" id="s2j-GS-gCK"/>
+                        <outlet property="DonationType" destination="Gsh-Rs-UJM" id="b2Z-nT-Wke"/>
+                        <outlet property="Time" destination="JVx-9o-UXQ" id="0tQ-ji-zEe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dI3-rD-KXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597.5" y="1320.5"/>
         </scene>
-        <!--Item4-->
+        <!--Profile-->
         <scene sceneID="Bd2-N6-r5u">
             <objects>
                 <navigationController id="ONn-M3-HWV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item4" id="jm6-0z-748"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="jm6-0z-748"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DBc-Ri-sd4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -335,11 +357,11 @@
             </objects>
             <point key="canvasLocation" x="-2872" y="1901"/>
         </scene>
-        <!--Item1-->
+        <!--Info-->
         <scene sceneID="p3T-dv-goQ">
             <objects>
                 <navigationController id="l8K-tz-Y3W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item1" id="IeE-Kc-IlR"/>
+                    <tabBarItem key="tabBarItem" title="Info" id="IeE-Kc-IlR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTI-YA-lrP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -672,11 +694,11 @@
             </objects>
             <point key="canvasLocation" x="-406.5" y="4629.5"/>
         </scene>
-        <!--Item3-->
+        <!--Donations-->
         <scene sceneID="1tf-NQ-3Ex">
             <objects>
                 <navigationController id="oJa-Qw-FbX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item3" id="1Rz-Dd-0uf"/>
+                    <tabBarItem key="tabBarItem" title="Donations" id="1Rz-Dd-0uf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F2x-o4-Yf4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
