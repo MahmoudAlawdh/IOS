@@ -705,6 +705,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="donorLogin:" destination="Ce1-Fj-zeu" eventType="touchUpInside" id="KXk-4U-gSj"/>
                                     <segue destination="kse-Ae-fwn" kind="push" id="eAZ-6W-qB4"/>
                                 </connections>
                             </button>
@@ -726,13 +727,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="ppO-Ts-hGa">
-                                <rect key="frame" x="84" y="191" width="152" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (1)" id="DDs-J8-DOq">
                                 <rect key="frame" x="100" y="41" width="121" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -748,10 +742,21 @@
                                     <segue destination="10N-qJ-W7C" kind="push" id="7p4-Vv-7XE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="ppO-Ts-hGa">
+                                <rect key="frame" x="84" y="191" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bXu-Xr-NEi"/>
+                    <connections>
+                        <outlet property="password" destination="Mhv-pX-mxI" id="Yzg-5R-jFE"/>
+                        <outlet property="username" destination="ppO-Ts-hGa" id="b6G-OI-bzW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3b-83-UiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
