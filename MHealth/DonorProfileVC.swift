@@ -9,9 +9,27 @@
 import UIKit
 
 class DonorProfileVC: UIViewController {
+    @IBOutlet var NameField: UITextField!
+    @IBOutlet var LNameField: UITextField!
+    @IBOutlet var EmailField: UITextField!
 
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var Phone: UITextField!
+    @IBOutlet var BloodTypeField: UITextField!
+    @IBOutlet var NationalityField: UITextField!
+    @IBOutlet var BirthDate: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        NameField.text = donor.firstName
+        LNameField.text = donor.lastName
+        EmailField.text = donor.email
+        passwordField.text = donor.password
+        Phone.text = donor.phoneNumber
+        BloodTypeField.text = donor.bloodtype
+        NationalityField.text = donor.nationality
+        BirthDate.text = donor.birthDate
+        
 
         // Do any additional setup after loading the view.
     }
