@@ -29,26 +29,27 @@ class LoginViewController: UIViewController , NetworkCaller {
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
         
-        if
+        
         
         
         for Donor in resp {
             //print(Donor)
-            print( Donor.valueForKey("email")!)
-            print( Donor.valueForKey("password")!)
-            
-            
-            
-            //            let d = doctor as! NSDictionary
-            //            let phone:String = d.objectForKey("civilId") as! String
-            //            let email:String = d.objectForKey("email") as! String
-            //            let name:String = "\(d.objectForKey("firstName")!) \(d.objectForKey("middleName")!) \(d.objectForKey("lastName")!)"
-            
-          //  let d = doctor as! NSDictionary
-            // let phone:String = d.objectForKey("phone") as! String
-             //let email:String = d.objectForKey("email") as! String
-            //let name:String = "\(d.objectForKey("name")!)"
-          //  addFriend(name, phone: phone, email: email)
+            if Donor.valueForKey("email")! as! String == username.text! && Donor.valueForKey("password")! as! String == password.text! {
+                print(Donor)
+                donor.firstName = Donor.valueForKey("firstName")! as! String
+                donor.lastName = Donor.valueForKey("firstName")! as! String
+                donor.birthDate = Donor.valueForKey("firstName")! as! String
+                donor.bloodtype = Donor.valueForKey("firstName")! as! String
+                donor.civilID = Donor.valueForKey("firstName")! as! String
+                donor.donorID = Donor.valueForKey("firstName")! as! String
+                donor.email = Donor.valueForKey("firstName")! as! String
+                donor.gender = Donor.valueForKey("firstName")! as! String
+                donor.lastName = Donor.valueForKey("firstName")! as! String
+                donor.nationality = Donor.valueForKey("firstName")! as! String
+                donor.password = Donor.valueForKey("firstName")! as! String
+                donor.phoneNumber = Donor.valueForKey("firstName")! as! String
+                donor.state = Donor.valueForKey("firstName")! as! String
+            }
             
         }
 
