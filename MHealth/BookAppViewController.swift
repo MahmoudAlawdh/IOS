@@ -8,11 +8,64 @@
 
 import UIKit
 
-class BookAppViewController: UIViewController {
+class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
+    @IBAction func Confirm(sender: AnyObject) {
+        
+        
+        /// make appointment
+        
+        
+        
+        
+        
+    }
+    @IBOutlet var DonationType: UIPickerView!
+
+    @IBOutlet var Branchs: UIPickerView!
+    
+    @IBOutlet var Day: UIPickerView!
+    
+    @IBOutlet var Time: UIPickerView!
+    let DonationTypeData = ["RBCS","AP"]
+    let BranchsData = ["1","2","3"]
+    let day = ["1","2","3"]
+    let time = ["8-10","10-12","12-2"]
+    
+    var UserDonation = ""
+    var UserBranch = ""
+    var UserDay = ""
+    var UserTime = ""
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+
+        switch pickerView.tag {
+        case 1:
+            UserDonation = DonationTypeData[row]
+        case 2:
+            UserBranch = BranchsData[row]
+        case 3:
+            UserDay = day[row]
+        case 4:
+            UserTime = time[row]
+        default: break
+            
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+                DonationType.dataSource = self
+                DonationType.delegate = self
+                Branchs.dataSource = self
+                Branchs.delegate = self
+                Day.dataSource = self
+                Day.delegate = self
+                Time.dataSource = self
+                Time.delegate = self
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +73,53 @@ class BookAppViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
+    {
+        
+        switch pickerView.tag {
+        case 1:
+            return DonationTypeData[row]
+        case 2:
+            return BranchsData[row]
+        case 3:
+            return day[row]
+        case 4:
+            return time[row]
+        default:
+            return ""
+        }
+    }
     
+
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        switch pickerView.tag {
+        case 1:
+            return 1
+        case 2:
+            return 1
+        case 3:
+            return 1
+        case 4:
+            return 1
+        default:
+            return 0
+        }
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView.tag {
+        case 1:
+            return DonationTypeData.count
+        case 2:
+            return BranchsData.count
+        case 3:
+            return day.count
+        case 4:
+            return time.count
+        default:
+            return 0
+        }
+    }
 
     /*
     // MARK: - Navigation

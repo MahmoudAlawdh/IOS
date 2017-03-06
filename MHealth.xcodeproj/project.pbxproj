@@ -30,6 +30,7 @@
 		52CC05181E6B4E1300BC93A9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC05171E6B4E1300BC93A9 /* Const.swift */; };
 		52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC05191E6B53D300BC93A9 /* PathsManager.swift */; };
 		625258405D3A2BB46D2011A3 /* Pods_MHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */; };
+		8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E67D1E6D37C2006B8317 /* Donor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		52CC05151E6B4A4100BC93A9 /* UserDH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDH.swift; sourceTree = "<group>"; };
 		52CC05171E6B4E1300BC93A9 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		52CC05191E6B53D300BC93A9 /* PathsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsManager.swift; sourceTree = "<group>"; };
+		8822E67D1E6D37C2006B8317 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donor.swift; sourceTree = "<group>"; };
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 			children = (
 				52CC050F1E6B413900BC93A9 /* DataHolder.swift */,
 				52CC05151E6B4A4100BC93A9 /* UserDH.swift */,
+				8822E67D1E6D37C2006B8317 /* Donor.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */,
 				297122571E6C2AD900705863 /* EntryViewController.swift in Sources */,
 				52CC05121E6B41C400BC93A9 /* Validator.swift in Sources */,
+				8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */,
 				297122631E6C5A2000705863 /* BookAppViewController.swift in Sources */,
 				297122651E6C753A00705863 /* DonorProfileVC.swift in Sources */,
 				2971225D1E6C58C400705863 /* RegisterViewController.swift in Sources */,

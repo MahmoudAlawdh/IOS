@@ -22,6 +22,7 @@ class StaticInfoViewController: UIViewController {
     @IBOutlet var Questions: UIButton!
 
     @IBOutlet var BloodSafety: UIButton!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
