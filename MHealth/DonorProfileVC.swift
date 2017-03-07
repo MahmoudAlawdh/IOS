@@ -14,8 +14,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     @IBAction func Logout(sender: AnyObject) {
         
         let c:UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("login"))!
-        
-        self.presentViewController(c, animated: false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
         
         
     }

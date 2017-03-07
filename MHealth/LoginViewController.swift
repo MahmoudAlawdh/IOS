@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController , NetworkCaller {
-
+    var flag = 0
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
     @IBAction func donorLogin(sender: AnyObject) {
@@ -50,14 +50,18 @@ class LoginViewController: UIViewController , NetworkCaller {
                 donor.state = Donor.valueForKey("status")! as! Int
                 
                 
-                let c:UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("home"))!
+                let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController
                 
                 self.presentViewController(c, animated: false, completion: nil)
+                flag = 1
             }
-            username.textColor = UIColor.redColor()
-            password.textColor = UIColor.redColor()
+            
 
             
+        }
+        if flag == 0{
+        username.textColor = UIColor.redColor()
+        password.textColor = UIColor.redColor()
         }
 
     }
