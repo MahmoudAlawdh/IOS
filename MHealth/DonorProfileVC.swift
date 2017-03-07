@@ -9,6 +9,19 @@
 import UIKit
 
 class DonorProfileVC: UIViewController {
+    
+    @IBOutlet var Logout: UIButton!
+    @IBAction func Logout(sender: AnyObject) {
+        
+        let c:UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("login"))!
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+        
+    }
+    
+    
+    
     @IBOutlet var NameField: UITextField!
     @IBOutlet var LNameField: UITextField!
     @IBOutlet var EmailField: UITextField!
