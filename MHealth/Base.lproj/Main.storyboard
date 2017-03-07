@@ -25,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZt-pg-h23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1104.5" y="1867.5"/>
+            <point key="canvasLocation" x="-1336.5" y="1891.5"/>
         </scene>
         <!--Book-->
         <scene sceneID="oEJ-KE-O68">
@@ -42,7 +42,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAU-Se-By6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.5" y="1304.5"/>
+            <point key="canvasLocation" x="-673.5" y="1488.5"/>
         </scene>
         <!--Book Donation Appointment-->
         <scene sceneID="Ad2-yJ-ecw">
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dI3-rD-KXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601.5" y="1310.5"/>
+            <point key="canvasLocation" x="-158.5" y="1482.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Bd2-N6-r5u">
@@ -145,7 +145,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84T-7M-k8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575.5" y="182.5"/>
+            <point key="canvasLocation" x="-823.5" y="622.5"/>
         </scene>
         <!--Donor Profile-->
         <scene sceneID="HML-vh-ju6">
@@ -317,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMA-0G-jzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122.5" y="182.5"/>
+            <point key="canvasLocation" x="-245.5" y="622.5"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -363,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3208" y="1853"/>
+            <point key="canvasLocation" x="-3112.5" y="1891.5"/>
         </scene>
         <!--Info-->
         <scene sceneID="p3T-dv-goQ">
@@ -380,7 +380,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evk-Gl-bz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246.5" y="2346.5"/>
+            <point key="canvasLocation" x="-649.5" y="2314.5"/>
         </scene>
         <!--Donation Process-->
         <scene sceneID="bKW-dH-bO3">
@@ -474,7 +474,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ite-Zz-zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675.5" y="2590.5"/>
+            <point key="canvasLocation" x="955.5" y="1899.5"/>
         </scene>
         <!--Donation Process-->
         <scene sceneID="sj4-Mm-hpw">
@@ -549,7 +549,7 @@ Who can Donate blood?
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9s-NO-MxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3125.5" y="2590.5"/>
+            <point key="canvasLocation" x="1461.5" y="1891.5"/>
         </scene>
         <!--Donation Process-->
         <scene sceneID="hG7-tz-9ux">
@@ -606,7 +606,7 @@ Who can Donate blood?
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONm-wb-SvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639.5" y="2595.5"/>
+            <point key="canvasLocation" x="1959.5" y="1891.5"/>
         </scene>
         <!--Can i Donate !-->
         <scene sceneID="igX-BQ-OtV">
@@ -668,7 +668,7 @@ What are the requirement to donate blood?
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMp-j5-Z6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675.5" y="4973.5"/>
+            <point key="canvasLocation" x="960.5" y="4229.5"/>
         </scene>
         <!--Can i Donate !-->
         <scene sceneID="IU8-Te-tii">
@@ -793,7 +793,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nz-0u-tIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3169.5" y="4973.5"/>
+            <point key="canvasLocation" x="1461.5" y="4261.5"/>
         </scene>
         <!--Before Donation-->
         <scene sceneID="xAZ-L8-qiu">
@@ -849,7 +849,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBJ-0u-Vxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675.5" y="3342.5"/>
+            <point key="canvasLocation" x="955.5" y="2661.5"/>
         </scene>
         <!--Before Donation-->
         <scene sceneID="bgP-36-2da">
@@ -901,7 +901,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvP-cn-vf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3177.5" y="3342.5"/>
+            <point key="canvasLocation" x="1461.5" y="2661.5"/>
         </scene>
         <!--Before Donation-->
         <scene sceneID="dnx-tX-mAN">
@@ -954,7 +954,7 @@ Thank you
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZg-8f-CU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3705.5" y="3357.5"/>
+            <point key="canvasLocation" x="1959.5" y="2661.5"/>
         </scene>
         <!--After Donation-->
         <scene sceneID="50J-th-4LE">
@@ -1064,7 +1064,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1F-6V-rQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680.5" y="4163.5"/>
+            <point key="canvasLocation" x="960.5" y="3443.5"/>
         </scene>
         <!--After Donation-->
         <scene sceneID="iPq-ou-4YW">
@@ -1144,7 +1144,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPJ-QK-JVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3169.5" y="4163.5"/>
+            <point key="canvasLocation" x="1461.5" y="3434.5"/>
         </scene>
         <!--After Donation-->
         <scene sceneID="g7c-bb-U5s">
@@ -1208,7 +1208,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zog-1M-Ps0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712.5" y="4163.5"/>
+            <point key="canvasLocation" x="1944.5" y="3434.5"/>
         </scene>
         <!--After Donation-->
         <scene sceneID="uO1-kJ-cLQ">
@@ -1285,7 +1285,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV8-5L-aOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4247.5" y="4154.5"/>
+            <point key="canvasLocation" x="2423.5" y="3443.5"/>
         </scene>
         <!--After Donation-->
         <scene sceneID="bzT-DM-AFj">
@@ -1353,7 +1353,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNP-tC-Thg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4775.5" y="4163.5"/>
+            <point key="canvasLocation" x="2903.5" y="3434.5"/>
         </scene>
         <!--Helping Instractions-->
         <scene sceneID="uAU-nb-tBM">
@@ -1431,7 +1431,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-BR-QWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112.5" y="3342.5"/>
+            <point key="canvasLocation" x="-131.5" y="2314.5"/>
         </scene>
         <!--My Donations-->
         <scene sceneID="dgR-zX-fwy">
@@ -1450,7 +1450,7 @@ National Guard Blood Bank branch
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgf-ya-DDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-406.5" y="4629.5"/>
+            <point key="canvasLocation" x="-1318.5" y="4037.5"/>
         </scene>
         <!--Donations-->
         <scene sceneID="1tf-NQ-3Ex">
@@ -1467,7 +1467,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWu-tR-HDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-397.5" y="3550.5"/>
+            <point key="canvasLocation" x="-1325.5" y="3062.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="Oof-3H-HMN">
@@ -1711,7 +1711,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tn8-Ac-bBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2104.5" y="2846.5"/>
+            <point key="canvasLocation" x="-1778.5" y="3078.5"/>
         </scene>
         <!--Forget Password-->
         <scene sceneID="UzT-LA-NGl">
@@ -1760,7 +1760,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4J-ZE-xed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2712.5" y="2838.5"/>
+            <point key="canvasLocation" x="-2352.5" y="2724.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpQ-f3-cts">
@@ -1778,7 +1778,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M49-PR-Kca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2358" y="1876"/>
+            <point key="canvasLocation" x="-2494.5" y="1899.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ixe-sr-URN">
@@ -1786,6 +1786,7 @@ National Guard Blood Bank branch
                 <navigationController storyboardIdentifier="DP" automaticallyAdjustsScrollViewInsets="NO" id="AM7-Xr-AdJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="DHJ-tk-QfM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXo-M5-ueX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1797,7 +1798,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEC-1V-vdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2102.5" y="2576.5"/>
+            <point key="canvasLocation" x="478" y="1900"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8qu-A2-AW3">
@@ -1816,7 +1817,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGq-7q-a0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143" y="3342"/>
+            <point key="canvasLocation" x="477.5" y="2661.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O3k-EM-TQE">
@@ -1835,7 +1836,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-IQ-4hG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2135" y="4155"/>
+            <point key="canvasLocation" x="477.5" y="3434.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QQx-Dg-i1F">
@@ -1854,7 +1855,7 @@ National Guard Blood Bank branch
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mM-un-pLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142.5" y="4973.5"/>
+            <point key="canvasLocation" x="477.5" y="4237.5"/>
         </scene>
     </scenes>
     <resources>
