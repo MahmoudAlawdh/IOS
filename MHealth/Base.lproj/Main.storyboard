@@ -879,7 +879,7 @@ Cg
                                     <segue destination="liT-dm-T5X" kind="push" id="sVe-3q-Uha"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="Mhv-pX-mxI">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="Mhv-pX-mxI">
                                 <rect key="frame" x="84" y="237" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
@@ -901,7 +901,7 @@ Cg
                                     <segue destination="10N-qJ-W7C" kind="push" id="7p4-Vv-7XE"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="ppO-Ts-hGa">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="ppO-Ts-hGa">
                                 <rect key="frame" x="84" y="191" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.8449707031" alpha="1" colorSpace="calibratedWhite"/>
