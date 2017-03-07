@@ -553,7 +553,7 @@ Who can Donate blood?
                                 <rect key="frame" x="0.0" y="95" width="375" height="356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">How do i need to prepare for the day of donation?
+                                <string key="text">How do i need to prepare for the day of donation?
  1- Sleep at least 6-8 hours on the night before the day of donation
  2- Drink plenty of fluids
  3- Have healthy light meals (fat free) on the day of donation 
@@ -562,7 +562,7 @@ Who can Donate blood?
 6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery 
 7- You should wait at least 3 days after any dental procedure, before donating blood
 8- Please inform the physician if you had blood transfusion before. 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -580,7 +580,7 @@ Who can Donate blood?
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONm-wb-SvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3585.5" y="2225.5"/>
+            <point key="canvasLocation" x="3705.5" y="2617.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GxF-q9-QDU">
@@ -696,7 +696,7 @@ Who can Donate blood?
                                 <rect key="frame" x="0.0" y="114" width="375" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">PER DONATION INSTRUCTIONS 
+                                <string key="text">PER DONATION INSTRUCTIONS 
 FOR APHERESIS PLATELETS DONORS
 
 We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
@@ -707,7 +707,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
     b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment 
      c. Antibiotics for at least seven days before your appointment 
     d. If you are taking any other medications, please inform the physician 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -749,14 +749,14 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <rect key="frame" x="0.0" y="305" width="375" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">3- Drink plenty of fluids three to four hours before donating platelets.
+                                <string key="text">3- Drink plenty of fluids three to four hours before donating platelets.
 4- Eat healthy light food (fat free), like fruits and vegetables, and do not skip a meal on the day before donation. 
 5- On the day of donation, your breakfast shall include: Toast, Jam and Honey, Biscuits without cream. 
 6- We also suggest that you increase your consumption of Calcium-rich foods (dairy products) or take a Calcium supplement the evening before your donation and also and also the morning of your donation .
 7- Wear comfortable clothes with sleeves that can be easily rolled up above the elbow.
 8- Apheresis Donation procedure usually takes 60 - 90 minutes, so please go to toilet just before starting donation to avoid interruption of the procedure                      9- Refrain from smoking for at least 30 minutes before donation
 10- Bring your Civil ID with you on the day of the donation
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -789,7 +789,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <rect key="frame" x="0.0" y="165" width="375" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.
+                                <string key="text">11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.
 
 Platelet transfusion is a lifesaving medical treatment for Cancer patients, organ or bone marrow transplant patients, victims of traumatic injuries, and patients undergoing open heart surgeries
 
@@ -800,7 +800,7 @@ Don’t forget to take appointment for your next donation
 Thank you 
 
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
