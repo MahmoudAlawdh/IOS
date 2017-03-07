@@ -381,20 +381,10 @@
             </objects>
             <point key="canvasLocation" x="246.5" y="2346.5"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="PoQ-yj-dY6">
-            <objects>
-                <pageViewController storyboardIdentifier="MypageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="H1b-Nl-XAE" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="B9x-er-7Il"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="73K-KN-mez" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1689.5" y="2590.5"/>
-        </scene>
-        <!--Donation ProcessVC View Controller-->
+        <!--Donation Process-->
         <scene sceneID="bKW-dH-bO3">
             <objects>
-                <viewController storyboardIdentifier="ZeroPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bku-ou-iZF" customClass="DonationProcessVCViewController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZeroPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bku-ou-iZF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fqs-q1-gCj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -460,18 +450,21 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation Process" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2AL-Cr-f3L">
-                                <rect key="frame" x="11" y="25" width="352" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iQo-RE-YdX"/>
+                    <navigationItem key="navigationItem" title="Donation Process" id="iQo-RE-YdX">
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="i0Y-ZF-Rti">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7gy-GO-Vej">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="NWh-el-u8n" kind="push" id="d4O-DS-6fl"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageDP" destination="Iad-a4-WNl" id="Fd7-1C-TvB"/>
@@ -479,9 +472,9 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ite-Zz-zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143.5" y="2590.5"/>
+            <point key="canvasLocation" x="2675.5" y="2590.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Donation Process-->
         <scene sceneID="sj4-Mm-hpw">
             <objects>
                 <viewController restorationIdentifier="FirstPage" storyboardIdentifier="FirstPage" id="NWh-el-u8n" sceneMemberID="viewController">
@@ -489,24 +482,49 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="EOO-xV-9lE">
-                                <rect key="frame" x="61" y="130" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EOO-xV-9lE">
+                                <rect key="frame" x="0.0" y="109" width="375" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">How Often can I give blood?
+1- Whole Blood Donation: every 8 weeks up to 6 times per year
+2- Double red blood cells donation: every 16 weeks up to 3 times per year
+3- Platelets donation: every 2 weeks up to 24 times per year
+
+Who can Donate blood?
+1- Healthy donors whom ages between 17 - 70 Years old 
+2- Citizens or residents who have valid residency 
+3- Donor’s weight shall be  50 Kg</string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" id="tzL-X1-vot">
+                                <rect key="frame" x="0.0" y="290" width="375" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Donation Process" id="b9e-Zj-m8T">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="KtP-G3-F7U"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="30z-NW-aIe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uN5-sh-Ojf">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="KbG-Tv-HEC" kind="push" id="cL1-Os-eM6"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9s-NO-MxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605.5" y="2590.5"/>
+            <point key="canvasLocation" x="3125.5" y="2590.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Donation Process-->
         <scene sceneID="hG7-tz-9ux">
             <objects>
                 <viewController restorationIdentifier="SecondPage" storyboardIdentifier="SecondPage" id="KbG-Tv-HEC" sceneMemberID="viewController">
@@ -514,27 +532,46 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Mzf-Yf-W6H">
-                                <rect key="frame" x="58" y="177" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X2l-vK-5Hw">
-                                <rect key="frame" x="160" y="545" width="37" height="30"/>
+                                <rect key="frame" x="169" y="617" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="kaX-YR-R8b" kind="push" id="KSL-OI-VlU"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Mzf-Yf-W6H">
+                                <rect key="frame" x="0.0" y="95" width="375" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">How do i need to prepare for the day of donation?
+ 1- Sleep at least 6-8 hours on the night before the day of donation
+ 2- Drink plenty of fluids
+ 3- Have healthy light meals (fat free) on the day of donation 
+ 4- Be in the good health and consult the physician if you are taking any medications that       may interfere with blood donation such as antibiotics or any of the medications on the medications on the medication deferral list (Attached)
+5- Consults the physician if you have any chronic condition or surgery that may affect the your health or affect the safety of blood 
+6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery 
+7- You should wait at least 3 days after any dental procedure, before donating blood
+8- Please inform the physician if you had blood transfusion before. 
+</mutableString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" id="wjc-fu-cMQ">
+                                <rect key="frame" x="0.0" y="451" width="375" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Donation Process" id="ZAo-tS-yzk">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="F1x-yY-84g"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONm-wb-SvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3008" y="2598"/>
+            <point key="canvasLocation" x="3585.5" y="2225.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GxF-q9-QDU">
@@ -564,10 +601,11 @@ Cg
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YKs-4J-8t4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gf5-GW-Dhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3235.5" y="3321.5"/>
+            <point key="canvasLocation" x="1742.5" y="5286.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="igX-BQ-OtV">
@@ -593,7 +631,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMp-j5-Z6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415.5" y="4215.5"/>
+            <point key="canvasLocation" x="1319.5" y="4575.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Na2-BG-i8l">
@@ -627,41 +665,148 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJE-tx-Gfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949.5" y="4239.5"/>
+            <point key="canvasLocation" x="2285.5" y="4711.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xAZ-L8-qiu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bBJ-0u-Vxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="6nf-DM-zTs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqo-hq-sI2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Befor Donation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BJV-ZS-rTh">
-                                <rect key="frame" x="11" y="75" width="352" height="56"/>
+                                <rect key="frame" x="11" y="39" width="352" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Jeq-HK-Lbs">
-                                <rect key="frame" x="20" y="139" width="335" height="440"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" id="Jeq-HK-Lbs">
+                                <rect key="frame" x="0.0" y="114" width="375" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">PER DONATION INSTRUCTIONS 
+FOR APHERESIS PLATELETS DONORS
+
+We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
+
+1- Sleep at least 6 hours on the day before donation.
+2- Be in good health and avoid certain medications such as:
+    a. Aspirin, or products containing aspirin, for at least 5 days before your appointment
+    b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment 
+     c. Antibiotics for at least seven days before your appointment 
+    d. If you are taking any other medications, please inform the physician 
+</mutableString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="local3-2" highlighted="YES" id="EZN-63-rrX">
+                                <rect key="frame" x="0.0" y="426" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Ck-uI-tdV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBJ-0u-Vxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2379.5" y="4037.5"/>
+            <point key="canvasLocation" x="2143.5" y="3342.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bgP-36-2da">
+            <objects>
+                <viewController id="m5Q-X4-FfL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kW-lv-bNa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before Donation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ihP-V7-6KI">
+                                <rect key="frame" x="11" y="41" width="352" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" id="a9S-vJ-d4I">
+                                <rect key="frame" x="0.0" y="112" width="375" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="jL3-ax-64F">
+                                <rect key="frame" x="0.0" y="305" width="375" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">3- Drink plenty of fluids three to four hours before donating platelets.
+4- Eat healthy light food (fat free), like fruits and vegetables, and do not skip a meal on the day before donation. 
+5- On the day of donation, your breakfast shall include: Toast, Jam and Honey, Biscuits without cream. 
+6- We also suggest that you increase your consumption of Calcium-rich foods (dairy products) or take a Calcium supplement the evening before your donation and also and also the morning of your donation .
+7- Wear comfortable clothes with sleeves that can be easily rolled up above the elbow.
+8- Apheresis Donation procedure usually takes 60 - 90 minutes, so please go to toilet just before starting donation to avoid interruption of the procedure                      9- Refrain from smoking for at least 30 minutes before donation
+10- Bring your Civil ID with you on the day of the donation
+</mutableString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvP-cn-vf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593.5" y="3342.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dnx-tX-mAN">
+            <objects>
+                <viewController id="Ji7-MU-YoC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hff-dK-S75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Befor Donation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZfF-yw-VLs">
+                                <rect key="frame" x="11" y="42" width="352" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="gdZ-da-iWO">
+                                <rect key="frame" x="0.0" y="165" width="375" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.
+
+Platelet transfusion is a lifesaving medical treatment for Cancer patients, organ or bone marrow transplant patients, victims of traumatic injuries, and patients undergoing open heart surgeries
+
+“ 70 minutes of your time once every month can save one of these patients”
+“Please help by being a regular platelet donor”
+
+Don’t forget to take appointment for your next donation 
+Thank you 
+
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" id="2Dz-VD-ZUz">
+                                <rect key="frame" x="0.0" y="427" width="375" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZg-8f-CU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3027.5" y="3342.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="50J-th-4LE">
@@ -695,7 +840,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1F-6V-rQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.5" y="3569.5"/>
+            <point key="canvasLocation" x="2707.5" y="4089.5"/>
         </scene>
         <!--Static Info View Controller-->
         <scene sceneID="uAU-nb-tBM">
@@ -715,7 +860,7 @@ Cg
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="H1b-Nl-XAE" kind="push" id="wfB-0k-Vc5"/>
+                                    <segue destination="AM7-Xr-AdJ" kind="push" id="5IU-NA-7GQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gx4-0g-Zb2">
@@ -727,9 +872,6 @@ Cg
                                 <state key="normal" title="Can i Donate !">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="eJy-Nc-r4G" kind="push" id="qUL-Qp-giE"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="laZ-ad-0m1">
                                 <rect key="frame" x="210" y="307" width="150" height="130"/>
@@ -739,9 +881,6 @@ Cg
                                 <state key="normal" title="After Donation">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="a9X-cd-i5p" kind="push" id="kCq-mW-nsg"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a49-Cv-bcC">
                                 <rect key="frame" x="210" y="470" width="150" height="130"/>
@@ -751,9 +890,6 @@ Cg
                                 <state key="normal" title="Blood Safety">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vSU-Te-Fao" kind="push" id="gK0-mX-KDV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qxD-0N-rp1">
                                 <rect key="frame" x="20" y="470" width="150" height="130"/>
@@ -763,9 +899,6 @@ Cg
                                 <state key="normal" title="Questionare ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="buR-A6-o0T" kind="push" id="hvO-Wv-aMa"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help !!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NRW-Vc-63I">
                                 <rect key="frame" x="6" y="72" width="362" height="56"/>
@@ -783,9 +916,6 @@ Cg
                                 <state key="normal" title="Before Donation">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="6nf-DM-zTs" kind="push" id="ZRR-oo-dfV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -802,7 +932,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-BR-QWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110.5" y="3143.5"/>
+            <point key="canvasLocation" x="998.5" y="3342.5"/>
         </scene>
         <!--My Donations-->
         <scene sceneID="dgR-zX-fwy">
@@ -1136,12 +1266,37 @@ Cg
             </objects>
             <point key="canvasLocation" x="-2358" y="1876"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ixe-sr-URN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AM7-Xr-AdJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DHJ-tk-QfM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXo-M5-ueX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bku-ou-iZF" kind="relationship" relationship="rootViewController" id="XKD-E9-O9n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEC-1V-vdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102.5" y="2576.5"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="1" width="1500" height="1125"/>
+        <image name="10" width="626" height="626"/>
         <image name="4" width="2048" height="1536"/>
+        <image name="5" width="371" height="464"/>
+        <image name="9" width="1280" height="720"/>
+        <image name="local3-2" width="480" height="320"/>
         <image name="mhealth (1)" width="387" height="389"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bGn-7o-6wO"/>
+        <segue reference="KSL-OI-VlU"/>
     </inferredMetricsTieBreakers>
 </document>
