@@ -22,6 +22,15 @@ class StaticInfoViewController: UIViewController {
     @IBOutlet var Questions: UIButton!
 
     @IBOutlet var BloodSafety: UIButton!
+
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+        
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -10,6 +10,16 @@ import UIKit
 
 class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
+    @IBAction func Confirm(sender: AnyObject) {
+        
+        
+        /// make appointment
+        
+        
+        
+        
+        
+    }
     @IBOutlet var DonationType: UIPickerView!
 
     @IBOutlet var Branchs: UIPickerView!
@@ -21,7 +31,29 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     let BranchsData = ["1","2","3"]
     let day = ["1","2","3"]
     let time = ["8-10","10-12","12-2"]
+    
+    var UserDonation = ""
+    var UserBranch = ""
+    var UserDay = ""
+    var UserTime = ""
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
+        switch pickerView.tag {
+        case 1:
+            UserDonation = DonationTypeData[row]
+        case 2:
+            UserBranch = BranchsData[row]
+        case 3:
+            UserDay = day[row]
+        case 4:
+            UserTime = time[row]
+        default: break
+            
+        }
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 DonationType.dataSource = self
@@ -58,9 +90,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         }
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
-    }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         switch pickerView.tag {
