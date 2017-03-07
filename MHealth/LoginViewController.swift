@@ -48,7 +48,15 @@ class LoginViewController: UIViewController , NetworkCaller {
                 donor.password = Donor.valueForKey("password")! as! String
                 donor.phoneNumber = Donor.valueForKey("phoneNumber")! as! String
                 donor.state = Donor.valueForKey("status")! as! Int
+                
+                
+                let c:UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("home"))!
+                
+                self.presentViewController(c, animated: false, completion: nil)
             }
+            username.textColor = UIColor.redColor()
+            password.textColor = UIColor.redColor()
+
             
         }
 
