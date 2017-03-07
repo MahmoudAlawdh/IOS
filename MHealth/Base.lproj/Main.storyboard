@@ -936,6 +936,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ppo-VZ-trM"/>
+                    <connections>
+                        <outlet property="Email" destination="hnX-5I-Ntt" id="K3k-Rn-W6U"/>
+                        <outlet property="ID" destination="PSK-NA-V9O" id="aob-1Z-CA6"/>
+                        <outlet property="bloodType" destination="hqS-9l-BfU" id="ecD-jy-4ph"/>
+                        <outlet property="firstname" destination="6tg-rH-GXx" id="edB-IA-3Ci"/>
+                        <outlet property="gender" destination="Leh-aQ-pTw" id="J03-a8-exX"/>
+                        <outlet property="lastname" destination="GB7-UR-51W" id="iCS-h9-wc6"/>
+                        <outlet property="nationality" destination="s0o-d9-gQn" id="PfZ-0d-0qV"/>
+                        <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
+                        <outlet property="phone" destination="xdf-HG-kwG" id="luZ-pp-w9E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tn8-Ac-bBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
