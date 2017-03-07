@@ -460,7 +460,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="8lH-gY-tih">
-                                <rect key="frame" x="0.0" y="76" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -492,20 +492,41 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EOO-xV-9lE">
-                                <rect key="frame" x="0.0" y="109" width="375" height="181"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="EOO-xV-9lE">
+                                <rect key="frame" x="0.0" y="126" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">How Often can I give blood?
-1- Whole Blood Donation: every 8 weeks up to 6 times per year
-2- Double red blood cells donation: every 16 weeks up to 3 times per year
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">How Often can I give blood?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">1- Whole Blood Donation: every 8 weeks up to 6 times per year
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">2- Double red blood cells donation: every 16 weeks up to 3 times per year
 3- Platelets donation: every 2 weeks up to 24 times per year
 
 Who can Donate blood?
 1- Healthy donors whom ages between 17 - 70 Years old 
 2- Citizens or residents who have valid residency 
 3- Donor’s weight shall be  50 Kg</string>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="ArialMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" id="tzL-X1-vot">
@@ -520,6 +541,7 @@ Who can Donate blood?
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Donation Process" id="b9e-Zj-m8T">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rL2-mZ-daP"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="30z-NW-aIe">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uN5-sh-Ojf">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -553,11 +575,17 @@ Who can Donate blood?
                                     <action selector="Done:" destination="KbG-Tv-HEC" eventType="touchUpInside" id="XEH-8G-oBs"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Mzf-Yf-W6H">
-                                <rect key="frame" x="0.0" y="130" width="375" height="290"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" id="wjc-fu-cMQ">
+                                <rect key="frame" x="0.0" y="387" width="375" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="Mzf-Yf-W6H">
+                                <rect key="frame" x="0.0" y="130" width="375" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">How do i need to prepare for the day of donation?
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">How do i need to prepare for the day of donation?
  1- Sleep at least 6-8 hours on the night before the day of donation
  2- Drink plenty of fluids
  3- Have healthy light meals (fat free) on the day of donation 
@@ -566,8 +594,12 @@ Who can Donate blood?
 6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery 
 7- You should wait at least 3 days after any dental procedure, before donating blood
 8- Please inform the physician if you had blood transfusion before. 
-</mutableString>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="ArialMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="QD2-xb-HXv">
@@ -587,40 +619,6 @@ Who can Donate blood?
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONm-wb-SvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3705.5" y="2617.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GxF-q9-QDU">
-            <objects>
-                <viewController id="eJy-Nc-r4G" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Aqm-re-tPO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can i Donate !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tDK-VQ-Hoe">
-                                <rect key="frame" x="11" y="77" width="352" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="319-tr-TxO">
-                                <rect key="frame" x="11" y="157" width="352" height="405"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="YKs-4J-8t4"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gf5-GW-Dhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1742.5" y="5286.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="igX-BQ-OtV">
@@ -648,40 +646,6 @@ Who can Donate blood?
             </objects>
             <point key="canvasLocation" x="1319.5" y="4575.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Na2-BG-i8l">
-            <objects>
-                <viewController id="vSU-Te-Fao" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JgJ-Ma-BmS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Safety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wsv-vs-983">
-                                <rect key="frame" x="11" y="74" width="352" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88251506980000005" green="0.7012681449" blue="0.19312951859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="0z5-gu-KAS">
-                                <rect key="frame" x="20" y="138" width="335" height="430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="S8C-Rf-c5J"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kJE-tx-Gfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2285.5" y="4711.5"/>
-        </scene>
         <!--Before Donation-->
         <scene sceneID="xAZ-L8-qiu">
             <objects>
@@ -698,7 +662,7 @@ Who can Donate blood?
                                 <rect key="frame" x="0.0" y="125" width="375" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">PER DONATION INSTRUCTIONS 
+                                <string key="text">PER DONATION INSTRUCTIONS 
 FOR APHERESIS PLATELETS DONORS
 
 We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
@@ -709,10 +673,14 @@ We would like to express our thanks and gratitude for your cooperation with us b
     b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment 
      c. Antibiotics for at least seven days before your appointment 
     d. If you are taking any other medications, please inform the physician 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="9dl-cF-jiL">
+                                <rect key="frame" x="0.0" y="76" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -761,6 +729,10 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="LfE-D9-2fO">
+                                <rect key="frame" x="0.0" y="78" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -770,10 +742,10 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="Ji7-MU-YoC" kind="push" id="RQp-S2-CHV"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="Ji7-MU-YoC" kind="push" id="jUN-WM-fFI"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -790,8 +762,24 @@ We would like to express our thanks and gratitude for your cooperation with us b
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" id="2Dz-VD-ZUz">
+                                <rect key="frame" x="0.0" y="388" width="375" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="heR-TK-9bQ">
+                                <rect key="frame" x="163" y="607" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="Done:" destination="Ji7-MU-YoC" eventType="touchUpInside" id="Und-lH-pim"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="o62-eM-7BN">
+                                <rect key="frame" x="0.0" y="76" width="375" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="gdZ-da-iWO">
-                                <rect key="frame" x="0.0" y="110" width="375" height="317"/>
+                                <rect key="frame" x="0.0" y="126" width="375" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.
@@ -809,18 +797,6 @@ Thank you
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" id="2Dz-VD-ZUz">
-                                <rect key="frame" x="0.0" y="388" width="375" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="heR-TK-9bQ">
-                                <rect key="frame" x="163" y="607" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="Done:" destination="Ji7-MU-YoC" eventType="touchUpInside" id="Und-lH-pim"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -863,7 +839,7 @@ Thank you
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1F-6V-rQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2707.5" y="4089.5"/>
+            <point key="canvasLocation" x="2675.5" y="4139.5"/>
         </scene>
         <!--Static Info View Controller-->
         <scene sceneID="uAU-nb-tBM">
