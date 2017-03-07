@@ -475,9 +475,6 @@ Cg
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="imageDP" destination="Iad-a4-WNl" id="Fd7-1C-TvB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ite-Zz-zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -536,7 +533,7 @@ Who can Donate blood?
         <!--Donation Process-->
         <scene sceneID="hG7-tz-9ux">
             <objects>
-                <viewController restorationIdentifier="SecondPage" storyboardIdentifier="SecondPage" id="KbG-Tv-HEC" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SecondPage" storyboardIdentifier="SecondPage" id="KbG-Tv-HEC" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9TH-Sp-Zd4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,7 +543,7 @@ Who can Donate blood?
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="kaX-YR-R8b" kind="push" id="KSL-OI-VlU"/>
+                                    <action selector="Done:" destination="KbG-Tv-HEC" eventType="touchUpInside" id="XEH-8G-oBs"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Mzf-Yf-W6H">
@@ -769,10 +766,10 @@ We would like to express our thanks and gratitude for your cooperation with us b
             </objects>
             <point key="canvasLocation" x="2593.5" y="3342.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Done Controller-->
         <scene sceneID="dnx-tX-mAN">
             <objects>
-                <viewController id="Ji7-MU-YoC" sceneMemberID="viewController">
+                <viewController id="Ji7-MU-YoC" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hff-dK-S75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -869,7 +866,7 @@ Thank you
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AM7-Xr-AdJ" kind="push" id="5IU-NA-7GQ"/>
+                                    <action selector="DonationProcess:" destination="kaX-YR-R8b" eventType="touchUpInside" id="y1w-Eq-8tK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gx4-0g-Zb2">
@@ -1291,7 +1288,7 @@ Thank you
         <!--Navigation Controller-->
         <scene sceneID="Ixe-sr-URN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AM7-Xr-AdJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DP" automaticallyAdjustsScrollViewInsets="NO" id="AM7-Xr-AdJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="DHJ-tk-QfM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qXo-M5-ueX">
@@ -1319,6 +1316,5 @@ Thank you
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bGn-7o-6wO"/>
-        <segue reference="KSL-OI-VlU"/>
     </inferredMetricsTieBreakers>
 </document>
