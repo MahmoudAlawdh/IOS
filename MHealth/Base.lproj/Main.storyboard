@@ -526,7 +526,7 @@ Who can Donate blood?
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="KbG-Tv-HEC" kind="push" id="cL1-Os-eM6"/>
+                                    <segue destination="KbG-Tv-HEC" kind="push" id="bQS-t5-b5L"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -554,10 +554,10 @@ Who can Donate blood?
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="Mzf-Yf-W6H">
-                                <rect key="frame" x="0.0" y="95" width="375" height="356"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">How do i need to prepare for the day of donation?
+                                <mutableString key="text">How do i need to prepare for the day of donation?
  1- Sleep at least 6-8 hours on the night before the day of donation
  2- Drink plenty of fluids
  3- Have healthy light meals (fat free) on the day of donation 
@@ -566,12 +566,16 @@ Who can Donate blood?
 6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery 
 7- You should wait at least 3 days after any dental procedure, before donating blood
 8- Please inform the physician if you had blood transfusion before. 
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" id="wjc-fu-cMQ">
-                                <rect key="frame" x="0.0" y="387" width="375" height="229"/>
+                                <rect key="frame" x="0.0" y="419" width="375" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="QD2-xb-HXv">
+                                <rect key="frame" x="0.0" y="80" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
