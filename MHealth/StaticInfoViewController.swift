@@ -23,6 +23,13 @@ class StaticInfoViewController: UIViewController {
 
     @IBOutlet var BloodSafety: UIButton!
 
+    @IBAction func DonationProcess(sender: AnyObject) {
+        
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("DP")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+    }
     
     
     override func viewDidLoad() {
