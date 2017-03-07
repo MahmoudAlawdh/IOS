@@ -39,6 +39,12 @@ class StaticInfoViewController: UIViewController {
     }
     
     
+    @IBAction func CanIDonate(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("CID")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+    }
+
     
     @IBAction func AfterDonation(sender: AnyObject) {
         let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("AF")) as! UINavigationController
