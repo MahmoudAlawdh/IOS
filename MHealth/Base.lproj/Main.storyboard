@@ -1055,6 +1055,9 @@ Cg
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="RegisterAction:" destination="liT-dm-T5X" eventType="touchUpInside" id="eJj-rS-Wyg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UQE-HN-Krx">
                                 <rect key="frame" x="183" y="496" width="102" height="30"/>
