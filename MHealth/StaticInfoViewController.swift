@@ -31,6 +31,12 @@ class StaticInfoViewController: UIViewController {
         
     }
     
+    @IBAction func BeforeDonation(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("BD")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
