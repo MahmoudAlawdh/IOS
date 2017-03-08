@@ -8,16 +8,30 @@
 
 import UIKit
 
-class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
+class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate ,NetworkCaller{
 
     @IBAction func Confirm(sender: AnyObject) {
         
         
         /// make appointment
         
+        let n:Networking = Networking()
+        var dit = [String: AnyObject]()
+        
+        dit["place"] = donor.civilID
+        dit["date"] = "2017-01-01T00:00:00Z"
+        dit["bbBranchId"] = 0
+        dit["donorId"] = donor.donorID
+        
+        n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donationappointment/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
         
         
         
+    }
+    func setDictResponse(resp: NSDictionary, reqId: Int) {
+        
+    }
+    func setArrayResponse(resp: NSArray, reqId: Int) {
         
     }
     @IBOutlet var DonationType: UIPickerView!
@@ -27,6 +41,13 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBOutlet var Day: UIPickerView!
     
     @IBOutlet var Time: UIPickerView!
+    
+    @IBOutlet var DT: UIButton!
+    @IBOutlet var B: UIButton!
+    @IBOutlet var D: UIButton!
+    @IBOutlet var T: UIButton!
+    @IBOutlet var Donationlabel: UILabel!
+    
     let DonationTypeData = ["RBCS","AP"]
     let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
     let day = ["1","2","3"]
@@ -42,31 +63,77 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         switch pickerView.tag {
         case 1:
             UserDonation = DonationTypeData[row]
+            if UserDonation == "AP"{
+                Donationlabel.hidden = false
+                B.hidden = true
+                D.hidden = true
+                T.hidden = true
+                Branchs.hidden = true
+                Day.hidden = true
+                Time.hidden = true
+            }else{
+                Donationlabel.hidden = true
+                B.hidden = false
+                D.hidden = false
+                T.hidden = false
+                Branchs.hidden = false
+                Day.hidden = false
+                Time.hidden = false
+            }
+            break
         case 2:
             UserBranch = BranchsData[row]
+            break
         case 3:
             UserDay = day[row]
+            break
         case 4:
             UserTime = time[row]
+            break
         default: break
             
         }
+        
+        
+        
 
     }
     
+    @IBOutlet var conf: UIButton!
+    @IBOutlet var Timee: UIButton!
+    @IBOutlet var dayy: UIButton!
+    @IBOutlet var branchh: UIButton!
+    @IBOutlet var DonType: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-                DonationType.dataSource = self
-                DonationType.delegate = self
-                Branchs.dataSource = self
-                Branchs.delegate = self
-                Day.dataSource = self
-                Day.delegate = self
-                Time.dataSource = self
-                Time.delegate = self
-
+        DonationType.dataSource = self
+        DonationType.delegate = self
+        Branchs.dataSource = self
+        Branchs.delegate = self
+        Day.dataSource = self
+        Day.delegate = self
+        Time.dataSource = self
+        Time.delegate = self
         
-        // Do any additional setup after loading the view.
+        Donationlabel.hidden = true
+       // let DonationTypeData = ["RBCS","AP"]
+        //let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
+        //let day = ["1","2","3"]
+        //let time = ["8-10","10-12","12-2"]
+        
+        
+
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
+        
+        
+        if langu == "ar" {
+            DonType.setTitle("فصيلة الدم ", forState: .Normal)
+            branchh.setTitle("الفرع ", forState: .Normal)
+            dayy.setTitle("اليوم ", forState: .Normal)
+            Timee.setTitle("الوقت", forState: .Normal)
+            conf.setTitle("تاكيد", forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

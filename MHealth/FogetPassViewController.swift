@@ -25,7 +25,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
         let networkManager:Networking = Networking()
         //networkManager.logging = true
         
-        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": email] , reqId: 5, caller: self)
+        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail] , reqId: 5, caller: self)
 
     }
 
@@ -52,10 +52,22 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
 
 
 
+    @IBOutlet var ll: UILabel!
+    
+    @IBOutlet var confirm: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
+        
+        
+        if langu == "ar" {
+            ll.text = "البريد الالكتروني"
+            confirm.setTitle("تاكيد", forState: .Normal)
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

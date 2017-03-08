@@ -1,33 +1,15 @@
 //
-//  EntryViewController.swift
+//  ConfViewController.swift
 //  MHealth
 //
-//  Created by trn2 on 3/5/17.
+//  Created by trn1 on 3/8/17.
 //  Copyright © 2017 PIFSS. All rights reserved.
 //
 
 import UIKit
 
-class EntryViewController: UIViewController {
+class ConfViewController: UIViewController {
 
-    
-    @IBAction func ArabicButton(sender: AnyObject) {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.setValue("ar", forKey: "lang" )
-        
-        
-        
-        
-        userDefaults.valueForKey("lang")
-    }
-    
-    @IBAction func EnglishButton(sender: AnyObject) {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.setValue("en", forKey: "lang")
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
