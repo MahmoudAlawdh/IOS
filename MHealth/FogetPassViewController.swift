@@ -8,7 +8,49 @@
 
 import UIKit
 
-class FogetPassViewController: UIViewController {
+class FogetPassViewController: UIViewController , NetworkCaller{
+    
+//    
+//    let successMessage = “Email message was sent to you at ”
+//    self.displayMessage(successMessage)
+    // return
+
+    @IBOutlet weak var email: UITextField!
+    
+    
+    @IBAction func confirm(sender: AnyObject) {
+        
+        
+        let Donoremail:String = email.text!
+        let networkManager:Networking = Networking()
+        //networkManager.logging = true
+        
+        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail] , reqId: 5, caller: self)
+
+    }
+
+
+
+func setArrayResponse(resp: NSArray, reqId: Int) {
+}
+
+func setDictResponse(resp: NSDictionary, reqId: Int) {
+    if resp == [:] {
+        
+        //lblMsg.text = " Success: An email was sent to you  "
+        
+    } else {
+
+    //lblMsd.text = " wrong email"
+    
+    }
+    
+    
+    
+    
+}
+
+
 
     @IBOutlet var email: UILabel!
     
