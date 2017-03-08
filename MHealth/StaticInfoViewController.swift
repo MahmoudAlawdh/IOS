@@ -50,11 +50,13 @@ class StaticInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let userDefaults = NSUserDefaults.standardUserDefaults()
         var langu:String = userDefaults.valueForKey("lang") as! String
         
         
         if langu == "ar" {
+            self.title = "معلومات"
             DonProcess.setTitle("عملية التبرع", forState: .Normal)
             
             CanDon.setTitle("هل استطيع التبرع ؟", forState: .Normal)

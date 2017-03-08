@@ -128,6 +128,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         
         if langu == "ar" {
+            self.title = "حجز"
             DonType.setTitle("فصيلة الدم ", forState: .Normal)
             branchh.setTitle("الفرع ", forState: .Normal)
             dayy.setTitle("اليوم ", forState: .Normal)

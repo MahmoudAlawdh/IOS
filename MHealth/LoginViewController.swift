@@ -81,8 +81,9 @@ class LoginViewController: UIViewController , NetworkCaller {
                 
                 
                 let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController
-                
                 self.presentViewController(c, animated: false, completion: nil)
+
+                
                 flag = 1
             }
             
