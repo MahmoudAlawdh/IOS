@@ -653,13 +653,14 @@ What are the requirement to donate blood?
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Can i Donate !" id="Bv7-vE-Wyg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BEn-u7-yoY"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="cpv-zG-XVN">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WHw-dh-Mw7">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="BQF-Ze-EaW" kind="push" id="q7r-ZV-9OB"/>
+                                    <segue destination="BQF-Ze-EaW" kind="push" id="Et0-V7-UYR"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -788,7 +789,9 @@ Cg
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Can i Donate !" id="BUk-LL-0VH"/>
+                    <navigationItem key="navigationItem" title="Can i Donate !" id="BUk-LL-0VH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vl8-kP-69z"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nz-0u-tIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -834,6 +837,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Before Donation" id="6Ck-uI-tdV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="sfF-e8-qXT"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="XmP-VG-Ery">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DLA-29-C3b">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -886,6 +890,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Before Donation" id="NYD-Qq-s3t">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="GPC-u7-gIs"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="FD9-VC-0en">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8qL-Bc-UNk">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -949,7 +954,9 @@ Thank you
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Before Donation" id="fIi-H5-bb4"/>
+                    <navigationItem key="navigationItem" title="Before Donation" id="fIi-H5-bb4">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="p57-Vq-qMm"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZg-8f-CU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1049,14 +1056,10 @@ Cg
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="After Donation" id="Ccr-hO-QZX">
-                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="nj1-ke-fA2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tI5-y5-Y5B">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                            </button>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="f9Q-He-bBg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="swR-dL-CAo">
                             <connections>
-                                <segue destination="pYq-Wu-HmC" kind="push" id="BgK-5H-sVc"/>
+                                <segue destination="pYq-Wu-HmC" kind="push" id="3zZ-8h-rRg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1130,6 +1133,7 @@ Cg
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="After Donation" id="ICi-br-WkT">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ak8-Kx-0zv"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="b1Q-e3-sSd">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wkf-OA-Gfm">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -1193,6 +1197,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="After Donation" id="L9F-z7-5FG">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jA1-Nv-SG1"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="FQW-6j-E4x">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SSs-s1-von">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -1270,6 +1275,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="After Donation" id="VQv-cs-xlK">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="u4A-F9-rwP"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="AcP-kP-M32">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="68s-BW-7r7">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
@@ -1348,7 +1354,9 @@ National Guard Blood Bank branch
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="After Donation" id="1Zq-vr-jOU"/>
+                    <navigationItem key="navigationItem" title="After Donation" id="1Zq-vr-jOU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Xuq-L3-eEc"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNP-tC-Thg" userLabel="First Responder" sceneMemberID="firstResponder"/>
