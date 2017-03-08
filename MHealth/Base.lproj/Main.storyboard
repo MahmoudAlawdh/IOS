@@ -1223,7 +1223,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="bM9-yE-HqP">
-                                <rect key="frame" x="0.0" y="194" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="174" width="375" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -1263,7 +1263,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1468874765814" id="Wl3-qS-qhS">
-                                <rect key="frame" x="0.0" y="442" width="375" height="175"/>
+                                <rect key="frame" x="0.0" y="424" width="375" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
