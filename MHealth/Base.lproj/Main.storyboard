@@ -462,7 +462,7 @@
         <!--Donation Process-->
         <scene sceneID="bKW-dH-bO3">
             <objects>
-                <viewController storyboardIdentifier="ZeroPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bku-ou-iZF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZeroPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bku-ou-iZF" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fqs-q1-gCj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,7 +472,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="tSv-gz-SsK">
-                                <rect key="frame" x="0.0" y="332" width="375" height="284"/>
+                                <rect key="frame" x="0.0" y="332" width="375" height="275"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300245351279" green="0.94511182000870686" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -532,6 +532,14 @@ Cg
                                 <rect key="frame" x="0.0" y="76" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lSI-8y-7jv">
+                                <rect key="frame" x="172" y="609" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="bku-ou-iZF" eventType="touchUpInside" id="Kns-AA-6CK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -556,7 +564,7 @@ Cg
         <!--Donation Process-->
         <scene sceneID="sj4-Mm-hpw">
             <objects>
-                <viewController restorationIdentifier="FirstPage" storyboardIdentifier="FirstPage" id="NWh-el-u8n" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FirstPage" storyboardIdentifier="FirstPage" id="NWh-el-u8n" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c07-CZ-q5a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -603,9 +611,17 @@ Who can Donate blood?
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" id="tzL-X1-vot">
-                                <rect key="frame" x="0.0" y="318" width="375" height="297"/>
+                                <rect key="frame" x="0.0" y="318" width="375" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2cX-py-0mb">
+                                <rect key="frame" x="166" y="609" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="NWh-el-u8n" eventType="touchUpInside" id="Xeh-T5-xk7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -688,7 +704,7 @@ Who can Donate blood?
         <!--Can i Donate !-->
         <scene sceneID="igX-BQ-OtV">
             <objects>
-                <viewController id="buR-A6-o0T" sceneMemberID="viewController">
+                <viewController id="buR-A6-o0T" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V2M-Fj-8AR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -719,13 +735,21 @@ What are the requirement to donate blood?
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blood-donation" id="agL-ud-RKj">
-                                <rect key="frame" x="0.0" y="374" width="375" height="241"/>
+                                <rect key="frame" x="0.0" y="354" width="375" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="1r8-HC-A5S">
                                 <rect key="frame" x="0.0" y="83" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ExK-h8-Kqg">
+                                <rect key="frame" x="172" y="603" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="buR-A6-o0T" eventType="touchUpInside" id="SFc-fP-4Xz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -878,17 +902,17 @@ Cg
         <!--Before Donation-->
         <scene sceneID="xAZ-L8-qiu">
             <objects>
-                <viewController id="6nf-DM-zTs" sceneMemberID="viewController">
+                <viewController id="6nf-DM-zTs" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqo-hq-sI2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="local3-2" highlighted="YES" id="EZN-63-rrX">
-                                <rect key="frame" x="0.0" y="425" width="375" height="209"/>
+                                <rect key="frame" x="0.0" y="402" width="375" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" id="Jeq-HK-Lbs">
-                                <rect key="frame" x="0.0" y="125" width="375" height="300"/>
+                                <rect key="frame" x="0.0" y="125" width="375" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">PER DONATION INSTRUCTIONS 
@@ -910,6 +934,14 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <rect key="frame" x="0.0" y="76" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Pw-Ai-Wx1">
+                                <rect key="frame" x="179" y="606" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="6nf-DM-zTs" eventType="touchUpInside" id="jKg-5E-aqG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -935,13 +967,29 @@ We would like to express our thanks and gratitude for your cooperation with us b
         <!--Before Donation-->
         <scene sceneID="bgP-36-2da">
             <objects>
-                <viewController id="m5Q-X4-FfL" sceneMemberID="viewController">
+                <viewController id="m5Q-X4-FfL" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4kW-lv-bNa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="LfE-D9-2fO">
+                                <rect key="frame" x="0.0" y="78" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" id="a9S-vJ-d4I">
+                                <rect key="frame" x="0.0" y="131" width="375" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eG3-m4-PVV">
+                                <rect key="frame" x="172" y="617" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="m5Q-X4-FfL" eventType="touchUpInside" id="aVI-pi-izF"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="jL3-ax-64F">
-                                <rect key="frame" x="0.0" y="305" width="375" height="329"/>
+                                <rect key="frame" x="0.0" y="282" width="375" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">3- Drink plenty of fluids three to four hours before donating platelets.
@@ -955,14 +1003,6 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="LfE-D9-2fO">
-                                <rect key="frame" x="0.0" y="78" width="375" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" id="a9S-vJ-d4I">
-                                <rect key="frame" x="0.0" y="111" width="375" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1043,7 +1083,7 @@ Thank you
         <!--After Donation-->
         <scene sceneID="50J-th-4LE">
             <objects>
-                <viewController id="a9X-cd-i5p" sceneMemberID="viewController">
+                <viewController id="a9X-cd-i5p" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i6I-OY-Dor">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1057,7 +1097,7 @@ Thank you
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="Ltj-iQ-XxD">
-                                <rect key="frame" x="0.0" y="303" width="375" height="327"/>
+                                <rect key="frame" x="0.0" y="303" width="375" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -1129,6 +1169,14 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qbV-kV-z8Y">
+                                <rect key="frame" x="172" y="611" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="a9X-cd-i5p" eventType="touchUpInside" id="rtk-pI-on2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1149,7 +1197,7 @@ Cg
         <!--After Donation-->
         <scene sceneID="iPq-ou-4YW">
             <objects>
-                <viewController id="pYq-Wu-HmC" sceneMemberID="viewController">
+                <viewController id="pYq-Wu-HmC" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBB-Pg-WS3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1177,7 +1225,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="Orl-9p-ZA1">
-                                <rect key="frame" x="0.0" y="428" width="375" height="217"/>
+                                <rect key="frame" x="0.0" y="428" width="375" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -1207,7 +1255,16 @@ Cg
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3n-FG-nl6">
+                                <rect key="frame" x="172" y="609" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="pYq-Wu-HmC" eventType="touchUpInside" id="LfN-FD-DOd"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="After Donation" id="ICi-br-WkT">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ak8-Kx-0zv"/>
@@ -1230,7 +1287,7 @@ Cg
         <!--After Donation-->
         <scene sceneID="g7c-bb-U5s">
             <objects>
-                <viewController id="v6m-v5-3ZX" sceneMemberID="viewController">
+                <viewController id="v6m-v5-3ZX" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vpz-vo-kBQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1240,7 +1297,7 @@ Cg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="udd-9R-8vP">
-                                <rect key="frame" x="0.0" y="155" width="375" height="342"/>
+                                <rect key="frame" x="0.0" y="153" width="375" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -1267,9 +1324,17 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloodprocessing3.0531" id="pt2-jd-BXR">
-                                <rect key="frame" x="0.0" y="497" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="484" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2DP-rF-vbK">
+                                <rect key="frame" x="172" y="611" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="v6m-v5-3ZX" eventType="touchUpInside" id="eS1-GP-cWx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1295,7 +1360,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
         <!--After Donation-->
         <scene sceneID="uO1-kJ-cLQ">
             <objects>
-                <viewController id="0W2-J8-6Co" sceneMemberID="viewController">
+                <viewController id="0W2-J8-6Co" customClass="DoneController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5JO-tv-UWQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1305,7 +1370,7 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="bM9-yE-HqP">
-                                <rect key="frame" x="0.0" y="194" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="174" width="375" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -1345,9 +1410,17 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1468874765814" id="Wl3-qS-qhS">
-                                <rect key="frame" x="0.0" y="442" width="375" height="175"/>
+                                <rect key="frame" x="0.0" y="424" width="375" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hyz-56-bKJ">
+                                <rect key="frame" x="172" y="601" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="0W2-J8-6Co" eventType="touchUpInside" id="Bbc-Qg-uDK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
