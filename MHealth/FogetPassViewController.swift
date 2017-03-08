@@ -52,7 +52,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
 
 
 
-    @IBOutlet var email: UILabel!
+    @IBOutlet var ll: UILabel!
     
     @IBOutlet var confirm: UIButton!
     
@@ -64,7 +64,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
         
         
         if langu == "ar" {
-            email.text = "البريد الالكتروني"
+            ll.text = "البريد الالكتروني"
             confirm.setTitle("تاكيد", forState: .Normal)
             
         }
