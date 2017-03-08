@@ -93,7 +93,22 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         }
         
     }
-
+    @IBOutlet var firstname: UILabel!
+    @IBOutlet var lastname: UILabel!
+    @IBOutlet var email: UILabel!
+    @IBOutlet var password: UILabel!
+  
+    @IBOutlet var phonenumber: UILabel!
+    
+    @IBOutlet var bloodtype: UILabel!
+    @IBOutlet var natinality: UILabel!
+    @IBOutlet var birthdate: UILabel!
+    
+    @IBOutlet var publicDone: UILabel!
+    
+    @IBOutlet var Eedit: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NameField.text = donor.firstName
@@ -113,8 +128,25 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         BirthDate.text = donor.birthDate
         BirthDate.userInteractionEnabled = false
         
-
-        // Do any additional setup after loading the view.
+        // language
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
+        
+        
+        if langu == "ar" {
+           
+          firstname.text = "الاسم الاول"
+          lastname.text = "الاسم الاخير"
+            natinality.text = "الجنسية"
+            email.text = "البريد الالكتروني"
+            password.text = "الرقم السري"
+            phonenumber.text = "الهاتف"
+           bloodtype.text = "فصيلة الدم"
+            birthdate.text = "تاريخ الميلاد"
+            publicDone.text = "عام"
+            Eedit.setTitle("تحرير", forState: .Normal)
+            Logout.setTitle("تسجيل خروج", forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

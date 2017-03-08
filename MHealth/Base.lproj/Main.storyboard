@@ -306,13 +306,23 @@
                     <connections>
                         <outlet property="BirthDate" destination="i3v-CI-qpW" id="rJl-q4-C0e"/>
                         <outlet property="BloodTypeField" destination="mOu-bc-klp" id="sVd-z1-8Yu"/>
+                        <outlet property="Eedit" destination="29L-a2-lVD" id="Da0-U1-AsV"/>
                         <outlet property="EmailField" destination="5if-CY-6tG" id="Thp-7D-LIE"/>
                         <outlet property="LNameField" destination="kgd-gf-Bv3" id="be2-hj-UhY"/>
                         <outlet property="Logout" destination="3s1-ZW-oQf" id="cxh-XE-RVa"/>
                         <outlet property="NameField" destination="I0b-m4-kAp" id="fxL-4V-oKZ"/>
                         <outlet property="NationalityField" destination="t7n-PV-ATI" id="2GC-g9-IKA"/>
                         <outlet property="Phone" destination="SNW-rz-Ml2" id="D9e-iE-Lor"/>
+                        <outlet property="birthdate" destination="mhI-Lh-2p5" id="37l-mQ-6wB"/>
+                        <outlet property="bloodtype" destination="5ct-ca-UwU" id="Eer-RJ-nJJ"/>
+                        <outlet property="email" destination="pOb-yX-9fe" id="hP5-re-7AL"/>
+                        <outlet property="firstname" destination="P4Y-nh-flb" id="66U-Bm-l8Q"/>
+                        <outlet property="lastname" destination="fiA-EH-7ry" id="877-vZ-Wzl"/>
+                        <outlet property="natinality" destination="Icw-0d-Sl9" id="eOr-EL-9NU"/>
+                        <outlet property="password" destination="0eN-Yx-4eY" id="xkJ-3R-gMh"/>
                         <outlet property="passwordField" destination="Z7q-O7-57D" id="PIz-Pm-MtG"/>
+                        <outlet property="phonenumber" destination="vsI-yN-HM0" id="kKt-Wg-9a5"/>
+                        <outlet property="publicDone" destination="ZQI-XP-xze" id="5ji-Y6-ioP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMA-0G-jzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1780,7 +1790,6 @@ National Guard Blood Bank branch
                         <outlet property="last" destination="ChQ-8b-Lo9" id="17p-IV-5Ap"/>
                         <outlet property="lastname" destination="GB7-UR-51W" id="iCS-h9-wc6"/>
                         <outlet property="nation" destination="KtP-PP-Sva" id="IS5-W2-mcC"/>
-                        <outlet property="nationality" destination="s0o-d9-gQn" id="PfZ-0d-0qV"/>
                         <outlet property="pass" destination="y7m-ah-TUU" id="Siy-Wb-6y1"/>
                         <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
                         <outlet property="phonNUm" destination="wIb-IV-MKj" id="Jy7-ua-UIB"/>
@@ -1841,7 +1850,8 @@ National Guard Blood Bank branch
                     <navigationItem key="navigationItem" title="Forget Password" id="8Ir-WS-Vzr"/>
                     <connections>
                         <outlet property="confirm" destination="Syx-w9-eyj" id="oqo-Pf-saD"/>
-                        <outlet property="email" destination="G1R-Kg-c8e" id="JFL-U5-qge"/>
+                        <outlet property="email" destination="Fxn-mY-oec" id="Hgn-ef-4bv"/>
+                        <outlet property="ll" destination="G1R-Kg-c8e" id="DsG-7V-r64"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4J-ZE-xed" userLabel="First Responder" sceneMemberID="firstResponder"/>
