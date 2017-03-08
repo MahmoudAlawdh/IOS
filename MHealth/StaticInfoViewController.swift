@@ -23,8 +23,34 @@ class StaticInfoViewController: UIViewController {
 
     @IBOutlet var BloodSafety: UIButton!
 
+    @IBAction func DonationProcess(sender: AnyObject) {
+        
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("DP")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+    }
+    
+    @IBAction func BeforeDonation(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("BD")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+    }
     
     
+    @IBAction func CanIDonate(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("CID")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+    }
+
+    
+    @IBAction func AfterDonation(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("AF")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
        
