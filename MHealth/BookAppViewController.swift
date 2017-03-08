@@ -107,7 +107,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         Time.dataSource = self
         Time.delegate = self
         
-        Donationlabel.hidden = false
+        Donationlabel.hidden = true
        // let DonationTypeData = ["RBCS","AP"]
         //let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
         //let day = ["1","2","3"]
