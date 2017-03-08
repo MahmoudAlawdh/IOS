@@ -60,7 +60,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
         super.viewDidLoad()
 
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var langu:String = userDefaults.valueForKey("lang") as! String
+        let langu:String = userDefaults.valueForKey("lang") as! String
         
         
         if langu == "ar" {
