@@ -28,7 +28,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     
     @IBOutlet var Time: UIPickerView!
     let DonationTypeData = ["RBCS","AP"]
-    let BranchsData = ["1","2","3"]
+    let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
     let day = ["1","2","3"]
     let time = ["8-10","10-12","12-2"]
     
