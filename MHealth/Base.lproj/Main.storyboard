@@ -793,7 +793,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nz-0u-tIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461.5" y="4261.5"/>
+            <point key="canvasLocation" x="1483.5" y="4229.5"/>
         </scene>
         <!--Before Donation-->
         <scene sceneID="xAZ-L8-qiu">
@@ -1425,7 +1425,6 @@ National Guard Blood Bank branch
                         <outlet property="AfterDon" destination="laZ-ad-0m1" id="Lmy-nn-lfM"/>
                         <outlet property="BeforDon" destination="bYr-o3-yur" id="tkJ-ba-fYQ"/>
                         <outlet property="CanDon" destination="Gx4-0g-Zb2" id="Bc7-fo-kM9"/>
-                        <outlet property="CanIDonate" destination="Gx4-0g-Zb2" id="AzI-vF-ehv"/>
                         <outlet property="DonProcess" destination="Sfa-Sf-8tt" id="pRh-8e-WTN"/>
                     </connections>
                 </viewController>
