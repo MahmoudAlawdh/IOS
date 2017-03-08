@@ -7,28 +7,15 @@
 //
 
 import Foundation
-class Branchs: NSObject {
+class Branchs{
     var branchAddress:String = ""
     var branchId:Int = 0
     var branchLat:String = ""
     var branchLong:String = ""
     var branchNameAr:String = ""
     var branchNameEn:String = ""
-    var List:[Branchs] = []
+
     
-    override init(){
-        
-    }
-    init( dic:NSArray ){
-        
-        for item  in dic{
-            var i:NSDictionary = item as! NSDictionary
-            var b:Branchs = Branchs()
-            b.branchAddress = i.valueForKey("branchAddress") as! String
-            
-            
-            List.append(b)
-        }
-    }
+
     
 }

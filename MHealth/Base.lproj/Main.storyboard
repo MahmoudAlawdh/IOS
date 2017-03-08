@@ -577,7 +577,7 @@ Who can Donate blood?
                     </view>
                     <navigationItem key="navigationItem" title="Donation Process" id="b9e-Zj-m8T">
                         <barButtonItem key="backBarButtonItem" title="Back" id="rL2-mZ-daP"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="30z-NW-aIe">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="30z-NW-aIe">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uN5-sh-Ojf">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
