@@ -37,11 +37,11 @@ func setArrayResponse(resp: NSArray, reqId: Int) {
 func setDictResponse(resp: NSDictionary, reqId: Int) {
     if resp == [:] {
         
-        lblMsg.text = " Success: An email was sent to you  "
+        //lblMsg.text = " Success: An email was sent to you  "
         
     } else {
 
-    lblMsd.text = " wrong email"
+    //lblMsd.text = " wrong email"
     
     }
     
