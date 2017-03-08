@@ -35,7 +35,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         
         
 
-        if s.currentTitle! == "Edit"{
+        if s.currentTitle! == "Edit" || s.currentTitle == "تحرير"{
             NameField.userInteractionEnabled = true
             LNameField.userInteractionEnabled = true
             EmailField.userInteractionEnabled = true
@@ -83,6 +83,8 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             if langu == "ar"{
                 s.setTitle("تحرير", forState: .Normal)
             }else{
+                
+            
             s.setTitle("Edit", forState: .Normal )
             }
         }
