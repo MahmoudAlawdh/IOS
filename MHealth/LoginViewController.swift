@@ -12,13 +12,43 @@ class LoginViewController: UIViewController , NetworkCaller {
     var flag = 0
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet var register: UIButton!
+    @IBOutlet var login: UIButton!
+    
+    @IBOutlet var forgetpassword: UIButton!
+    
+    
     @IBAction func donorLogin(sender: AnyObject) {
     
         self.networkManager.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/donor", params: [:], reqId: 0, caller: self)
     }
+    
     let networkManager:Networking = Networking()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
+        
+        
+        if langu == "ar" {
+            password.placeholder = "الرقم السري"
+            username.placeholder = "اسم المستخدم"
+            login.setTitle("تسجيل الدخول", forState: .Normal)
+            register.setTitle("التسجيل", forState: .Normal)
+            forgetpassword.setTitle("نسيت كلمة السر", forState: .Normal)
+            
+        }
+        
+        else{
+            password.placeholder = "password"
+            username.placeholder = "username"
+            login.setTitle("Login", forState: .Normal)
+            register.setTitle("Register", forState: .Normal)
+            forgetpassword.setTitle("Forget Password", forState: .Normal)
+        
+        
+        }
         
     }
     

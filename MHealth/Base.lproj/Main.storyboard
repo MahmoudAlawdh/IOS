@@ -403,11 +403,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" id="Iad-a4-WNl">
-                                <rect key="frame" x="0.0" y="120" width="375" height="291"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="tSv-gz-SsK">
-                                <rect key="frame" x="0.0" y="332" width="375" height="275"/>
+                                <rect key="frame" x="0.0" y="332" width="375" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300245351279" green="0.94511182000870686" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -468,7 +468,7 @@ Cg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lSI-8y-7jv">
-                                <rect key="frame" x="172" y="609" width="30" height="30"/>
+                                <rect key="frame" x="172" y="604" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
@@ -542,15 +542,15 @@ Who can Donate blood?
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="wIG-9W-dov">
-                                <rect key="frame" x="0.0" y="77" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="77" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" id="tzL-X1-vot">
-                                <rect key="frame" x="0.0" y="318" width="375" height="290"/>
+                                <rect key="frame" x="0.0" y="318" width="375" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2cX-py-0mb">
-                                <rect key="frame" x="166" y="609" width="30" height="30"/>
+                                <rect key="frame" x="179" y="600" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
@@ -600,11 +600,11 @@ Who can Donate blood?
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" id="wjc-fu-cMQ">
-                                <rect key="frame" x="0.0" y="416" width="375" height="193"/>
+                                <rect key="frame" x="0.0" y="417" width="375" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="Mzf-Yf-W6H">
-                                <rect key="frame" x="0.0" y="134" width="375" height="310"/>
+                                <rect key="frame" x="0.0" y="134" width="375" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
@@ -870,7 +870,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Pw-Ai-Wx1">
-                                <rect key="frame" x="179" y="606" width="30" height="30"/>
+                                <rect key="frame" x="172" y="601" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Exit"/>
                                 <connections>
@@ -907,22 +907,6 @@ We would like to express our thanks and gratitude for your cooperation with us b
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="LfE-D9-2fO">
-                                <rect key="frame" x="0.0" y="78" width="375" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" id="a9S-vJ-d4I">
-                                <rect key="frame" x="0.0" y="131" width="375" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eG3-m4-PVV">
-                                <rect key="frame" x="172" y="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Exit"/>
-                                <connections>
-                                    <action selector="Done:" destination="m5Q-X4-FfL" eventType="touchUpInside" id="aVI-pi-izF"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="jL3-ax-64F">
                                 <rect key="frame" x="0.0" y="282" width="375" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -938,6 +922,22 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="LfE-D9-2fO">
+                                <rect key="frame" x="0.0" y="78" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" id="a9S-vJ-d4I">
+                                <rect key="frame" x="0.0" y="131" width="375" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eG3-m4-PVV">
+                                <rect key="frame" x="172" y="612" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="Done:" destination="m5Q-X4-FfL" eventType="touchUpInside" id="aVI-pi-izF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -972,14 +972,6 @@ We would like to express our thanks and gratitude for your cooperation with us b
                                 <rect key="frame" x="0.0" y="388" width="375" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="heR-TK-9bQ">
-                                <rect key="frame" x="163" y="607" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="Done:" destination="Ji7-MU-YoC" eventType="touchUpInside" id="Und-lH-pim"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="o62-eM-7BN">
                                 <rect key="frame" x="0.0" y="76" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1003,6 +995,14 @@ Thank you
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="heR-TK-9bQ">
+                                <rect key="frame" x="163" y="602" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="Done:" destination="Ji7-MU-YoC" eventType="touchUpInside" id="Und-lH-pim"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1611,7 +1611,7 @@ National Guard Blood Bank branch
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4dQ-tS-yu5">
-                                <rect key="frame" x="132" y="481" width="121" height="30"/>
+                                <rect key="frame" x="132" y="479" width="121" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Forget password">
@@ -1627,7 +1627,10 @@ National Guard Blood Bank branch
                     <navigationItem key="navigationItem" title="Login" id="bXu-Xr-NEi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="forgetpassword" destination="4dQ-tS-yu5" id="k2n-GQ-8S9"/>
+                        <outlet property="login" destination="hOB-hB-blY" id="N29-a3-oqE"/>
                         <outlet property="password" destination="Mhv-pX-mxI" id="Yzg-5R-jFE"/>
+                        <outlet property="register" destination="IiK-Fq-X3H" id="jgB-tB-uCV"/>
                         <outlet property="username" destination="ppO-Ts-hGa" id="b6G-OI-bzW"/>
                     </connections>
                 </viewController>
@@ -1685,13 +1688,6 @@ National Guard Blood Bank branch
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civil ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="En3-Ux-2nD">
-                                <rect key="frame" x="22" y="213" width="55" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PzD-7Y-Ywl">
                                 <rect key="frame" x="21" y="247" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1756,8 +1752,19 @@ National Guard Blood Bank branch
                                     <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (3)" id="FA6-g5-utv">
+                                <rect key="frame" x="96" y="83" width="183" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civil ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="En3-Ux-2nD">
+                                <rect key="frame" x="20" y="213" width="70" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lwc-tb-ZPA">
-                                <rect key="frame" x="86" y="573" width="102" height="30"/>
+                                <rect key="frame" x="121" y="581" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register">
@@ -1767,24 +1774,6 @@ National Guard Blood Bank branch
                                     <action selector="RegisterAction:" destination="liT-dm-T5X" eventType="touchUpInside" id="eJj-rS-Wyg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UQE-HN-Krx">
-                                <rect key="frame" x="217" y="573" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (3)" id="FA6-g5-utv">
-                                <rect key="frame" x="96" y="83" width="183" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="s0o-d9-gQn">
-                                <rect key="frame" x="99" y="244" width="186" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1792,13 +1781,23 @@ National Guard Blood Bank branch
                     <connections>
                         <outlet property="Email" destination="hnX-5I-Ntt" id="K3k-Rn-W6U"/>
                         <outlet property="ID" destination="PSK-NA-V9O" id="aob-1Z-CA6"/>
+                        <outlet property="bloodT" destination="afZ-5q-cxB" id="Q2M-x5-Mhj"/>
                         <outlet property="bloodType" destination="hqS-9l-BfU" id="ecD-jy-4ph"/>
+                        <outlet property="civilID" destination="En3-Ux-2nD" id="Qir-JC-Fac"/>
+                        <outlet property="emaill" destination="mxI-ch-WMP" id="LkK-7Q-SeU"/>
+                        <outlet property="first" destination="PzD-7Y-Ywl" id="7uf-Jc-z19"/>
                         <outlet property="firstname" destination="6tg-rH-GXx" id="edB-IA-3Ci"/>
-                        <outlet property="gender" destination="Leh-aQ-pTw" id="J03-a8-exX"/>
+                        <outlet property="gender" destination="Leh-aQ-pTw" id="iKq-Dk-XU6"/>
+                        <outlet property="gg" destination="qt6-5r-t4k" id="sdl-TP-KXV"/>
+                        <outlet property="last" destination="ChQ-8b-Lo9" id="17p-IV-5Ap"/>
                         <outlet property="lastname" destination="GB7-UR-51W" id="iCS-h9-wc6"/>
+                        <outlet property="nation" destination="KtP-PP-Sva" id="IS5-W2-mcC"/>
                         <outlet property="nationality" destination="s0o-d9-gQn" id="PfZ-0d-0qV"/>
+                        <outlet property="pass" destination="y7m-ah-TUU" id="Siy-Wb-6y1"/>
                         <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
+                        <outlet property="phonNUm" destination="wIb-IV-MKj" id="Jy7-ua-UIB"/>
                         <outlet property="phone" destination="xdf-HG-kwG" id="luZ-pp-w9E"/>
+                        <outlet property="regs" destination="Lwc-tb-ZPA" id="bCN-dr-CNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tn8-Ac-bBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1813,14 +1812,8 @@ National Guard Blood Bank branch
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Fxn-mY-oec">
-                                <rect key="frame" x="89" y="366" width="230" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G1R-Kg-c8e">
-                                <rect key="frame" x="28" y="370" width="41" height="21"/>
+                                <rect key="frame" x="29" y="370" width="123" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1848,12 +1841,19 @@ National Guard Blood Bank branch
                                 <rect key="frame" x="89" y="124" width="213" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Fxn-mY-oec">
+                                <rect key="frame" x="160" y="367" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Forget Password" id="8Ir-WS-Vzr"/>
                     <connections>
-                        <outlet property="email" destination="Fxn-mY-oec" id="Xpo-1r-Ayq"/>
+                        <outlet property="confirm" destination="Syx-w9-eyj" id="oqo-Pf-saD"/>
+                        <outlet property="email" destination="G1R-Kg-c8e" id="JFL-U5-qge"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4J-ZE-xed" userLabel="First Responder" sceneMemberID="firstResponder"/>
