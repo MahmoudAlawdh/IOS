@@ -9,7 +9,9 @@
 import UIKit
 
 class MyDnationsVC: UITableViewController {
-
+ 
+    
+    var myDonation = [" Donation Time", " Donation Time "]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,24 +31,37 @@ class MyDnationsVC: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+//        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-
+        let cell = UITableViewCell()
+        cell.textLabel!.text = "ASdf"
         return cell
     }
-    */
+    
 
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0{
+            return  "Asdf"
+        }
+        else if section == 1{
+            return "fdsa"
+        }
+        else{
+            return "last"
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
