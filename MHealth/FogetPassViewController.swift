@@ -10,10 +10,22 @@ import UIKit
 
 class FogetPassViewController: UIViewController {
 
+    @IBOutlet var email: UILabel!
+    
+    @IBOutlet var confirm: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
+        
+        
+        if langu == "ar" {
+            email.text = "البريد الالكتروني"
+            confirm.setTitle("تاكيد", forState: .Normal)
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

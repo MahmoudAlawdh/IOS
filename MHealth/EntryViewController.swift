@@ -10,10 +10,22 @@ import UIKit
 
 class EntryViewController: UIViewController {
 
+    
     @IBAction func ArabicButton(sender: AnyObject) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setValue("ar", forKey: "lang" )
+        
+        
+        
+        
+        userDefaults.valueForKey("lang")
     }
     
     @IBAction func EnglishButton(sender: AnyObject) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setValue("en", forKey: "lang")
+        
+        
     }
     
     override func viewDidLoad() {
