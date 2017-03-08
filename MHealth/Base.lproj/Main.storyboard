@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mtx-Uh-LqY">
-                                <rect key="frame" x="6" y="366" width="150" height="30"/>
+                                <rect key="frame" x="6" y="350" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Branch">
@@ -61,7 +61,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kig-Ae-diK">
-                                <rect key="frame" x="6" y="436" width="150" height="30"/>
+                                <rect key="frame" x="6" y="447" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Day">
@@ -69,15 +69,50 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6X1-Uo-5Wg">
-                                <rect key="frame" x="6" y="509" width="150" height="30"/>
+                                <rect key="frame" x="6" y="521" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Time">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NZh-in-Vf6">
+                                <rect key="frame" x="6" y="248" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Donation type">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <pickerView tag="2" contentMode="scaleToFill" id="LWx-Pw-udc">
+                                <rect key="frame" x="164" y="325" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="3" contentMode="scaleToFill" id="etk-Zl-As4">
+                                <rect key="frame" x="164" y="422" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="4" contentMode="scaleToFill" id="JVx-9o-UXQ">
+                                <rect key="frame" x="164" y="496" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView tag="1" contentMode="scaleToFill" id="Gsh-Rs-UJM">
+                                <rect key="frame" x="158" y="223" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (3)" id="9vq-Uu-grH">
+                                <rect key="frame" x="77" y="72" width="220" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it takes only 10 mins to donate. go " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DDP-5K-GPv">
+                                <rect key="frame" x="20" y="405" width="348" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oee-Yh-Ce5">
-                                <rect key="frame" x="87" y="559" width="200" height="40"/>
+                                <rect key="frame" x="87" y="575" width="200" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Confirm">
@@ -87,43 +122,20 @@
                                     <action selector="Confirm:" destination="uoz-VR-lAm" eventType="touchUpInside" id="mX2-MH-wv4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NZh-in-Vf6">
-                                <rect key="frame" x="6" y="291" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Donation type">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <pickerView tag="2" contentMode="scaleToFill" id="LWx-Pw-udc">
-                                <rect key="frame" x="164" y="359" width="204" height="43"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <pickerView tag="3" contentMode="scaleToFill" id="etk-Zl-As4">
-                                <rect key="frame" x="164" y="429" width="204" height="43"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <pickerView tag="4" contentMode="scaleToFill" id="JVx-9o-UXQ">
-                                <rect key="frame" x="164" y="503" width="204" height="41"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <pickerView tag="1" contentMode="scaleToFill" id="Gsh-Rs-UJM">
-                                <rect key="frame" x="164" y="282" width="204" height="47"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (3)" id="9vq-Uu-grH">
-                                <rect key="frame" x="67" y="99" width="240" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Book Donation Appointment" id="YeA-wi-uhk"/>
                     <connections>
+                        <outlet property="B" destination="Mtx-Uh-LqY" id="90r-gG-l6i"/>
                         <outlet property="Branchs" destination="LWx-Pw-udc" id="tfm-bJ-mIw"/>
+                        <outlet property="D" destination="kig-Ae-diK" id="fJ6-Ag-n4U"/>
+                        <outlet property="DT" destination="NZh-in-Vf6" id="tkR-HV-cYc"/>
                         <outlet property="Day" destination="etk-Zl-As4" id="s2j-GS-gCK"/>
                         <outlet property="DonType" destination="NZh-in-Vf6" id="Yh7-Q4-p92"/>
                         <outlet property="DonationType" destination="Gsh-Rs-UJM" id="b2Z-nT-Wke"/>
+                        <outlet property="Donationlabel" destination="DDP-5K-GPv" id="Ljr-6n-M99"/>
+                        <outlet property="T" destination="6X1-Uo-5Wg" id="dJe-8f-Xfv"/>
                         <outlet property="Time" destination="JVx-9o-UXQ" id="0tQ-ji-zEe"/>
                         <outlet property="Timee" destination="6X1-Uo-5Wg" id="Hj9-C6-ovG"/>
                         <outlet property="branchh" destination="Mtx-Uh-LqY" id="EL1-TP-p6o"/>
@@ -1861,7 +1873,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4J-ZE-xed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2352.5" y="2724.5"/>
+            <point key="canvasLocation" x="-2352.5" y="2744.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpQ-f3-cts">
