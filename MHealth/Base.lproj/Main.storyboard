@@ -122,8 +122,13 @@
                     <connections>
                         <outlet property="Branchs" destination="LWx-Pw-udc" id="tfm-bJ-mIw"/>
                         <outlet property="Day" destination="etk-Zl-As4" id="s2j-GS-gCK"/>
+                        <outlet property="DonType" destination="NZh-in-Vf6" id="Yh7-Q4-p92"/>
                         <outlet property="DonationType" destination="Gsh-Rs-UJM" id="b2Z-nT-Wke"/>
                         <outlet property="Time" destination="JVx-9o-UXQ" id="0tQ-ji-zEe"/>
+                        <outlet property="Timee" destination="6X1-Uo-5Wg" id="Hj9-C6-ovG"/>
+                        <outlet property="branchh" destination="Mtx-Uh-LqY" id="EL1-TP-p6o"/>
+                        <outlet property="conf" destination="Oee-Yh-Ce5" id="ddF-oq-ees"/>
+                        <outlet property="dayy" destination="kig-Ae-diK" id="TmT-yX-d9t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dI3-rD-KXS" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -30,7 +30,11 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     
     @IBAction func EditUpdate(sender: AnyObject) {
         let s:UIButton = sender as! UIButton
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
         
+        
+
         if s.currentTitle! == "Edit"{
             NameField.userInteractionEnabled = true
             LNameField.userInteractionEnabled = true
@@ -40,7 +44,12 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             BloodTypeField.userInteractionEnabled = true
             NationalityField.userInteractionEnabled = true
             BirthDate.userInteractionEnabled = true
+            
+            if langu == "ar" {
+                s.setTitle("حفظ", forState: .Normal)
+            }else{
             s.setTitle("Save", forState: .Normal )
+            }
         }
         else{
             
@@ -71,7 +80,11 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             BloodTypeField.userInteractionEnabled = false
             NationalityField.userInteractionEnabled = false
             BirthDate.userInteractionEnabled = false
+            if langu == "ar"{
+                s.setTitle("تحرير", forState: .Normal)
+            }else{
             s.setTitle("Edit", forState: .Normal )
+            }
         }
         
     }

@@ -51,9 +51,17 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         default: break
             
         }
+        
+        
+        
 
     }
     
+    @IBOutlet var conf: UIButton!
+    @IBOutlet var Timee: UIButton!
+    @IBOutlet var dayy: UIButton!
+    @IBOutlet var branchh: UIButton!
+    @IBOutlet var DonType: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
                 DonationType.dataSource = self
@@ -65,8 +73,17 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
                 Time.dataSource = self
                 Time.delegate = self
 
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var langu:String = userDefaults.valueForKey("lang") as! String
         
-        // Do any additional setup after loading the view.
+        
+        if langu == "ar" {
+            DonType.setTitle("فصيلة الدم ", forState: .Normal)
+            branchh.setTitle("الفرع ", forState: .Normal)
+            dayy.setTitle("اليوم ", forState: .Normal)
+            Timee.setTitle("الوقت", forState: .Normal)
+            conf.setTitle("تاكيد", forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {
