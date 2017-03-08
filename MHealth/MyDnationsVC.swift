@@ -45,21 +45,19 @@ class MyDnationsVC: UITableViewController {
 
         // Configure the cell...
         let cell = UITableViewCell()
-        cell.textLabel!.text = "ASdf"
+        cell.textLabel!.text = "Donation Time"
         return cell
     }
     
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
-            return  "Asdf"
+            return  "My Donations "
         }
-        else if section == 1{
-            return "fdsa"
+        else {
+            return "Upcoming Appointment"
         }
-        else{
-            return "last"
-        }
+        
     }
     
     /*
