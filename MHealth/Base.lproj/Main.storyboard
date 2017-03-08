@@ -1789,6 +1789,12 @@ National Guard Blood Bank branch
                                     <action selector="RegisterAction:" destination="liT-dm-T5X" eventType="touchUpInside" id="eJj-rS-Wyg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="kdb-qv-dSW">
+                                <rect key="frame" x="114" y="319" width="186" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1807,6 +1813,7 @@ National Guard Blood Bank branch
                         <outlet property="last" destination="ChQ-8b-Lo9" id="17p-IV-5Ap"/>
                         <outlet property="lastname" destination="GB7-UR-51W" id="iCS-h9-wc6"/>
                         <outlet property="nation" destination="KtP-PP-Sva" id="IS5-W2-mcC"/>
+                        <outlet property="nationality" destination="kdb-qv-dSW" id="IqC-iT-fsy"/>
                         <outlet property="pass" destination="y7m-ah-TUU" id="Siy-Wb-6y1"/>
                         <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
                         <outlet property="phonNUm" destination="wIb-IV-MKj" id="Jy7-ua-UIB"/>
