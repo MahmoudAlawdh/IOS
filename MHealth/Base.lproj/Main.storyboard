@@ -115,14 +115,26 @@
                                 <rect key="frame" x="67" y="99" width="240" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it takes only 10 mins to donate. go " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DDP-5K-GPv">
+                                <rect key="frame" x="20" y="405" width="348" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Book Donation Appointment" id="YeA-wi-uhk"/>
                     <connections>
+                        <outlet property="B" destination="Mtx-Uh-LqY" id="90r-gG-l6i"/>
                         <outlet property="Branchs" destination="LWx-Pw-udc" id="tfm-bJ-mIw"/>
+                        <outlet property="D" destination="kig-Ae-diK" id="fJ6-Ag-n4U"/>
+                        <outlet property="DT" destination="NZh-in-Vf6" id="tkR-HV-cYc"/>
                         <outlet property="Day" destination="etk-Zl-As4" id="s2j-GS-gCK"/>
                         <outlet property="DonationType" destination="Gsh-Rs-UJM" id="b2Z-nT-Wke"/>
+                        <outlet property="Donationlabel" destination="DDP-5K-GPv" id="Ljr-6n-M99"/>
+                        <outlet property="T" destination="6X1-Uo-5Wg" id="dJe-8f-Xfv"/>
                         <outlet property="Time" destination="JVx-9o-UXQ" id="0tQ-ji-zEe"/>
                     </connections>
                 </viewController>
@@ -1846,7 +1858,7 @@ National Guard Blood Bank branch
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4J-ZE-xed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2352.5" y="2724.5"/>
+            <point key="canvasLocation" x="-2352.5" y="2744.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpQ-f3-cts">
