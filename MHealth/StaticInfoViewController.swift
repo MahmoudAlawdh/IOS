@@ -19,9 +19,6 @@ class StaticInfoViewController: UIViewController {
     
     @IBOutlet var AfterDon: UIButton!
     
-    @IBOutlet var Questions: UIButton!
-
-    @IBOutlet var BloodSafety: UIButton!
 
     @IBAction func DonationProcess(sender: AnyObject) {
         
