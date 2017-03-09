@@ -11,22 +11,13 @@ import UIKit
 class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate ,NetworkCaller{
 
     @IBAction func Confirm(sender: AnyObject) {
-        
-        
-        /// make appointment
-        
         let n:Networking = Networking()
         var dit = [String: AnyObject]()
-        
         dit["place"] = donor.civilID
         dit["date"] = "2017-01-01T00:00:00Z"
         dit["bbBranchId"] = 0
         dit["donorId"] = donor.donorID
-        
         n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donationappointment/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
-        
-        
-        
     }
     var L:NSMutableArray = NSMutableArray()
     
@@ -34,10 +25,11 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
     }
     func setArrayResponse(resp: NSArray, reqId: Int) {
-        if reqId == 1{
+        var n:Networking = Networking()
+        if reqId == -1{
             for item in resp{
-                var i:NSDictionary = item as! NSDictionary
-                var j:Branch = Branch()
+                let i:NSDictionary = item as! NSDictionary
+                let j:Branch = Branch()
                 j.branchAddress = i.valueForKey("branchAddress") as! String
                 j.branchId = i.valueForKey("branchId") as! Int
                 j.branchLat = i.valueForKey("branchLat") as! String
@@ -46,9 +38,25 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
                 j.branchNameEn = i.valueForKey("branchNameEn") as! String
                 
                 L.addObject(j)
+                n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/schedule/freeslots/" + "\(j.branchId)", params: [:], reqId: (j.branchId), caller: self)
+            }
+            UserBranch = L.objectAtIndex(0) as! Branch
+        } 
+        for i in L{
+            var w:Branch = i as! Branch
+            if w.branchId == reqId{
+                for item in resp{
+                    let i:NSDictionary = item as! NSDictionary
+                    var d:Slot = Slot()
+                    d.Days = i.valueForKey("day") as! String
+                    d.Slots = i.valueForKey("slots") as! NSArray
+                    w.day.addObject(d)
+                }
             }
         }
         Branchs.reloadAllComponents()
+        Day.reloadAllComponents()
+        Time.reloadAllComponents()
         
     }
     @IBOutlet var DonationType: UIPickerView!
@@ -66,12 +74,11 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBOutlet var Donationlabel: UILabel!
     
     let DonationTypeData = ["RBCS","AP"]
-    let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
-    let day = ["1","2","3"]
-    let time = ["8-10","10-12","12-2"]
+    let day:NSMutableArray = NSMutableArray()
+
     
     var UserDonation = ""
-    var UserBranch = ""
+    var UserBranch:Branch = Branch()
     var UserDay = ""
     var UserTime = ""
     
@@ -99,13 +106,14 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             }
             break
         case 2:
-            UserBranch = BranchsData[row]
+            UserBranch = L.objectAtIndex(row) as! Branch ///***
+            
             break
         case 3:
-            UserDay = day[row]
+            UserDay = "Asdf"
             break
         case 4:
-            UserTime = time[row]
+            UserTime = "QWER"
             break
         default: break
             
@@ -136,7 +144,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
 
         let n:Networking = Networking()
         
-        n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: 1, caller: self)
+        n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: -1, caller: self)
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
@@ -165,15 +173,18 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 2:
             let userDefaults = NSUserDefaults.standardUserDefaults()
             let langu:String = userDefaults.valueForKey("lang") as! String
-            let i:Branch = L.objectAtIndex(row) as! Branch
+            let i:Branch = UserBranch
             if langu == "ar" {
                 return i.branchNameAr
             }
             return i.branchNameEn
         case 3:
-            return day[row]
+            
+            let i:Branch = UserBranch
+            
+            return i.branchNameAr
         case 4:
-            return time[row]
+            return "ASDF"
         default:
             return ""
         }
@@ -202,9 +213,10 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 2:
             return L.count
         case 3:
-            return day.count
+            return 1
+            
         case 4:
-            return time.count
+            return 5
         default:
             return 0
         }
