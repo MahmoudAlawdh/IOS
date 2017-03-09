@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     @IBOutlet weak var Email: UITextField!
     
-    @IBOutlet weak var passowrd: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     @IBOutlet weak var phone: UITextField!
     
@@ -57,13 +57,28 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dit["civilId"] = ID.text
         dit["firstName"] = firstname.text
         dit["lastName"] = lastname.text
-        dit["password"] = passowrd.text
+        dit["password"] = password.text
         dit["nationality"] = nationality.text
         dit["email"] = Email.text
         dit["phoneNumber"] = phone.text
         dit["gender"] = String(gender.selectedSegmentIndex)
         dit["bloodType"] = bloodType.text
         dit["birthDate"] = "2017-01-01T00:00:00Z"
+        
+    
+        if firstname.text == nil || firstname.text == "" || ID.text == nil || ID.text == "" || password.text == nil || password.text == ""   {
+            
+            //lblMsg.text = "All fields are required."
+            
+        } else {
+            
+            
+        }
+
+        
+        
+        
+        
         
          let n:Networking = Networking()
         n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)

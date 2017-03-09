@@ -17,6 +17,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
 
     @IBOutlet weak var email: UITextField!
     
+    @IBOutlet weak var lblMsg: UILabel!
     
     @IBAction func confirm(sender: AnyObject) {
         
@@ -37,11 +38,11 @@ func setArrayResponse(resp: NSArray, reqId: Int) {
 func setDictResponse(resp: NSDictionary, reqId: Int) {
     if resp == [:] {
         
-        //lblMsg.text = " Success: An email was sent to you  "
+        lblMsg.text = " Success: An email was sent to you  "
         
     } else {
 
-    //lblMsd.text = " wrong email"
+    lblMsg.text = " wrong email"
     
     }
     

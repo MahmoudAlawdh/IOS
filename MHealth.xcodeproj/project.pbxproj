@@ -33,7 +33,9 @@
 		8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E67D1E6D37C2006B8317 /* Donor.swift */; };
 		8822E6821E6E98F1006B8317 /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6811E6E98F1006B8317 /* DoneController.swift */; };
 		8822E6861E6FFB6A006B8317 /* Branchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6851E6FFB6A006B8317 /* Branchs.swift */; };
-		8822E6881E712D8A006B8317 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6871E712D8A006B8317 /* Day.swift */; };
+		EA0B43E61E715161009C33A8 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B43E51E715161009C33A8 /* Slot.swift */; };
+		EAC145261E7147B500B6B80C /* previousDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC145251E7147B500B6B80C /* previousDonation.swift */; };
+		EAC145281E71485600B6B80C /* UpcomingDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC145271E71485600B6B80C /* UpcomingDonation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,9 +67,11 @@
 		8822E67D1E6D37C2006B8317 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donor.swift; sourceTree = "<group>"; };
 		8822E6811E6E98F1006B8317 /* DoneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
 		8822E6851E6FFB6A006B8317 /* Branchs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branchs.swift; sourceTree = "<group>"; };
-		8822E6871E712D8A006B8317 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		EAC145251E7147B500B6B80C /* previousDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = previousDonation.swift; sourceTree = "<group>"; };
+		EAC145271E71485600B6B80C /* UpcomingDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingDonation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				297122621E6C5A2000705863 /* BookAppViewController.swift */,
 				297122641E6C753A00705863 /* DonorProfileVC.swift */,
 				8822E6811E6E98F1006B8317 /* DoneController.swift */,
+				EAC145251E7147B500B6B80C /* previousDonation.swift */,
+				EAC145271E71485600B6B80C /* UpcomingDonation.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 				52CC05151E6B4A4100BC93A9 /* UserDH.swift */,
 				8822E67D1E6D37C2006B8317 /* Donor.swift */,
 				8822E6851E6FFB6A006B8317 /* Branchs.swift */,
-				8822E6871E712D8A006B8317 /* Day.swift */,
+				EA0B43E51E715161009C33A8 /* Slot.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -306,13 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC145261E7147B500B6B80C /* previousDonation.swift in Sources */,
 				52CC05071E6B407E00BC93A9 /* Networking.swift in Sources */,
 				52CC05101E6B413900BC93A9 /* DataHolder.swift in Sources */,
 				52CC05161E6B4A4100BC93A9 /* UserDH.swift in Sources */,
 				52CC05081E6B407E00BC93A9 /* OutputResult.swift in Sources */,
-				8822E6881E712D8A006B8317 /* Day.swift in Sources */,
 				2971225F1E6C58E400705863 /* FogetPassViewController.swift in Sources */,
 				8822E6821E6E98F1006B8317 /* DoneController.swift in Sources */,
+				EA0B43E61E715161009C33A8 /* Slot.swift in Sources */,
 				297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */,
 				52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */,
 				52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */,
@@ -328,6 +335,7 @@
 				2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */,
 				52CC05181E6B4E1300BC93A9 /* Const.swift in Sources */,
 				8822E6861E6FFB6A006B8317 /* Branchs.swift in Sources */,
+				EAC145281E71485600B6B80C /* UpcomingDonation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
