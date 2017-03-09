@@ -58,7 +58,7 @@ class StaticInfoViewController: UIViewController {
         if langu == "ar" {
             self.title = "معلومات"
             self.tabBarController?.viewControllers?[1].title = "حجز"
-            self.tabBarController?.viewControllers?[2].title = "tbr3ati"
+            self.tabBarController?.viewControllers?[2].title = "تبرعاتي"
             self.tabBarController?.viewControllers?[3].title = "الملف الشخصي"
             DonProcess.setTitle("عملية التبرع", forState: .Normal)
             
