@@ -14,5 +14,6 @@ class Branch{
     var branchLong:String = ""
     var branchNameAr:String = ""
     var branchNameEn:String = ""
+    var day:NSMutableArray = NSMutableArray()
    
 }
