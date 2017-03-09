@@ -36,7 +36,7 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
      func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if tableView.tag == 1 {
             return 3
-        } else 
+        } 
         return 3
     }
     
