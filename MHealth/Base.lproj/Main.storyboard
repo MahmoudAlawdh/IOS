@@ -120,6 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Confirm:" destination="uoz-VR-lAm" eventType="touchUpInside" id="mX2-MH-wv4"/>
+                                    <segue destination="BRE-uk-2zD" kind="push" id="oVz-Ke-4cW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -345,6 +346,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMA-0G-jzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245.5" y="622.5"/>
+        </scene>
+        <!--My DnationsVC-->
+        <scene sceneID="goG-Fa-b2M">
+            <objects>
+                <viewController id="BRE-uk-2zD" customClass="MyDnationsVC" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJn-B0-aRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3bX-ut-JZg">
+                                <rect key="frame" x="37" y="545" width="286" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calculate Next Time Donation"/>
+                            </button>
+                            <view contentMode="scaleToFill" id="5lO-VO-PWd">
+                                <rect key="frame" x="20" y="96" width="335" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="alP-ct-LZt">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BRE-uk-2zD" id="RV0-eT-xbd"/>
+                                            <outlet property="delegate" destination="BRE-uk-2zD" id="cDR-Mx-qNK"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="haG-Bj-rjl">
+                                <rect key="frame" x="20" y="293" width="335" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="G7f-PQ-YbW">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BRE-uk-2zD" id="cql-Dz-PR5"/>
+                                            <outlet property="delegate" destination="BRE-uk-2zD" id="Bdq-UT-Fw9"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gxr-Qf-tmy"/>
+                    <connections>
+                        <outlet property="oldTable" destination="alP-ct-LZt" id="pPX-ZZ-XwJ"/>
+                        <outlet property="upcomingTable" destination="G7f-PQ-YbW" id="mhB-Cf-HZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plc-Xy-PyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329.5" y="1125.5"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1540,25 +1600,6 @@ National Guard Blood Bank branch
             </objects>
             <point key="canvasLocation" x="-131.5" y="2314.5"/>
         </scene>
-        <!--My Donations-->
-        <scene sceneID="dgR-zX-fwy">
-            <objects>
-                <tableViewController id="EQA-i6-m7o" customClass="MyDnationsVC" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dbj-Rz-V37">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="EQA-i6-m7o" id="E8L-Et-Clx"/>
-                            <outlet property="delegate" destination="EQA-i6-m7o" id="rJw-Tx-Ynd"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="My Donations" id="NoW-C6-6tQ"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wgf-ya-DDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1325.5" y="4038.5"/>
-        </scene>
         <!--Donations-->
         <scene sceneID="1tf-NQ-3Ex">
             <objects>
@@ -1568,9 +1609,6 @@ National Guard Blood Bank branch
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="EQA-i6-m7o" kind="relationship" relationship="rootViewController" id="Vg3-kX-eLY"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWu-tR-HDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1815,7 +1853,7 @@ National Guard Blood Bank branch
                         <outlet property="nation" destination="KtP-PP-Sva" id="IS5-W2-mcC"/>
                         <outlet property="nationality" destination="kdb-qv-dSW" id="IqC-iT-fsy"/>
                         <outlet property="pass" destination="y7m-ah-TUU" id="Siy-Wb-6y1"/>
-                        <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
+                        <outlet property="password" destination="icw-L4-8IL" id="11q-MQ-wIm"/>
                         <outlet property="phonNUm" destination="wIb-IV-MKj" id="Jy7-ua-UIB"/>
                         <outlet property="phone" destination="xdf-HG-kwG" id="luZ-pp-w9E"/>
                         <outlet property="regs" destination="Lwc-tb-ZPA" id="bCN-dr-CNM"/>
@@ -1847,17 +1885,6 @@ National Guard Blood Bank branch
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Syx-w9-eyj">
-                                <rect key="frame" x="150" y="424" width="108" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Confirm">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirm:" destination="10N-qJ-W7C" eventType="touchUpInside" id="lWB-pY-X8N"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mhealth (3)" id="5TT-4v-O8k">
                                 <rect key="frame" x="89" y="124" width="213" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1868,6 +1895,24 @@ National Guard Blood Bank branch
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cqj-We-TgU">
+                                <rect key="frame" x="204" y="399" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Syx-w9-eyj">
+                                <rect key="frame" x="150" y="428" width="108" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirm:" destination="10N-qJ-W7C" eventType="touchUpInside" id="lWB-pY-X8N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1875,6 +1920,7 @@ National Guard Blood Bank branch
                     <connections>
                         <outlet property="confirm" destination="Syx-w9-eyj" id="oqo-Pf-saD"/>
                         <outlet property="email" destination="Fxn-mY-oec" id="Hgn-ef-4bv"/>
+                        <outlet property="lblMsg" destination="cqj-We-TgU" id="vSh-cM-5bl"/>
                         <outlet property="ll" destination="G1R-Kg-c8e" id="DsG-7V-r64"/>
                     </connections>
                 </viewController>
