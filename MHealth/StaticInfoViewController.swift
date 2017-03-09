@@ -52,7 +52,7 @@ class StaticInfoViewController: UIViewController {
         super.viewDidLoad()
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var langu:String = userDefaults.valueForKey("lang") as! String
+        let langu:String = userDefaults.valueForKey("lang") as! String
         
         
         if langu == "ar" {

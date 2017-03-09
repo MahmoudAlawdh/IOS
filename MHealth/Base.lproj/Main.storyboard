@@ -112,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oee-Yh-Ce5">
-                                <rect key="frame" x="87" y="575" width="200" height="40"/>
+                                <rect key="frame" x="87" y="584" width="200" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Confirm">
@@ -1789,6 +1789,12 @@ National Guard Blood Bank branch
                                     <action selector="RegisterAction:" destination="liT-dm-T5X" eventType="touchUpInside" id="eJj-rS-Wyg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="kdb-qv-dSW">
+                                <rect key="frame" x="114" y="319" width="186" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1807,6 +1813,7 @@ National Guard Blood Bank branch
                         <outlet property="last" destination="ChQ-8b-Lo9" id="17p-IV-5Ap"/>
                         <outlet property="lastname" destination="GB7-UR-51W" id="iCS-h9-wc6"/>
                         <outlet property="nation" destination="KtP-PP-Sva" id="IS5-W2-mcC"/>
+                        <outlet property="nationality" destination="kdb-qv-dSW" id="IqC-iT-fsy"/>
                         <outlet property="pass" destination="y7m-ah-TUU" id="Siy-Wb-6y1"/>
                         <outlet property="passowrd" destination="icw-L4-8IL" id="cMb-Pd-1Wz"/>
                         <outlet property="phonNUm" destination="wIb-IV-MKj" id="Jy7-ua-UIB"/>

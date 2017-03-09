@@ -65,7 +65,7 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dit["bloodType"] = bloodType.text
         dit["birthDate"] = "2017-01-01T00:00:00Z"
         
-         var n:Networking = Networking()
+         let n:Networking = Networking()
         n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
@@ -78,7 +78,7 @@ class RegisterViewController: UIViewController , NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var langu:String = userDefaults.valueForKey("lang") as! String
+        let langu:String = userDefaults.valueForKey("lang") as! String
         
         
         if langu == "ar" {

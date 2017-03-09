@@ -12,8 +12,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     
     @IBOutlet var Logout: UIButton!
     @IBAction func Logout(sender: AnyObject) {
-        
-        let c:UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier("login"))!
+
         self.dismissViewControllerAnimated(true, completion: nil)
         
         
@@ -31,7 +30,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     @IBAction func EditUpdate(sender: AnyObject) {
         let s:UIButton = sender as! UIButton
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var langu:String = userDefaults.valueForKey("lang") as! String
+        let langu:String = userDefaults.valueForKey("lang") as! String
         
         
 
@@ -55,7 +54,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             
             // update profile with database
             
-            var n:Networking = Networking()
+            let n:Networking = Networking()
             var dit = [String: AnyObject]()
             dit["civilId"] = donor.civilID
             dit["firstName"] = NameField.text
@@ -145,7 +144,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         
         // language
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var langu:String = userDefaults.valueForKey("lang") as! String
+        let langu:String = userDefaults.valueForKey("lang") as! String
         
         
         if langu == "ar" {

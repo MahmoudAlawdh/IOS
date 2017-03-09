@@ -7,15 +7,12 @@
 //
 
 import Foundation
-class Branchs{
+class Branch{
     var branchAddress:String = ""
     var branchId:Int = 0
     var branchLat:String = ""
     var branchLong:String = ""
     var branchNameAr:String = ""
     var branchNameEn:String = ""
-
-    
-
-    
+   
 }
