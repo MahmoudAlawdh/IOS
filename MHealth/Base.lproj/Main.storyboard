@@ -565,6 +565,9 @@ Cg
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Procee1" destination="tSv-gz-SsK" id="ema-7Q-5mh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ite-Zz-zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,43 +581,6 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="EOO-xV-9lE">
-                                <rect key="frame" x="0.0" y="126" width="375" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">How Often can I give blood?
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="13" name="ArialMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">1- Whole Blood Donation: every 8 weeks up to 6 times per year
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="13" name="Arial-BoldMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">2- Double red blood cells donation: every 16 weeks up to 3 times per year
-3- Platelets donation: every 2 weeks up to 24 times per year
-
-Who can Donate blood?
-1- Healthy donors whom ages between 17 - 70 Years old 
-2- Citizens or residents who have valid residency 
-3- Donor’s weight shall be  50 Kg</string>
-                                        <attributes>
-                                            <font key="NSFont" size="13" name="ArialMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuwait-blood-bank" id="wIG-9W-dov">
                                 <rect key="frame" x="0.0" y="77" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -631,6 +597,53 @@ Who can Donate blood?
                                     <action selector="Done:" destination="NWh-el-u8n" eventType="touchUpInside" id="Xeh-T5-xk7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" id="EOO-xV-9lE">
+                                <rect key="frame" x="0.0" y="90" width="375" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">
+Who can Donate blood?
+1- Healthy donors whom ages between 17 - 70 Years old 
+2- Citizens or residents who have valid residency 
+3- Donor’s weight shall be  50 Kg                                                                     </string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">How do i need to prepare for the day of donation?
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="13" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 1- Sleep at least 6-8 hours on the night before the day of donation
+ 2- Drink plenty of fluids
+ 3- Have healthy light meals (fat free) on the day of donation 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="13" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="20" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -648,6 +661,9 @@ Who can Donate blood?
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Procee2" destination="EOO-xV-9lE" id="kNG-OI-FeA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9s-NO-MxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -705,6 +721,9 @@ Who can Donate blood?
                     </view>
                     <navigationItem key="navigationItem" title="Donation Process" id="ZAo-tS-yzk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Procee3" destination="Mzf-Yf-W6H" id="1R5-Wk-r1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONm-wb-SvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -776,6 +795,9 @@ What are the requirement to donate blood?
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="can1" destination="ao6-4i-p7F" id="o6r-xC-HDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMp-j5-Z6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -903,6 +925,9 @@ Cg
                         <barButtonItem key="backBarButtonItem" title="Back" id="vl8-kP-69z"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="can2" destination="j8s-dX-mLY" id="CoI-Cf-sfn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nz-0u-tIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -924,7 +949,7 @@ Cg
                                 <rect key="frame" x="0.0" y="125" width="375" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89574300250000005" green="0.94511182000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">PER DONATION INSTRUCTIONS 
+                                <mutableString key="text">PER DONATION INSTRUCTIONS 
 FOR APHERESIS PLATELETS DONORS
 
 We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
@@ -935,7 +960,7 @@ We would like to express our thanks and gratitude for your cooperation with us b
     b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment 
      c. Antibiotics for at least seven days before your appointment 
     d. If you are taking any other medications, please inform the physician 
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -968,6 +993,9 @@ We would like to express our thanks and gratitude for your cooperation with us b
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="before1" destination="Jeq-HK-Lbs" id="nCz-60-cQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBJ-0u-Vxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1084,6 +1112,10 @@ Thank you
                         <barButtonItem key="backBarButtonItem" title="Back" id="p57-Vq-qMm"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="before2" destination="gdZ-da-iWO" id="x4d-Ve-DGt"/>
+                        <outlet property="before3" destination="gdZ-da-iWO" id="bxU-ec-xUY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZg-8f-CU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1198,6 +1230,9 @@ Cg
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="After1" destination="Ltj-iQ-XxD" id="rWG-Zp-H4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1F-6V-rQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1288,6 +1323,11 @@ Cg
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="After2" destination="xbB-RR-Hy2" id="dZ8-2f-6ew"/>
+                        <outlet property="After3" destination="Hu7-NZ-TVs" id="Xyt-wi-2aJ"/>
+                        <outlet property="After4" destination="Orl-9p-ZA1" id="HYV-eH-q6Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPJ-QK-JVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1361,6 +1401,9 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="After5" destination="udd-9R-8vP" id="1zB-cM-0mq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zog-1M-Ps0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1447,6 +1490,9 @@ ICAgIAogICAgICAgICAgICAgICAgICA
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="After6" destination="bM9-yE-HqP" id="Uv1-8u-1Si"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hV8-5L-aOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1517,6 +1563,9 @@ National Guard Blood Bank branch
                         <barButtonItem key="backBarButtonItem" title="Back" id="Xuq-L3-eEc"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="After7" destination="GNK-9H-hbG" id="oCZ-MS-oHz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNP-tC-Thg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1838,7 +1887,9 @@ National Guard Blood Bank branch
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Register" id="Ppo-VZ-trM"/>
+                    <navigationItem key="navigationItem" title="Register" id="Ppo-VZ-trM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Efc-6i-f56"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="Email" destination="hnX-5I-Ntt" id="K3k-Rn-W6U"/>
                         <outlet property="ID" destination="PSK-NA-V9O" id="aob-1Z-CA6"/>
@@ -1918,7 +1969,9 @@ National Guard Blood Bank branch
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Forget Password" id="8Ir-WS-Vzr"/>
+                    <navigationItem key="navigationItem" title="Forget Password" id="8Ir-WS-Vzr">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6Ve-fR-Lzq"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="confirm" destination="Syx-w9-eyj" id="oqo-Pf-saD"/>
                         <outlet property="email" destination="Fxn-mY-oec" id="Hgn-ef-4bv"/>

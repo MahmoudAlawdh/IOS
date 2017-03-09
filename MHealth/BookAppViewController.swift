@@ -79,7 +79,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     
     var UserDonation = ""
     var UserBranch:Branch = Branch()
-    var UserDay = ""
+    var UserDay:Slot = Slot()
     var UserTime = ""
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -110,10 +110,10 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             
             break
         case 3:
-            UserDay = "Asdf"
+            UserDay = UserBranch.day.objectAtIndex(row) as! Slot
             break
         case 4:
-            UserTime = "QWER"
+            UserTime = UserDay.Slots[row] as! String
             break
         default: break
             
@@ -173,16 +173,14 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 2:
             let userDefaults = NSUserDefaults.standardUserDefaults()
             let langu:String = userDefaults.valueForKey("lang") as! String
-            let i:Branch = UserBranch
             if langu == "ar" {
-                return i.branchNameAr
+                return (L.objectAtIndex(row) as! Branch).branchNameAr
             }
-            return i.branchNameEn
+            return (L.objectAtIndex(row) as! Branch).branchNameEn
+
         case 3:
-            
-            let i:Branch = UserBranch
-            
-            return i.branchNameAr
+            var d:Slot = UserBranch.day.objectAtIndex(row) as! Slot
+            return d.Days
         case 4:
             return "ASDF"
         default:
@@ -213,9 +211,10 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 2:
             return L.count
         case 3:
-            return 1
+            return UserBranch.day.count
             
         case 4:
+        
             return 5
         default:
             return 0
