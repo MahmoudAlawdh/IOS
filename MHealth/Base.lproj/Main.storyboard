@@ -120,7 +120,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Confirm:" destination="uoz-VR-lAm" eventType="touchUpInside" id="mX2-MH-wv4"/>
-                                    <segue destination="BRE-uk-2zD" kind="push" id="oVz-Ke-4cW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -404,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plc-Xy-PyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329.5" y="1125.5"/>
+            <point key="canvasLocation" x="-1325.5" y="3938.5"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1609,6 +1608,9 @@ National Guard Blood Bank branch
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BRE-uk-2zD" kind="relationship" relationship="rootViewController" id="YMd-MP-N9a"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWu-tR-HDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
