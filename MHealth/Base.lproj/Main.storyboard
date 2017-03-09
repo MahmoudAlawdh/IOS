@@ -506,6 +506,9 @@ Cg
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Procee1" destination="tSv-gz-SsK" id="ema-7Q-5mh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ite-Zz-zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

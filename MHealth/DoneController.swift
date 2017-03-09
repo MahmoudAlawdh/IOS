@@ -17,8 +17,12 @@ class DoneController: UIViewController {
         // Drawing code
     }
     */
+    @IBOutlet var Procee1: UITextView!
     @IBAction func Done(sender: AnyObject) {
                 self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    override func viewDidLoad() {
+        //Procee1.text
     }
 
 }
