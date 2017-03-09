@@ -28,10 +28,27 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         
     }
+    var L:NSMutableArray = NSMutableArray()
+    
     func setDictResponse(resp: NSDictionary, reqId: Int) {
         
     }
     func setArrayResponse(resp: NSArray, reqId: Int) {
+        if reqId == 1{
+            for item in resp{
+                var i:NSDictionary = item as! NSDictionary
+                var j:Branch = Branch()
+                j.branchAddress = i.valueForKey("branchAddress") as! String
+                j.branchId = i.valueForKey("branchId") as! Int
+                j.branchLat = i.valueForKey("branchLat") as! String
+                j.branchLong = i.valueForKey("branchLong") as! String
+                j.branchNameAr = i.valueForKey("branchNameAr") as! String
+                j.branchNameEn = i.valueForKey("branchNameEn") as! String
+                
+                L.addObject(j)
+            }
+        }
+        Branchs.reloadAllComponents()
         
     }
     @IBOutlet var DonationType: UIPickerView!
@@ -116,13 +133,11 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         Time.delegate = self
         
         Donationlabel.hidden = true
-       // let DonationTypeData = ["RBCS","AP"]
-        //let BranchsData = ["Central Blood Bank ( Jabriya ) ","Adan Hospital Blood Bank branch","Jahra Hospital Blood Bank branch", "Asima Blood Bank branch", "National Guard Blood Bank branch"]
-        //let day = ["1","2","3"]
-        //let time = ["8-10","10-12","12-2"]
-        
-        
 
+        let n:Networking = Networking()
+        
+        n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: 1, caller: self)
+        
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
         
@@ -148,7 +163,13 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 1:
             return DonationTypeData[row]
         case 2:
-            return BranchsData[row]
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            let langu:String = userDefaults.valueForKey("lang") as! String
+            let i:Branch = L.objectAtIndex(row) as! Branch
+            if langu == "ar" {
+                return i.branchNameAr
+            }
+            return i.branchNameEn
         case 3:
             return day[row]
         case 4:
@@ -179,7 +200,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         case 1:
             return DonationTypeData.count
         case 2:
-            return BranchsData.count
+            return L.count
         case 3:
             return day.count
         case 4:
