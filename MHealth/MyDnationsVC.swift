@@ -8,14 +8,30 @@
 
 import UIKit
 
-class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NetworkCaller {
  
     @IBOutlet weak var oldTable: UITableView!
     
     @IBOutlet weak var upcomingTable: UITableView!
     
-    
     var myDonation = [" Donation Time", " Donation Time "]
+    var networkManager : Networking = Networking()
+    
+    var donationTime : NSArray = NSArray()
+    var oldTableArray : NSMutableArray = NSMutableArray()
+    var upcomingTableArray : NSMutableArray = NSMutableArray()
+    
+    
+    func setArrayResponse(resp: NSArray, reqId: Int) {
+        print(resp)
+        donationTime = resp
+        
+    }
+    
+    func setDictResponse(resp: NSDictionary, reqId: Int) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +40,7 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        networkManager.AMGetArrayData(Const.URLs.donationRecord + "/civilId" , params: ["donorCivilid": 23], reqId: 1, caller: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,15 +51,21 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     // MARK: - Table view data source
     
      func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        if tableView.tag == 1 {
-            return 3
-        } 
-        return 3
+        
+            return 1
+        
+        
     }
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        if tableView.tag == 1 {
+            
+        return oldTableArray.count
+        }
+        else {
+            return upcomingTableArray.count
+        }
     }
     
     
@@ -51,13 +74,24 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         
         // Configure the cell...
         let cell = UITableViewCell()
-        cell.textLabel!.text = "Donation Time"
+        if tableView.tag == 1 {
+            
+            cell.textLabel!.text = "Donation Time"
+
+        }else
+        {
+         
+            cell.textLabel!.text = "Donation Time"
+
+        }
+        
+        
         return cell
     }
     
     
      func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0{
+        if tableView.tag == 1{
             return  "My Donations "
         }
         else {
