@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292A9CD61E9B4AE800EEAC23 /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A9CD51E9B4AE800EEAC23 /* CustomTVC.swift */; };
+		292A9CD81E9B4BF200EEAC23 /* NotfcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A9CD71E9B4BF200EEAC23 /* NotfcationVC.swift */; };
+		29373D2B1E9A27F40015FF9E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29373D2A1E9A27F40015FF9E /* ShareViewController.swift */; };
 		297122571E6C2AD900705863 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122561E6C2AD900705863 /* EntryViewController.swift */; };
 		297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122581E6C2BB200705863 /* StaticInfoViewController.swift */; };
 		2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971225A1E6C588A00705863 /* LoginViewController.swift */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		20300A90085D875DF02F3899 /* Pods-MHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.release.xcconfig"; sourceTree = "<group>"; };
+		292A9CD51E9B4AE800EEAC23 /* CustomTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
+		292A9CD71E9B4BF200EEAC23 /* NotfcationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotfcationVC.swift; sourceTree = "<group>"; };
+		29373D2A1E9A27F40015FF9E /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		297122561E6C2AD900705863 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		297122581E6C2BB200705863 /* StaticInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticInfoViewController.swift; sourceTree = "<group>"; };
 		2971225A1E6C588A00705863 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +328,7 @@
 				2971225F1E6C58E400705863 /* FogetPassViewController.swift in Sources */,
 				8822E6821E6E98F1006B8317 /* DoneController.swift in Sources */,
 				EA0B43E61E715161009C33A8 /* Slot.swift in Sources */,
+				292A9CD81E9B4BF200EEAC23 /* NotfcationVC.swift in Sources */,
 				297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */,
 				52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */,
 				52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */,
@@ -329,11 +336,13 @@
 				297122571E6C2AD900705863 /* EntryViewController.swift in Sources */,
 				EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */,
 				52CC05121E6B41C400BC93A9 /* Validator.swift in Sources */,
+				29373D2B1E9A27F40015FF9E /* ShareViewController.swift in Sources */,
 				8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */,
 				297122631E6C5A2000705863 /* BookAppViewController.swift in Sources */,
 				297122651E6C753A00705863 /* DonorProfileVC.swift in Sources */,
 				2971225D1E6C58C400705863 /* RegisterViewController.swift in Sources */,
 				52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */,
+				292A9CD61E9B4AE800EEAC23 /* CustomTVC.swift in Sources */,
 				297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */,
 				EA57148C1E9B5C770054914E /* UpcomingTableVC.swift in Sources */,
 				52CC05141E6B41EC00BC93A9 /* Printer.swift in Sources */,
