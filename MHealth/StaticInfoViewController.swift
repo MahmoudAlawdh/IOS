@@ -53,6 +53,7 @@ class StaticInfoViewController: UIViewController {
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
+        var a:UIImage = UIImage(imageLiteral: "email")
         
         
         if langu == "ar" {
@@ -68,7 +69,6 @@ class StaticInfoViewController: UIViewController {
         }
         else {
             DonProcess.setTitle("Donation Process", forState: .Normal)
-            
             CanDon.setTitle("Can i Donate!", forState: .Normal)
             BeforDon.setTitle("Befor Donation", forState: .Normal)
             AfterDon.setTitle("Aftere Donation", forState: .Normal)

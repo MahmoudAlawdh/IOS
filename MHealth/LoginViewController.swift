@@ -29,6 +29,7 @@ class LoginViewController: UIViewController , NetworkCaller {
     let networkManager:Networking = Networking()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
         

@@ -16,6 +16,9 @@ class NotfcationVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         TableView.delegate = self
         TableView.dataSource = self
         
+
+
+        
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
@@ -46,10 +49,21 @@ class NotfcationVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = TableView.dequeueReusableCellWithIdentifier("CustomCell", forIndexPath: indexPath) as! CustomTVC
         cell.zainab = self
+        
         if flag == true{
+            let userDefaults = NSUserDefaults.standardUserDefaults()
+            let langu:String = userDefaults.valueForKey("lang") as! String
+            
+            
+            if langu == "ar" {
+                cell.button.setTitle("مشاركة ", forState: .Normal)
+                
+            }
+
         cell.titleText.text = data.objectAtIndex(indexPath.row).valueForKey("title") as! String
         cell.notifcationText.text = data.objectAtIndex(indexPath.row).valueForKey("date") as! String
         cell.descriptionText.text = data.objectAtIndex(indexPath.row).valueForKey("description") as! String
+          
         }
         return cell
     }
@@ -58,4 +72,7 @@ class NotfcationVC: UIViewController, UITableViewDelegate, UITableViewDataSource
      let cell = TableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomTVC
         return cell.frame.size.height
     }
-}
+    
+  
+    
+    }
