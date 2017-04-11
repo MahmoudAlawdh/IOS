@@ -10,10 +10,9 @@ import UIKit
 
 class ShareViewController: UIViewController {
 
-    @IBOutlet var lableText: UILabel!
     @IBAction func Share(sender: AnyObject) {
         
-        let activityAC = UIActivityViewController(activityItems: [lableText.text!], applicationActivities: nil)
+        let activityAC = UIActivityViewController(activityItems: ["zainab"], applicationActivities: nil)
        activityAC.popoverPresentationController?.sourceView = self.view
        
         self.presentViewController(activityAC, animated: true, completion: nil)
