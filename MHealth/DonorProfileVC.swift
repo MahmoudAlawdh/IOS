@@ -66,6 +66,9 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             dit["gender"] = donor.gender
             dit["bloodType"] = BloodTypeField.text
             dit["birthDate"] = "2017-01-01T00:00:00Z"
+            dit["donorId"] = donor.donorID
+            dit["status"] = true
+            
             
 
             n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/" + "\(donor.donorID)", httpMethod: "PUT", jsonData: dit, reqId: 0, caller: self)
