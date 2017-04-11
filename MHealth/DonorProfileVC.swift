@@ -149,7 +149,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         
         if langu == "ar" {
            self.title = "الملف الشخصي"
-          firstname.text = "الاسم الاول"
+         
           lastname.text = "الاسم الاخير"
             natinality.text = "الجنسية"
             email.text = "البريد الالكتروني"
