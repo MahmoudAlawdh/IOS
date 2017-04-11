@@ -25,7 +25,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
     }
     func setArrayResponse(resp: NSArray, reqId: Int) {
-        var n:Networking = Networking()
+        let n:Networking = Networking()
         if reqId == -1{
             for item in resp{
                 let i:NSDictionary = item as! NSDictionary
@@ -43,11 +43,11 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             UserBranch = L.objectAtIndex(0) as! Branch
         } 
         for i in L{
-            var w:Branch = i as! Branch
+            let w:Branch = i as! Branch
             if w.branchId == reqId{
                 for item in resp{
                     let i:NSDictionary = item as! NSDictionary
-                    var d:Slot = Slot()
+                    let d:Slot = Slot()
                     d.Days = i.valueForKey("day") as! String
                     d.Slots = i.valueForKey("slots") as! NSArray
                     w.day.addObject(d)
@@ -179,7 +179,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             return (L.objectAtIndex(row) as! Branch).branchNameEn
 
         case 3:
-            var d:Slot = UserBranch.day.objectAtIndex(row) as! Slot
+            let d:Slot = UserBranch.day.objectAtIndex(row) as! Slot
             return d.Days
         case 4:
             return "ASDF"
