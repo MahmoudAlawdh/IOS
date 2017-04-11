@@ -15,6 +15,10 @@
 		297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122601E6C598F00705863 /* MyDnationsVC.swift */; };
 		297122631E6C5A2000705863 /* BookAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122621E6C5A2000705863 /* BookAppViewController.swift */; };
 		297122651E6C753A00705863 /* DonorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297122641E6C753A00705863 /* DonorProfileVC.swift */; };
+		29FFBD401E9CB709003BF51C /* CustomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3C1E9CB709003BF51C /* CustomTVC.swift */; };
+		29FFBD411E9CB709003BF51C /* NotfcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3D1E9CB709003BF51C /* NotfcationVC.swift */; };
+		29FFBD421E9CB709003BF51C /* NotifcationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */; };
+		29FFBD431E9CB709003BF51C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -49,6 +53,10 @@
 		297122601E6C598F00705863 /* MyDnationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDnationsVC.swift; sourceTree = "<group>"; };
 		297122621E6C5A2000705863 /* BookAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAppViewController.swift; sourceTree = "<group>"; };
 		297122641E6C753A00705863 /* DonorProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonorProfileVC.swift; sourceTree = "<group>"; };
+		29FFBD3C1E9CB709003BF51C /* CustomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTVC.swift; sourceTree = "<group>"; };
+		29FFBD3D1E9CB709003BF51C /* NotfcationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotfcationVC.swift; sourceTree = "<group>"; };
+		29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationTVC.swift; sourceTree = "<group>"; };
+		29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +133,10 @@
 		52CC05091E6B408800BC93A9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				29FFBD3C1E9CB709003BF51C /* CustomTVC.swift */,
+				29FFBD3D1E9CB709003BF51C /* NotfcationVC.swift */,
+				29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */,
+				29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */,
 				52CC04F51E6B2F2400BC93A9 /* ViewController.swift */,
 				297122561E6C2AD900705863 /* EntryViewController.swift */,
 				297122581E6C2BB200705863 /* StaticInfoViewController.swift */,
@@ -315,6 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FFBD401E9CB709003BF51C /* CustomTVC.swift in Sources */,
+				29FFBD411E9CB709003BF51C /* NotfcationVC.swift in Sources */,
+				29FFBD421E9CB709003BF51C /* NotifcationTVC.swift in Sources */,
+				29FFBD431E9CB709003BF51C /* ShareViewController.swift in Sources */,
 				52CC05071E6B407E00BC93A9 /* Networking.swift in Sources */,
 				52CC05101E6B413900BC93A9 /* DataHolder.swift in Sources */,
 				52CC05161E6B4A4100BC93A9 /* UserDH.swift in Sources */,
