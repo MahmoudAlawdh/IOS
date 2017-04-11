@@ -37,6 +37,9 @@
 		8822E6821E6E98F1006B8317 /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6811E6E98F1006B8317 /* DoneController.swift */; };
 		8822E6861E6FFB6A006B8317 /* Branchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6851E6FFB6A006B8317 /* Branchs.swift */; };
 		EA0B43E61E715161009C33A8 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B43E51E715161009C33A8 /* Slot.swift */; };
+		EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABB51E9B704E00BF643F /* Donations.swift */; };
+		EA57148C1E9B5C770054914E /* UpcomingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57148B1E9B5C770054914E /* UpcomingTableVC.swift */; };
+		EA57148E1E9B5D430054914E /* MyPreviousDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		EA3EABB51E9B704E00BF643F /* Donations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
+		EA57148B1E9B5C770054914E /* UpcomingTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingTableVC.swift; sourceTree = "<group>"; };
+		EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviousDonation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +141,9 @@
 				297122621E6C5A2000705863 /* BookAppViewController.swift */,
 				297122641E6C753A00705863 /* DonorProfileVC.swift */,
 				8822E6811E6E98F1006B8317 /* DoneController.swift */,
-				29373D2A1E9A27F40015FF9E /* ShareViewController.swift */,
-				292A9CD51E9B4AE800EEAC23 /* CustomTVC.swift */,
-				292A9CD71E9B4BF200EEAC23 /* NotfcationVC.swift */,
+				EA57148B1E9B5C770054914E /* UpcomingTableVC.swift */,
+				EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */,
+				EA3EABB51E9B704E00BF643F /* Donations.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 				297122591E6C2BB200705863 /* StaticInfoViewController.swift in Sources */,
 				52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */,
 				52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */,
+				EA57148E1E9B5D430054914E /* MyPreviousDonation.swift in Sources */,
 				297122571E6C2AD900705863 /* EntryViewController.swift in Sources */,
+				EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */,
 				52CC05121E6B41C400BC93A9 /* Validator.swift in Sources */,
 				29373D2B1E9A27F40015FF9E /* ShareViewController.swift in Sources */,
 				8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */,
@@ -336,6 +344,7 @@
 				52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */,
 				292A9CD61E9B4AE800EEAC23 /* CustomTVC.swift in Sources */,
 				297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */,
+				EA57148C1E9B5C770054914E /* UpcomingTableVC.swift in Sources */,
 				52CC05141E6B41EC00BC93A9 /* Printer.swift in Sources */,
 				2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */,
 				52CC05181E6B4E1300BC93A9 /* Const.swift in Sources */,
