@@ -36,7 +36,7 @@ class EntryViewController: VideoSplashViewController {
         self.fillMode = .ResizeAspectFill
         self.alwaysRepeat = true
         self.sound = true
-        self.startTime = 12.0
+        self.startTime = 0.0
         self.duration = 4.0
         self.alpha = 0.7
         self.backgroundColor = UIColor.blackColor()
