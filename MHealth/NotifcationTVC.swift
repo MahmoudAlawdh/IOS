@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Whisper
 
 class NotifcationTVC: UITableViewController, NetworkCaller {
     var networkManager : Networking = Networking()
@@ -30,7 +31,14 @@ class NotifcationTVC: UITableViewController, NetworkCaller {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
         networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/bbnotification", params: ["donorCivilid": 23], reqId: 1, caller: self)
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

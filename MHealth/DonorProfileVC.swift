@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Whisper
 class DonorProfileVC: UIViewController,NetworkCaller {
     
     @IBOutlet var Logout: UIButton!
@@ -70,8 +70,14 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             dit["status"] = true
             
             
-
+            let reach = Reach()
+            if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+                
+            }else{
             n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/" + "\(donor.donorID)", httpMethod: "PUT", jsonData: dit, reqId: 0, caller: self)
+            }
             
             
             NameField.userInteractionEnabled = false

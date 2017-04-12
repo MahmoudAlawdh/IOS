@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Whisper
 
 class RegisterViewController: UIViewController , NetworkCaller {
     
@@ -79,9 +80,15 @@ class RegisterViewController: UIViewController , NetworkCaller {
         
         
         
-        
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
          let n:Networking = Networking()
         n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+        }
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
         

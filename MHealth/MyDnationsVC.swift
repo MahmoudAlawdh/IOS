@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Whisper
+
 
 class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NetworkCaller {
  
@@ -40,7 +42,14 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
         networkManager.AMGetArrayData(Const.URLs.donationRecord + "/civilId" , params: ["donorCivilid": 23], reqId: 1, caller: self)
+        }
     }
     
     override func didReceiveMemoryWarning() {

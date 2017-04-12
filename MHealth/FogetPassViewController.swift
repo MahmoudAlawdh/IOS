@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Whisper
 class FogetPassViewController: UIViewController , NetworkCaller{
     
 //    
@@ -25,8 +25,14 @@ class FogetPassViewController: UIViewController , NetworkCaller{
         let Donoremail:String = email.text!
         let networkManager:Networking = Networking()
         //networkManager.logging = true
-        
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
         networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail] , reqId: 5, caller: self)
+        }
 
     }
 

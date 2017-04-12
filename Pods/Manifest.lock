@@ -3,19 +3,22 @@ PODS:
   - ObjectMapper (1.3.0)
   - SwiftyJSON (2.3.2)
   - VideoSplashKit (1.1.0)
+  - Whisper (2.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.1.4)
   - ObjectMapper (~> 1.3)
   - SwiftyJSON (~> 2.3.2)
   - VideoSplashKit
+  - Whisper (~> 2.0)
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   VideoSplashKit: 0aa63d0bb37c5bd357de3e6a2a13dea5acad4d66
+  Whisper: 18b574de21a089c0d664b115f26e0d9ccbbadbab
 
-PODFILE CHECKSUM: af0e4fe98adddae722bee2ac9dc04573ed3cf578
+PODFILE CHECKSUM: d3f27d75d06bfb514a9dbce52325566e5910160b
 
 COCOAPODS: 1.2.0
