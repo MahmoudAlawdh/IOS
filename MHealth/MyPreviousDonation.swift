@@ -8,7 +8,15 @@
 
 import UIKit
 
-class MyPreviousDonation: UITableViewController {
+class MyPreviousDonation: UITableViewController, NetworkCaller {
+    
+    var networkManager : Networking = Networking()
+    
+    var donationTime : NSArray = NSArray()
+    var previousTableArray : NSMutableArray = NSMutableArray()
+    var data:NSMutableArray = NSMutableArray()
+    
+    var flag = false;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +26,25 @@ class MyPreviousDonation: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+         networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
+    }
+    
+    func setDictResponse(resp: NSDictionary, reqId: Int) {
+        
+        
+    }
+    
+    func setArrayResponse(resp: NSArray, reqId: Int) {
+        flag = true
+        for item in resp{
+            if item.valueForKey("status") as! String == "accepted"{
+                if item.valueForKey("donorCivilid") as! String == donor.civilID{
+                    data.addObject(item)
+                }
+            }
+        }
+        self.tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +56,48 @@ class MyPreviousDonation: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.count
     }
 
-    /*
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        
+        let cell:CustomePrevious = self.tableView.dequeueReusableCellWithIdentifier("previous") as! CustomePrevious
+        if flag == true {
+            cell.Donations.text = "Previous Donation"
+            cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
+            cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
+            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
+        }
+        
+        
+        
+        
+        
         return cell
     }
-    */
+    
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return "Previous Donations"
+    }
+    
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        let cell:CustomePrevious = self.tableView.dequeueReusableCellWithIdentifier("previous") as! CustomePrevious
+        
+        return cell.frame.size.height
+    }
+    
+
 
     /*
     // Override to support conditional editing of the table view.
