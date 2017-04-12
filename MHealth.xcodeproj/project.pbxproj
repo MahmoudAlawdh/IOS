@@ -30,6 +30,7 @@
 		29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD621E9DFBB5003BF51C /* blod1.mp4 */; };
 		29FFBD651E9DFF41003BF51C /* ali.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD641E9DFF41003BF51C /* ali.mp4 */; };
 		29FFBD6F1E9E0A0B003BF51C /* reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD6E1E9E0A0B003BF51C /* reach.swift */; };
+		29FFBD711E9E0D4B003BF51C /* trans.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD701E9E0D4B003BF51C /* trans.mp4 */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		29FFBD621E9DFBB5003BF51C /* blod1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blod1.mp4; sourceTree = "<group>"; };
 		29FFBD641E9DFF41003BF51C /* ali.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ali.mp4; sourceTree = "<group>"; };
 		29FFBD6E1E9E0A0B003BF51C /* reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reach.swift; sourceTree = "<group>"; };
+		29FFBD701E9E0D4B003BF51C /* trans.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = trans.mp4; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		52CC050E1E6B411100BC93A9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				29FFBD701E9E0D4B003BF51C /* trans.mp4 */,
 				29FFBD641E9DFF41003BF51C /* ali.mp4 */,
 				29FFBD621E9DFBB5003BF51C /* blod1.mp4 */,
 				29FFBD601E9DF695003BF51C /* heartbeet.mp4 */,
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FFBD711E9E0D4B003BF51C /* trans.mp4 in Resources */,
 				29FFBD511E9D65C7003BF51C /* blooooooood.mp4 in Resources */,
 				52CC04FE1E6B2F2600BC93A9 /* LaunchScreen.storyboard in Resources */,
 				29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */,
