@@ -22,6 +22,13 @@
 		29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD441E9CDA6B003BF51C /* blood.mp4 */; };
 		29FFBD471E9CDBE3003BF51C /* giphy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD461E9CDBE3003BF51C /* giphy.mp4 */; };
 		29FFBD491E9CDDD1003BF51C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */; };
+		29FFBD4F1E9CEC90003BF51C /* bloood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD4E1E9CEC90003BF51C /* bloood.mp4 */; };
+		29FFBD511E9D65C7003BF51C /* blooooooood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD501E9D65C7003BF51C /* blooooooood.mp4 */; };
+		29FFBD5D1E9DF3F1003BF51C /* zainab.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD5C1E9DF3F1003BF51C /* zainab.mp4 */; };
+		29FFBD5F1E9DF4D5003BF51C /* heart.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD5E1E9DF4D5003BF51C /* heart.mp4 */; };
+		29FFBD611E9DF695003BF51C /* heartbeet.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD601E9DF695003BF51C /* heartbeet.mp4 */; };
+		29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD621E9DFBB5003BF51C /* blod1.mp4 */; };
+		29FFBD651E9DFF41003BF51C /* ali.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD641E9DFF41003BF51C /* ali.mp4 */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -63,6 +70,13 @@
 		29FFBD441E9CDA6B003BF51C /* blood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blood.mp4; sourceTree = "<group>"; };
 		29FFBD461E9CDBE3003BF51C /* giphy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giphy.mp4; sourceTree = "<group>"; };
 		29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		29FFBD4E1E9CEC90003BF51C /* bloood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloood.mp4; sourceTree = "<group>"; };
+		29FFBD501E9D65C7003BF51C /* blooooooood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blooooooood.mp4; sourceTree = "<group>"; };
+		29FFBD5C1E9DF3F1003BF51C /* zainab.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zainab.mp4; sourceTree = "<group>"; };
+		29FFBD5E1E9DF4D5003BF51C /* heart.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = heart.mp4; sourceTree = "<group>"; };
+		29FFBD601E9DF695003BF51C /* heartbeet.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartbeet.mp4; sourceTree = "<group>"; };
+		29FFBD621E9DFBB5003BF51C /* blod1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blod1.mp4; sourceTree = "<group>"; };
+		29FFBD641E9DFF41003BF51C /* ali.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ali.mp4; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +201,13 @@
 		52CC050E1E6B411100BC93A9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				29FFBD641E9DFF41003BF51C /* ali.mp4 */,
+				29FFBD621E9DFBB5003BF51C /* blod1.mp4 */,
+				29FFBD601E9DF695003BF51C /* heartbeet.mp4 */,
+				29FFBD5E1E9DF4D5003BF51C /* heart.mp4 */,
+				29FFBD5C1E9DF3F1003BF51C /* zainab.mp4 */,
+				29FFBD501E9D65C7003BF51C /* blooooooood.mp4 */,
+				29FFBD4E1E9CEC90003BF51C /* bloood.mp4 */,
 				29FFBD461E9CDBE3003BF51C /* giphy.mp4 */,
 				52CC05191E6B53D300BC93A9 /* PathsManager.swift */,
 				52CC05111E6B41C400BC93A9 /* Validator.swift */,
@@ -274,11 +295,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FFBD511E9D65C7003BF51C /* blooooooood.mp4 in Resources */,
 				52CC04FE1E6B2F2600BC93A9 /* LaunchScreen.storyboard in Resources */,
+				29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */,
+				29FFBD5F1E9DF4D5003BF51C /* heart.mp4 in Resources */,
 				29FFBD471E9CDBE3003BF51C /* giphy.mp4 in Resources */,
+				29FFBD4F1E9CEC90003BF51C /* bloood.mp4 in Resources */,
 				29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */,
 				52CC04FB1E6B2F2600BC93A9 /* Assets.xcassets in Resources */,
+				29FFBD611E9DF695003BF51C /* heartbeet.mp4 in Resources */,
 				52CC050C1E6B40FC00BC93A9 /* Podfile in Resources */,
+				29FFBD651E9DFF41003BF51C /* ali.mp4 in Resources */,
+				29FFBD5D1E9DF3F1003BF51C /* zainab.mp4 in Resources */,
 				52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

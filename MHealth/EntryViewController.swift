@@ -1,10 +1,4 @@
-//
-//  EntryViewController.swift
-//  MHealth
-//
-//  Created by trn2 on 3/5/17.
-//  Copyright © 2017 PIFSS. All rights reserved.
-//
+
 
 import UIKit
 import VideoSplashKit
@@ -28,15 +22,15 @@ class EntryViewController: VideoSplashViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("giphy", ofType: "mp4")!)
+        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("ali", ofType: "mp4")!)
         self.videoFrame = view.frame
         self.fillMode = .ResizeAspectFill
         self.alwaysRepeat = true
         self.sound = true
-        self.startTime = 12.0
-        self.duration = 4.0
-        self.alpha = 0.7
-        self.backgroundColor = UIColor.blackColor()
+        self.startTime = 0.0
+        self.duration = 10.0
+        self.alpha = 1.0
+        self.backgroundColor = UIColor.clearColor()
         self.contentURL = url
         self.restartForeground = true
       
@@ -47,14 +41,6 @@ class EntryViewController: VideoSplashViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
