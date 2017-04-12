@@ -44,6 +44,7 @@
 		52CC05181E6B4E1300BC93A9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC05171E6B4E1300BC93A9 /* Const.swift */; };
 		52CC051A1E6B53D300BC93A9 /* PathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC05191E6B53D300BC93A9 /* PathsManager.swift */; };
 		625258405D3A2BB46D2011A3 /* Pods_MHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */; };
+		8818BA231E9D533F00F255CB /* reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8818BA221E9D533F00F255CB /* reach.swift */; };
 		8822E67E1E6D37C2006B8317 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E67D1E6D37C2006B8317 /* Donor.swift */; };
 		8822E6821E6E98F1006B8317 /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6811E6E98F1006B8317 /* DoneController.swift */; };
 		8822E6861E6FFB6A006B8317 /* Branchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822E6851E6FFB6A006B8317 /* Branchs.swift */; };
@@ -93,6 +94,7 @@
 		52CC05151E6B4A4100BC93A9 /* UserDH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDH.swift; sourceTree = "<group>"; };
 		52CC05171E6B4E1300BC93A9 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		52CC05191E6B53D300BC93A9 /* PathsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathsManager.swift; sourceTree = "<group>"; };
+		8818BA221E9D533F00F255CB /* reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reach.swift; sourceTree = "<group>"; };
 		8822E67D1E6D37C2006B8317 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donor.swift; sourceTree = "<group>"; };
 		8822E6811E6E98F1006B8317 /* DoneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
 		8822E6851E6FFB6A006B8317 /* Branchs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branchs.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FFBD401E9CB709003BF51C /* CustomTVC.swift in Sources */,
+				8818BA231E9D533F00F255CB /* reach.swift in Sources */,
 				29FFBD411E9CB709003BF51C /* NotfcationVC.swift in Sources */,
 				29FFBD421E9CB709003BF51C /* NotifcationTVC.swift in Sources */,
 				29FFBD431E9CB709003BF51C /* ShareViewController.swift in Sources */,

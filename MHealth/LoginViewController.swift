@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Whisper
 class LoginViewController: UIViewController , NetworkCaller {
     var flag = 0
     @IBOutlet weak var password: UITextField!
@@ -22,8 +22,14 @@ class LoginViewController: UIViewController , NetworkCaller {
     
     
     @IBAction func donorLogin(sender: AnyObject) {
-    
-        self.networkManager.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/donor", params: [:], reqId: 0, caller: self)
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+        }else{
+            self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
+        }
+        
     }
     
     let networkManager:Networking = Networking()

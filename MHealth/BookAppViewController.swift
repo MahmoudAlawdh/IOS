@@ -7,60 +7,10 @@
 //
 
 import UIKit
-
+import Whisper
 class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate ,NetworkCaller{
-
-    @IBAction func Confirm(sender: AnyObject) {
-        let n:Networking = Networking()
-        var dit = [String: AnyObject]()
-        dit["place"] = donor.civilID
-        dit["date"] = "2017-01-01T00:00:00Z"
-        dit["bbBranchId"] = 0
-        dit["donorId"] = donor.donorID
-        n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donationappointment/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
-    }
-    var L:NSMutableArray = NSMutableArray()
-    
-    func setDictResponse(resp: NSDictionary, reqId: Int) {
-        
-    }
-    func setArrayResponse(resp: NSArray, reqId: Int) {
-        let n:Networking = Networking()
-        if reqId == -1{
-            for item in resp{
-                let i:NSDictionary = item as! NSDictionary
-                let j:Branch = Branch()
-                j.branchAddress = i.valueForKey("branchAddress") as! String
-                j.branchId = i.valueForKey("branchId") as! Int
-                j.branchLat = i.valueForKey("branchLat") as! String
-                j.branchLong = i.valueForKey("branchLong") as! String
-                j.branchNameAr = i.valueForKey("branchNameAr") as! String
-                j.branchNameEn = i.valueForKey("branchNameEn") as! String
-                
-                L.addObject(j)
-                n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/schedule/freeslots/" + "\(j.branchId)", params: [:], reqId: (j.branchId), caller: self)
-            }
-            UserBranch = L.objectAtIndex(0) as! Branch
-        } 
-        for i in L{
-            let w:Branch = i as! Branch
-            if w.branchId == reqId{
-                for item in resp{
-                    let i:NSDictionary = item as! NSDictionary
-                    let d:Slot = Slot()
-                    d.Days = i.valueForKey("day") as! String
-                    d.Slots = i.valueForKey("slots") as! NSArray
-                    w.day.addObject(d)
-                }
-            }
-        }
-        Branchs.reloadAllComponents()
-        Day.reloadAllComponents()
-        Time.reloadAllComponents()
-        
-    }
     @IBOutlet var DonationType: UIPickerView!
-
+    
     @IBOutlet var Branchs: UIPickerView!
     
     @IBOutlet var Day: UIPickerView!
@@ -73,14 +23,100 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBOutlet var T: UIButton!
     @IBOutlet var Donationlabel: UILabel!
     
-    let DonationTypeData = ["RBCS","AP"]
+    let DonationTypeData = ["RBCS","Blood Cells"]
     let day:NSMutableArray = NSMutableArray()
-
+    let time = ["8 AM - 10 AM","10 AM - 12 PM","12 PM - 2 PM","2 PM - 4 PM"]
     
     var UserDonation = ""
     var UserBranch:Branch = Branch()
     var UserDay:Slot = Slot()
-    var UserTime = ""
+    var UserTime = 0
+    
+    @IBAction func Confirm(sender: AnyObject) {
+        let n:Networking = Networking()
+        var dit = [String: AnyObject]()
+        
+        
+        dit["day"] = UserDay.Days+"T00:00:00Z"
+        dit["branchId"] = UserBranch.branchId - 1
+        dit["isActive"] = 1
+        dit["isPast"] = 0
+        dit["isRegisteredUser"] = 1
+        dit["period"] = UserTime
+        dit["regUserId"] = donor.donorID
+        dit["siteUserId"] = 0
+        
+        
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
+        n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/schedule/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+            print(dit)
+        }
+    }
+    var L:NSMutableArray = NSMutableArray()
+    
+    func setDictResponse(resp: NSDictionary, reqId: Int) {
+        
+    }
+    func setArrayResponse(resp: NSArray, reqId: Int) {
+        let n:Networking = Networking()
+        if reqId == 0{
+            print(resp)
+        }
+        if reqId == -1{
+            for item in resp{
+                let i:NSDictionary = item as! NSDictionary
+                let j:Branch = Branch()
+                j.branchAddress = i.valueForKey("branchAddress") as! String
+                j.branchId = i.valueForKey("branchId") as! Int
+                j.branchLat = i.valueForKey("branchLat") as! String
+                j.branchLong = i.valueForKey("branchLong") as! String
+                j.branchNameAr = i.valueForKey("branchNameAr") as! String
+                j.branchNameEn = i.valueForKey("branchNameEn") as! String
+                
+                L.addObject(j)
+                let reach = Reach()
+                if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+                    let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+                    Whisper(message, to: self.navigationController!,action:.Show)
+                    
+                }else{
+                n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/schedule/freeslots/" + "\(j.branchId)", params: [:], reqId: (j.branchId), caller: self)
+                }
+            }
+            UserBranch = L.objectAtIndex(0) as! Branch
+            
+        } 
+        for i in L{
+            let w:Branch = i as! Branch
+            var counter = 0;
+            if w.branchId == reqId{
+                for item in resp{
+
+                    let i:NSDictionary = item as! NSDictionary
+                    let d:Slot = Slot()
+                    d.Days = i.valueForKey("day") as! String
+                    d.Slots = i.valueForKey("slots") as! NSArray
+                    w.day.addObject(d)
+                    if counter == 0 {
+                        UserDay.Days =  d.Days
+                        counter = counter + 1
+                    }
+                }
+            }
+            
+        }
+
+        Branchs.reloadAllComponents()
+        Day.reloadAllComponents()
+        Time.reloadAllComponents()
+        
+    }
+
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
@@ -113,7 +149,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             UserDay = UserBranch.day.objectAtIndex(row) as! Slot
             break
         case 4:
-            UserTime = UserDay.Slots[row] as! String
+            UserTime = row
             break
         default: break
             
@@ -143,8 +179,14 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         Donationlabel.hidden = true
 
         let n:Networking = Networking()
-        
+        let reach = Reach()
+        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+            
+        }else{
         n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: -1, caller: self)
+        }
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
@@ -182,7 +224,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             let d:Slot = UserBranch.day.objectAtIndex(row) as! Slot
             return d.Days
         case 4:
-            return "ASDF"
+            return time[row]
         default:
             return ""
         }
@@ -214,8 +256,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             return UserBranch.day.count
             
         case 4:
-        
-            return 5
+            return time.count
         default:
             return 0
         }
