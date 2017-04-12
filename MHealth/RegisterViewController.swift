@@ -54,6 +54,11 @@ class RegisterViewController: UIViewController , NetworkCaller {
     @IBOutlet var gender: UISegmentedControl!
     
     @IBAction func RegisterAction(sender: AnyObject) {
+        
+        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+        Whisper(message, to: self.navigationController!,action:.Show)
+        
+        
         var dit = [String: AnyObject]()
         dit["civilId"] = ID.text
         dit["firstName"] = firstname.text
