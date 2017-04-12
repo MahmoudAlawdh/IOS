@@ -417,10 +417,6 @@
                                 <rect key="frame" x="7" y="482" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donationablooooood" id="FKq-R3-th8">
-                                <rect key="frame" x="32" y="71" width="301" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="29L-a2-lVD">
                                 <rect key="frame" x="198" y="565" width="145" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,6 +447,18 @@
                                     <action selector="EditUpdate:" destination="IuK-Vf-UgD" eventType="touchUpInside" id="VTE-qQ-PgA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xWE-3n-sVe">
+                                <rect key="frame" x="130" y="72" width="166" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bbl-rn-Wdh">
+                                <rect key="frame" x="189" y="172" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="UpdateImaage:" destination="IuK-Vf-UgD" eventType="touchUpInside" id="jj3-qR-Eip"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -466,6 +474,7 @@
                         <outlet property="NameField" destination="I0b-m4-kAp" id="fxL-4V-oKZ"/>
                         <outlet property="NationalityField" destination="t7n-PV-ATI" id="2GC-g9-IKA"/>
                         <outlet property="Phone" destination="SNW-rz-Ml2" id="D9e-iE-Lor"/>
+                        <outlet property="UpdateImage" destination="Bbl-rn-Wdh" id="jbC-3B-jrV"/>
                         <outlet property="passwordField" destination="Z7q-O7-57D" id="PIz-Pm-MtG"/>
                         <outlet property="publicDone" destination="ZQI-XP-xze" id="5ji-Y6-ioP"/>
                     </connections>
@@ -484,7 +493,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="upcoming" id="KCg-DG-TPj" customClass="CustomeUpcomingTableViewCell" customModule="MHealth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCg-DG-TPj" id="h24-Oe-CGS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
@@ -549,7 +558,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zfd-Ep-Stg">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfd-Ep-Stg" id="eGk-Xk-5N0">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -2760,7 +2769,7 @@ National Guard Blood Bank branch
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="162" id="XtW-Gi-32b" customClass="CustomTVC" customModule="MHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="162"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XtW-Gi-32b" id="3hb-Jh-fh1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>

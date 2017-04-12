@@ -8,7 +8,7 @@
 
 import UIKit
 import Whisper
-class DonorProfileVC: UIViewController,NetworkCaller {
+class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,NetworkCaller {
     
     @IBOutlet var Logout: UIButton!
     @IBAction func Logout(sender: AnyObject) {
@@ -26,8 +26,61 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     @IBOutlet var NationalityField: UITextField!
     @IBOutlet var BirthDate: UITextField!    
     
+    @IBOutlet var UpdateImage: UIButton!
+    
+    @IBAction func UpdateImaage(sender: AnyObject) {
+        
+        let alertController = UIAlertController(title: "Upload Image", message: "Choose one of the two options", preferredStyle: .ActionSheet)
+        
+        let CameraRollAction = UIAlertAction(title: "Camera roll", style: .Default, handler: {(action: UIAlertAction) -> Void in
+            print("Camera Roll")
+            
+            let imagePicker:UIImagePickerController = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+            
+        })
+        
+        let CameraAction = UIAlertAction(title: "Take photo", style: .Default, handler: {(action: UIAlertAction) -> Void in
+            print("Camera ")
+            let imagePicker:UIImagePickerController = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.allowsEditing = true
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+        })
+        
+        let CancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {(action: UIAlertAction) -> Void in
+            print("Cancel")
+        })
+        
+        alertController.addAction(CameraAction)
+        alertController.addAction(CameraRollAction)
+        alertController.addAction(CancelAction)
+        
+        self.presentViewController(alertController, animated: true, completion: { _ in })
+        
+        print ("Button clicked")
+    }
+    
+    
     
     @IBAction func EditUpdate(sender: AnyObject) {
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         let s:UIButton = sender as! UIButton
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let langu:String = userDefaults.valueForKey("lang") as! String
