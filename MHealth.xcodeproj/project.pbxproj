@@ -20,7 +20,6 @@
 		29FFBD421E9CB709003BF51C /* NotifcationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */; };
 		29FFBD431E9CB709003BF51C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */; };
 		29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD441E9CDA6B003BF51C /* blood.mp4 */; };
-		29FFBD471E9CDBE3003BF51C /* giphy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD461E9CDBE3003BF51C /* giphy.mp4 */; };
 		29FFBD491E9CDDD1003BF51C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */; };
 		29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD621E9DFBB5003BF51C /* blod1.mp4 */; };
 		29FFBD6F1E9E0A0B003BF51C /* reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD6E1E9E0A0B003BF51C /* reach.swift */; };
@@ -64,7 +63,6 @@
 		29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationTVC.swift; sourceTree = "<group>"; };
 		29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		29FFBD441E9CDA6B003BF51C /* blood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blood.mp4; sourceTree = "<group>"; };
-		29FFBD461E9CDBE3003BF51C /* giphy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giphy.mp4; sourceTree = "<group>"; };
 		29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		29FFBD621E9DFBB5003BF51C /* blod1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blod1.mp4; sourceTree = "<group>"; };
 		29FFBD6E1E9E0A0B003BF51C /* reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reach.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			children = (
 				29FFBD761E9E1913003BF51C /* transtion2.mp4 */,
 				29FFBD621E9DFBB5003BF51C /* blod1.mp4 */,
-				29FFBD461E9CDBE3003BF51C /* giphy.mp4 */,
 				52CC05191E6B53D300BC93A9 /* PathsManager.swift */,
 				52CC05111E6B41C400BC93A9 /* Validator.swift */,
 				29FFBD441E9CDA6B003BF51C /* blood.mp4 */,
@@ -285,7 +282,6 @@
 			files = (
 				52CC04FE1E6B2F2600BC93A9 /* LaunchScreen.storyboard in Resources */,
 				29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */,
-				29FFBD471E9CDBE3003BF51C /* giphy.mp4 in Resources */,
 				29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */,
 				52CC04FB1E6B2F2600BC93A9 /* Assets.xcassets in Resources */,
 				52CC050C1E6B40FC00BC93A9 /* Podfile in Resources */,
