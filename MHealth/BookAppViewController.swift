@@ -35,8 +35,9 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBAction func Confirm(sender: AnyObject) {
         let n:Networking = Networking()
         var dit = [String: AnyObject]()
-        
-        
+        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+        Whisper(message, to: self.navigationController!,action:.Show)
+        if UserDonation == "Blood Cells"{
         dit["day"] = UserDay.Days+"T00:00:00Z"
         dit["branchId"] = UserBranch.branchId - 1
         dit["isActive"] = 1
@@ -54,7 +55,25 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             
         }else{
         n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/schedule/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
-            print(dit)
+        }
+        }
+        else{
+            dit["ddate"] = UserDay.Days+"T00:00:00Z"
+            dit["dnbloodtype"] = donor.bloodtype;
+            dit["donationdestination"] = "bank"
+            dit["donorCivilid"] = donor.civilID
+            dit["status"] = "pending"
+            
+            
+            let reach = Reach()
+            if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+                
+            }else{
+                n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+            }
+            
         }
     }
     var L:NSMutableArray = NSMutableArray()
@@ -123,23 +142,6 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         switch pickerView.tag {
         case 1:
             UserDonation = DonationTypeData[row]
-            if UserDonation == "AP"{
-                Donationlabel.hidden = false
-                B.hidden = true
-                D.hidden = true
-                T.hidden = true
-                Branchs.hidden = true
-                Day.hidden = true
-                Time.hidden = true
-            }else{
-                Donationlabel.hidden = true
-                B.hidden = false
-                D.hidden = false
-                T.hidden = false
-                Branchs.hidden = false
-                Day.hidden = false
-                Time.hidden = false
-            }
             break
         case 2:
             UserBranch = L.objectAtIndex(row) as! Branch ///***
