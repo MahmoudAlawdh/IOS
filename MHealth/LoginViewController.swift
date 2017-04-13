@@ -64,6 +64,7 @@ class LoginViewController: UIViewController , NetworkCaller {
                 donor.password = Donor.valueForKey("password")! as! String
                 donor.phoneNumber = Donor.valueForKey("phoneNumber")! as! String
                 donor.state = Donor.valueForKey("status")! as! Int
+                donor.img = Donor.valueForKey("imgURL") as! String
                 
                 
                 let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController
