@@ -17,7 +17,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
     
     var donationTime : NSArray = NSArray()
     var upcomingTableArray : NSMutableArray = NSMutableArray()
-    var data:NSArray = NSArray()
+    var data:NSMutableArray = NSMutableArray()
     
     var flag = false;
     
@@ -49,7 +49,14 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
         flag = true
-        data = resp
+        
+        for item in resp{
+            if item.valueForKey("status") as! String == "pending"{
+                if item.valueForKey("donorCivilid") as! String == donor.civilID{
+                    data.addObject(item)
+                }
+            }
+        }
         self.tableView.reloadData()
         
     }
@@ -79,7 +86,8 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         
         
         let cell:CustomeUpcomingTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("upcoming") as! CustomeUpcomingTableViewCell
-        if flag == true{
+        if flag == true {
+            
             cell.UpcomingTableView.text = "Upcoming Appointment"
             cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
             cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String

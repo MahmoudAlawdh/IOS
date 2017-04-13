@@ -45,6 +45,7 @@
 		EA0B43E61E715161009C33A8 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B43E51E715161009C33A8 /* Slot.swift */; };
 		EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABB51E9B704E00BF643F /* Donations.swift */; };
 		EA3EABDA1E9E273400BF643F /* CustomeUpcomingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABD91E9E273400BF643F /* CustomeUpcomingTableViewCell.swift */; };
+		EA3EABDC1E9E352700BF643F /* CustomePrevious.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABDB1E9E352700BF643F /* CustomePrevious.swift */; };
 		EA57148C1E9B5C770054914E /* UpcomingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57148B1E9B5C770054914E /* UpcomingTableVC.swift */; };
 		EA57148E1E9B5D430054914E /* MyPreviousDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		EA3EABB51E9B704E00BF643F /* Donations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
 		EA3EABD91E9E273400BF643F /* CustomeUpcomingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeUpcomingTableViewCell.swift; sourceTree = "<group>"; };
+		EA3EABDB1E9E352700BF643F /* CustomePrevious.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomePrevious.swift; sourceTree = "<group>"; };
 		EA57148B1E9B5C770054914E /* UpcomingTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingTableVC.swift; sourceTree = "<group>"; };
 		EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviousDonation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 				EA57148D1E9B5D430054914E /* MyPreviousDonation.swift */,
 				EA3EABB51E9B704E00BF643F /* Donations.swift */,
 				29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */,
+				EA3EABDB1E9E352700BF643F /* CustomePrevious.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				2971225D1E6C58C400705863 /* RegisterViewController.swift in Sources */,
 				52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */,
 				297122611E6C598F00705863 /* MyDnationsVC.swift in Sources */,
+				EA3EABDC1E9E352700BF643F /* CustomePrevious.swift in Sources */,
 				EA57148C1E9B5C770054914E /* UpcomingTableVC.swift in Sources */,
 				52CC05141E6B41EC00BC93A9 /* Printer.swift in Sources */,
 				2971225B1E6C588A00705863 /* LoginViewController.swift in Sources */,
