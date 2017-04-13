@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         shadow.shadowColor = UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
         shadow.shadowOffset = CGSizeMake(0, 1)
         
-       
+        
         return true
     }
 
