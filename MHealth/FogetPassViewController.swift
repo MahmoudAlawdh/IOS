@@ -44,7 +44,7 @@ func setArrayResponse(resp: NSArray, reqId: Int) {
 func setDictResponse(resp: NSDictionary, reqId: Int) {
     if resp == [:] {
         
-        lblMsg.text = " Success: An email was sent to you  "
+        lblMsg.text = " Success An email was sent to you  "
         
     } else {
 
@@ -65,15 +65,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
-        
-        
-        if langu == "ar" {
-          
-            confirm.setTitle("تاكيد", forState: .Normal)
-            
-        }
+       
     }
 
     override func didReceiveMemoryWarning() {

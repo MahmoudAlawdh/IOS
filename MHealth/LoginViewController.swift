@@ -36,29 +36,6 @@ class LoginViewController: UIViewController , NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
-        
-        
-        if langu == "ar" {
-            password.placeholder = "الرقم السري"
-            username.placeholder = "اسم المستخدم"
-            login.setTitle("تسجيل الدخول", forState: .Normal)
-            register.setTitle("التسجيل", forState: .Normal)
-            forgetpassword.setTitle("نسيت كلمة السر", forState: .Normal)
-            
-        }
-        
-        else{
-            password.placeholder = "password"
-            username.placeholder = "username"
-            login.setTitle("Login", forState: .Normal)
-            register.setTitle("Register", forState: .Normal)
-            forgetpassword.setTitle("Forget Password", forState: .Normal)
-        
-        
-        }
-        
     }
     
     

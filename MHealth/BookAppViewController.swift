@@ -190,19 +190,9 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: -1, caller: self)
         }
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
+       
         
-        
-        if langu == "ar" {
-            self.title = "حجز"
-            DonType.setTitle("فصيلة الدم ", forState: .Normal)
-            branchh.setTitle("الفرع ", forState: .Normal)
-            dayy.setTitle("اليوم ", forState: .Normal)
-            Timee.setTitle("الوقت", forState: .Normal)
-            conf.setTitle("تاكيد", forState: .Normal)
-        }
-    }
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

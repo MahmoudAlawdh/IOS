@@ -29,8 +29,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
     
     @IBAction func EditUpdate(sender: AnyObject) {
         let s:UIButton = sender as! UIButton
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
+      
         
         
 
@@ -44,12 +43,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             NationalityField.userInteractionEnabled = true
             BirthDate.userInteractionEnabled = true
             
-            if langu == "ar" {
-                s.setTitle("حفظ", forState: .Normal)
-            }else{
-            s.setTitle("Save", forState: .Normal )
-            }
-        }
+                    }
         else{
             
             // update profile with database
@@ -88,14 +82,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
             BloodTypeField.userInteractionEnabled = false
             NationalityField.userInteractionEnabled = false
             BirthDate.userInteractionEnabled = false
-            if langu == "ar"{
-                s.setTitle("تحرير", forState: .Normal)
-            }else{
-                
-            
-            s.setTitle("Edit", forState: .Normal )
-            }
-        }
+                   }
         
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
@@ -152,24 +139,7 @@ class DonorProfileVC: UIViewController,NetworkCaller {
         BirthDate.userInteractionEnabled = false
         
         // language
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
-        
-        
-        if langu == "ar" {
-           self.title = "الملف الشخصي"
-         
-          lastname.text = "الاسم الاخير"
-            natinality.text = "الجنسية"
-            email.text = "البريد الالكتروني"
-            password.text = "الرقم السري"
-            phonenumber.text = "الهاتف"
-           bloodtype.text = "فصيلة الدم"
-            birthdate.text = "تاريخ الميلاد"
-            publicDone.text = "عام"
-            Eedit.setTitle("تحرير", forState: .Normal)
-            Logout.setTitle("تسجيل خروج", forState: .Normal)
-        }
+      
     }
 
     override func didReceiveMemoryWarning() {
