@@ -36,29 +36,6 @@ class LoginViewController: UIViewController , NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
-        
-        
-        if langu == "ar" {
-            password.placeholder = "الرقم السري"
-            username.placeholder = "اسم المستخدم"
-            login.setTitle("تسجيل الدخول", forState: .Normal)
-            register.setTitle("التسجيل", forState: .Normal)
-            forgetpassword.setTitle("نسيت كلمة السر", forState: .Normal)
-            
-        }
-        
-        else{
-            password.placeholder = "password"
-            username.placeholder = "username"
-            login.setTitle("Login", forState: .Normal)
-            register.setTitle("Register", forState: .Normal)
-            forgetpassword.setTitle("Forget Password", forState: .Normal)
-        
-        
-        }
-        
     }
     
     
@@ -87,6 +64,7 @@ class LoginViewController: UIViewController , NetworkCaller {
                 donor.password = Donor.valueForKey("password")! as! String
                 donor.phoneNumber = Donor.valueForKey("phoneNumber")! as! String
                 donor.state = Donor.valueForKey("status")! as! Int
+                donor.img = Donor.valueForKey("imgURL") as! String
                 
                 
                 let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController

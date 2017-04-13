@@ -104,27 +104,10 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
+       
         
         
-        if langu == "ar" {
-           civilID.text = "الرقم المدني"
-            first.text = "الاسم الاول"
-            last.text = "الاسم الاخير"
-            nation.text = "الجنسية"
-            emaill.text = "البريد الالكتروني"
-            pass.text = "الرقم السري"
-            phonNUm.text = "الهاتف"
-            bloodT.text = "فصيلة الدم"
-            gg.text = "الجنس"
-
-            gender.setTitle("انثى", forSegmentAtIndex: 0)
-            gender.setTitle("ذكر", forSegmentAtIndex: 1)
-            regs.setTitle("سجل", forState: .Normal)
-         
-            
-        }
+     
         
 
         

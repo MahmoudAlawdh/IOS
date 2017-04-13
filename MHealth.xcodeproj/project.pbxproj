@@ -24,6 +24,7 @@
 		29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD621E9DFBB5003BF51C /* blod1.mp4 */; };
 		29FFBD6F1E9E0A0B003BF51C /* reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD6E1E9E0A0B003BF51C /* reach.swift */; };
 		29FFBD771E9E1913003BF51C /* transtion2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD761E9E1913003BF51C /* transtion2.mp4 */; };
+		29FFBD7B1E9F4650003BF51C /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD7A1E9F4650003BF51C /* Localization.strings */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -75,6 +76,9 @@
 		29FFBD621E9DFBB5003BF51C /* blod1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blod1.mp4; sourceTree = "<group>"; };
 		29FFBD6E1E9E0A0B003BF51C /* reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reach.swift; sourceTree = "<group>"; };
 		29FFBD761E9E1913003BF51C /* transtion2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = transtion2.mp4; sourceTree = "<group>"; };
+		29FFBD7A1E9F4650003BF51C /* Localization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		29FFBD8A1E9F81EE003BF51C /* ar-KW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-KW"; path = "ar-KW.lproj/Main.strings"; sourceTree = "<group>"; };
+		29FFBD8B1E9F81EE003BF51C /* ar-KW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-KW"; path = "ar-KW.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				52CC04FA1E6B2F2600BC93A9 /* Assets.xcassets */,
 				52CC04FC1E6B2F2600BC93A9 /* LaunchScreen.storyboard */,
 				52CC04FF1E6B2F2600BC93A9 /* Info.plist */,
+				29FFBD7A1E9F4650003BF51C /* Localization.strings */,
 			);
 			path = MHealth;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */,
 				52CC04FB1E6B2F2600BC93A9 /* Assets.xcassets in Resources */,
 				52CC050C1E6B40FC00BC93A9 /* Podfile in Resources */,
+				29FFBD7B1E9F4650003BF51C /* Localization.strings in Resources */,
 				29FFBD771E9E1913003BF51C /* transtion2.mp4 in Resources */,
 				52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */,
 			);
@@ -418,6 +424,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52CC04F81E6B2F2500BC93A9 /* Base */,
+				29FFBD8A1E9F81EE003BF51C /* ar-KW */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -426,6 +433,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52CC04FD1E6B2F2600BC93A9 /* Base */,
+				29FFBD8B1E9F81EE003BF51C /* ar-KW */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

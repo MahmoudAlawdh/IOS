@@ -1,0 +1,324 @@
+
+/* Class = "UITabBarItem"; title = "My Donations"; ObjectID = "1Rz-Dd-0uf"; */
+"1Rz-Dd-0uf.title" = "My Donations";
+
+/* Class = "UINavigationItem"; title = "Donor Profile"; ObjectID = "1TT-pO-Cqa"; */
+"1TT-pO-Cqa.title" = "Donor Profile";
+
+/* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "1Zq-vr-jOU"; */
+"1Zq-vr-jOU.title" = "After Donation";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "29L-a2-lVD"; */
+"29L-a2-lVD.normalTitle" = "Edit";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "2DP-rF-vbK"; */
+"2DP-rF-vbK.normalTitle" = "Exit";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "2cX-py-0mb"; */
+"2cX-py-0mb.normalTitle" = "Exit";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "30z-NW-aIe"; */
+"30z-NW-aIe.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "3s1-ZW-oQf"; */
+"3s1-ZW-oQf.normalTitle" = "Logout";
+
+/* Class = "UIButton"; normalTitle = "Upcoming Donations"; ObjectID = "40o-Bi-4rJ"; */
+"40o-Bi-4rJ.normalTitle" = "Upcoming Donations";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "68s-BW-7r7"; */
+"68s-BW-7r7.normalTitle" = "Next";
+
+/* Class = "UINavigationItem"; title = "Before Donation"; ObjectID = "6Ck-uI-tdV"; */
+"6Ck-uI-tdV.title" = "Before Donation";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "6Ve-fR-Lzq"; */
+"6Ve-fR-Lzq.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Time"; ObjectID = "6X1-Uo-5Wg"; */
+"6X1-Uo-5Wg.normalTitle" = "Time";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "6tg-rH-GXx"; */
+"6tg-rH-GXx.placeholder" = "First Name";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "7gy-GO-Vej"; */
+"7gy-GO-Vej.normalTitle" = "Next";
+
+/* Class = "UINavigationItem"; title = "Forget Password"; ObjectID = "8Ir-WS-Vzr"; */
+"8Ir-WS-Vzr.title" = "Forget Password";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "8Pw-Ai-Wx1"; */
+"8Pw-Ai-Wx1.normalTitle" = "Exit";
+
+/* Class = "UITabBarItem"; title = "Share"; ObjectID = "8R8-KR-gdl"; */
+"8R8-KR-gdl.title" = "Share";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8qL-Bc-UNk"; */
+"8qL-Bc-UNk.normalTitle" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "AcP-kP-M32"; */
+"AcP-kP-M32.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Ak8-Kx-0zv"; */
+"Ak8-Kx-0zv.title" = "Back";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "BEn-u7-yoY"; */
+"BEn-u7-yoY.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Can i Donate !"; ObjectID = "BUk-LL-0VH"; */
+"BUk-LL-0VH.title" = "Can i Donate !";
+
+/* Class = "UINavigationItem"; title = "Can i Donate !"; ObjectID = "Bv7-vE-Wyg"; */
+"Bv7-vE-Wyg.title" = "Can i Donate !";
+
+/* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "Ccr-hO-QZX"; */
+"Ccr-hO-QZX.title" = "After Donation";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "DLA-29-C3b"; */
+"DLA-29-C3b.normalTitle" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Efc-6i-f56"; */
+"Efc-6i-f56.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "ExK-h8-Kqg"; */
+"ExK-h8-Kqg.normalTitle" = "Exit";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "FQW-6j-E4x"; */
+"FQW-6j-E4x.title" = "Next";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email"; ObjectID = "Fxn-mY-oec"; */
+"Fxn-mY-oec.placeholder" = "Enter Your Email";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "GB7-UR-51W"; */
+"GB7-UR-51W.placeholder" = "Last Name";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "GPC-u7-gIs"; */
+"GPC-u7-gIs.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "Hyz-56-bKJ"; */
+"Hyz-56-bKJ.normalTitle" = "Exit";
+
+/* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "ICi-br-WkT"; */
+"ICi-br-WkT.title" = "After Donation";
+
+/* Class = "UITabBarItem"; title = "Help"; ObjectID = "IeE-Kc-IlR"; */
+"IeE-Kc-IlR.title" = "Help";
+
+/* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "L9F-z7-5FG"; */
+"L9F-z7-5FG.title" = "After Donation";
+
+/* Class = "UISegmentedControl"; Leh-aQ-pTw.segmentTitles[0] = "Male"; ObjectID = "Leh-aQ-pTw"; */
+"Leh-aQ-pTw.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; Leh-aQ-pTw.segmentTitles[1] = "Female"; ObjectID = "Leh-aQ-pTw"; */
+"Leh-aQ-pTw.segmentTitles[1]" = "Female";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "Lwc-tb-ZPA"; */
+"Lwc-tb-ZPA.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "Enter Your Password"; ObjectID = "Mhv-pX-mxI"; */
+"Mhv-pX-mxI.placeholder" = "Enter Your Password";
+
+/* Class = "UIButton"; normalTitle = "Branch"; ObjectID = "Mtx-Uh-LqY"; */
+"Mtx-Uh-LqY.normalTitle" = "Branch";
+
+/* Class = "UITabBarItem"; title = "Book "; ObjectID = "NPf-ZA-pxf"; */
+"NPf-ZA-pxf.title" = "Book ";
+
+/* Class = "UINavigationItem"; title = "Before Donation"; ObjectID = "NYD-Qq-s3t"; */
+"NYD-Qq-s3t.title" = "Before Donation";
+
+/* Class = "UIButton"; normalTitle = "Donation type"; ObjectID = "NZh-in-Vf6"; */
+"NZh-in-Vf6.normalTitle" = "Donation type";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "O3n-FG-nl6"; */
+"O3n-FG-nl6.normalTitle" = "Exit";
+
+/* Class = "UIButton"; normalTitle = "   Confirm"; ObjectID = "Oee-Yh-Ce5"; */
+"Oee-Yh-Ce5.normalTitle" = "   Confirm";
+
+/* Class = "UITextField"; placeholder = "Enter Your Civil ID"; ObjectID = "PSK-NA-V9O"; */
+"PSK-NA-V9O.placeholder" = "Enter Your Civil ID";
+
+/* Class = "UINavigationItem"; title = "Register"; ObjectID = "Ppo-VZ-trM"; */
+"Ppo-VZ-trM.title" = "Register";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "R30-N9-KAK"; */
+"R30-N9-KAK.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "My Donation"; ObjectID = "SBh-cZ-Ydc"; */
+"SBh-cZ-Ydc.normalTitle" = "My Donation";
+
+/* Class = "UITabBarItem"; title = "Notification"; ObjectID = "SMd-np-mc7"; */
+"SMd-np-mc7.title" = "Notification";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "SSs-s1-von"; */
+"SSs-s1-von.normalTitle" = "Next";
+
+/* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "VQv-cs-xlK"; */
+"VQv-cs-xlK.title" = "After Donation";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "WHw-dh-Mw7"; */
+"WHw-dh-Mw7.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "X2l-vK-5Hw"; */
+"X2l-vK-5Hw.normalTitle" = "Done";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "XmP-VG-Ery"; */
+"XmP-VG-Ery.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Xuq-L3-eEc"; */
+"Xuq-L3-eEc.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Book Donation Appointment"; ObjectID = "YeA-wi-uhk"; */
+"YeA-wi-uhk.title" = "Book Donation Appointment";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Yfw-q1-H5Z"; */
+"Yfw-q1-H5Z.title" = "Settings";
+
+/* Class = "UINavigationItem"; title = "Donations"; ObjectID = "YpK-ZI-kzK"; */
+"YpK-ZI-kzK.title" = "Donations";
+
+/* Class = "UINavigationItem"; title = "Donation Process"; ObjectID = "ZAo-tS-yzk"; */
+"ZAo-tS-yzk.title" = "Donation Process";
+
+/* Class = "UILabel"; text = "Public Donor"; ObjectID = "ZQI-XP-xze"; */
+"ZQI-XP-xze.text" = "Public Donor";
+
+/* Class = "UIButton"; normalTitle = " Share"; ObjectID = "a7x-i3-keb"; */
+"a7x-i3-keb.normalTitle" = " Share";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "a9R-R8-1cX"; */
+"a9R-R8-1cX.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "b1Q-e3-sSd"; */
+"b1Q-e3-sSd.title" = "Next";
+
+/* Class = "UINavigationItem"; title = "Donation Process"; ObjectID = "b9e-Zj-m8T"; */
+"b9e-Zj-m8T.title" = "Donation Process";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "bXu-Xr-NEi"; */
+"bXu-Xr-NEi.title" = "Login";
+
+/* Class = "UINavigationItem"; title = "Notification"; ObjectID = "bes-X3-jU9"; */
+"bes-X3-jU9.title" = "Notification";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "boZ-YG-AHS"; */
+"boZ-YG-AHS.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "cFD-22-Rp4"; */
+"cFD-22-Rp4.normalTitle" = "Done";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "cpv-zG-XVN"; */
+"cpv-zG-XVN.title" = "Next";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dFq-eb-2FR"; */
+"dFq-eb-2FR.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Share"; ObjectID = "dSB-Ri-ea3"; */
+"dSB-Ri-ea3.title" = "Share";
+
+/* Class = "UINavigationItem"; title = "About Us"; ObjectID = "dpK-u0-96B"; */
+"dpK-u0-96B.title" = "About Us";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eB7-k7-TK4"; */
+"eB7-k7-TK4.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "eG3-m4-PVV"; */
+"eG3-m4-PVV.normalTitle" = "Exit";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "f9Q-He-bBg"; */
+"f9Q-He-bBg.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Before Donation"; ObjectID = "fIi-H5-bb4"; */
+"fIi-H5-bb4.title" = "Before Donation";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "heR-TK-9bQ"; */
+"heR-TK-9bQ.normalTitle" = "Done";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "hnX-5I-Ntt"; */
+"hnX-5I-Ntt.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Blood Type"; ObjectID = "hqS-9l-BfU"; */
+"hqS-9l-BfU.placeholder" = "Blood Type";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "i0Y-ZF-Rti"; */
+"i0Y-ZF-Rti.title" = "Next";
+
+/* Class = "UINavigationItem"; title = "Donation Process"; ObjectID = "iQo-RE-YdX"; */
+"iQo-RE-YdX.title" = "Donation Process";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "icw-L4-8IL"; */
+"icw-L4-8IL.placeholder" = "Password";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "jA1-Nv-SG1"; */
+"jA1-Nv-SG1.title" = "Back";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "jm6-0z-748"; */
+"jm6-0z-748.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Nationality"; ObjectID = "kdb-qv-dSW"; */
+"kdb-qv-dSW.placeholder" = "Nationality";
+
+/* Class = "UIButton"; normalTitle = "Day"; ObjectID = "kig-Ae-diK"; */
+"kig-Ae-diK.normalTitle" = "Day";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "lSI-8y-7jv"; */
+"lSI-8y-7jv.normalTitle" = "Exit";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "mui-af-O6e"; */
+"mui-af-O6e.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "p57-Vq-qMm"; */
+"p57-Vq-qMm.title" = "Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pFC-yB-nis"; */
+"pFC-yB-nis.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email"; ObjectID = "ppO-Ts-hGa"; */
+"ppO-Ts-hGa.placeholder" = "Enter Your Email";
+
+/* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "qbV-kV-z8Y"; */
+"qbV-kV-z8Y.normalTitle" = "Exit";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "rL2-mZ-daP"; */
+"rL2-mZ-daP.title" = "Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rk6-Fz-fjk"; */
+"rk6-Fz-fjk.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "sfF-e8-qXT"; */
+"sfF-e8-qXT.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Helping Instractions"; ObjectID = "skM-C9-oZA"; */
+"skM-C9-oZA.title" = "Helping Instractions";
+
+/* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "swR-dL-CAo"; */
+"swR-dL-CAo.title" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "u4A-F9-rwP"; */
+"u4A-F9-rwP.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "uN5-sh-Ojf"; */
+"uN5-sh-Ojf.normalTitle" = "Next";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "vl8-kP-69z"; */
+"vl8-kP-69z.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "w9M-S3-af1"; */
+"w9M-S3-af1.title" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "wkf-OA-Gfm"; */
+"wkf-OA-Gfm.normalTitle" = "Next";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "xdf-HG-kwG"; */
+"xdf-HG-kwG.placeholder" = "Phone Number";
+
+/* Class = "UITextView"; text = "Blood donors are essential to the blood supply. Kuwait Blood Centers rely on donors like you to help save lives."; ObjectID = "xwZ-Kh-J5Q"; */
+"xwZ-Kh-J5Q.text" = "Blood donors are essential to the blood supply. Kuwait Blood Centers rely on donors like you to help save lives.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "y53-rs-znr"; */
+"y53-rs-znr.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "About Us"; ObjectID = "zex-6I-Adh"; */
+"zex-6I-Adh.title" = "About Us";

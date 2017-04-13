@@ -31,7 +31,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
-        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail] , reqId: 5, caller: self)
+        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail , "civilid":donor.civilID] , reqId: 5, caller: self)
         }
 
     }
@@ -44,7 +44,7 @@ func setArrayResponse(resp: NSArray, reqId: Int) {
 func setDictResponse(resp: NSDictionary, reqId: Int) {
     if resp == [:] {
         
-        lblMsg.text = " Success: An email was sent to you  "
+        lblMsg.text = " Success An email was sent to you  "
         
     } else {
 
@@ -65,15 +65,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let langu:String = userDefaults.valueForKey("lang") as! String
-        
-        
-        if langu == "ar" {
-          
-            confirm.setTitle("تاكيد", forState: .Normal)
-            
-        }
+       
     }
 
     override func didReceiveMemoryWarning() {

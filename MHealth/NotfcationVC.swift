@@ -61,10 +61,9 @@ class NotfcationVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             let langu:String = userDefaults.valueForKey("lang") as! String
             
             
-            if langu == "ar" {
-                cell.button.setTitle("مشاركة ", forState: .Normal)
+            
                 
-            }
+           
 
         cell.titleText.text = data.objectAtIndex(indexPath.row).valueForKey("title") as! String
         cell.notifcationText.text = data.objectAtIndex(indexPath.row).valueForKey("date") as! String
