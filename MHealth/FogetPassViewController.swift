@@ -31,7 +31,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
-        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail] , reqId: 5, caller: self)
+        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail , "civilid":donor.civilID] , reqId: 5, caller: self)
         }
 
     }

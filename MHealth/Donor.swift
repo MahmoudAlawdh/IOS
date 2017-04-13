@@ -20,6 +20,7 @@ struct donor {
     static var nationality:String = ""
     static var phoneNumber:String = ""
     static var state:Int = 0
+    static var img:String = "";
 }
 
 

@@ -494,6 +494,7 @@
                         <outlet property="NationalityField" destination="t7n-PV-ATI" id="2GC-g9-IKA"/>
                         <outlet property="Phone" destination="SNW-rz-Ml2" id="D9e-iE-Lor"/>
                         <outlet property="UpdateImage" destination="Bbl-rn-Wdh" id="jbC-3B-jrV"/>
+                        <outlet property="img" destination="xWE-3n-sVe" id="AgU-7y-D9d"/>
                         <outlet property="passwordField" destination="Z7q-O7-57D" id="PIz-Pm-MtG"/>
                         <outlet property="publicDone" destination="ZQI-XP-xze" id="5ji-Y6-ioP"/>
                     </connections>
@@ -580,7 +581,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfd-Ep-Stg" id="eGk-Xk-5N0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pFC-yB-nis">
@@ -2910,7 +2911,7 @@ National Guard Blood Bank branch
                                         <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XtW-Gi-32b" id="3hb-Jh-fh1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a7x-i3-keb">
@@ -3029,7 +3030,6 @@ National Guard Blood Bank branch
         <image name="donation" width="16" height="16"/>
         <image name="donation (1)" width="16" height="16"/>
         <image name="download" width="225" height="225"/>
-        <image name="download-1" width="225" height="225"/>
         <image name="email" width="64" height="64"/>
         <image name="gender-symbols" width="64" height="64"/>
         <image name="hand-holding-up-a-clock" width="32" height="32"/>
