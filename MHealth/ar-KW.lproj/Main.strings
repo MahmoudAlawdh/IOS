@@ -323,7 +323,7 @@
 /* Class = "UITabBarItem"; title = "About Us"; ObjectID = "zex-6I-Adh"; */
 "zex-6I-Adh.title" = "معلومات عنا";
 
-Class = "UIButton"; title = "Share With"; ObjectID = "Yi4-yv-FXz";
+/*Class = "UIButton"; title = "Share With"; ObjectID = "Yi4-yv-FXz";*/
 "Yi4-yv-FXz.text" = "مشاركة بــ";
 
 "Oic-D3-I3x.text" = "شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى";
