@@ -70,10 +70,10 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
         
         let cell:CustomePrevious = self.tableView.dequeueReusableCellWithIdentifier("previous") as! CustomePrevious
         if flag == true {
-            cell.Donations.text = "Previous Donation"
-            cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
-            cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
-            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
+//            cell.Donations.text = "Previous Donation"
+//            cell.Date.text = data.objectAtIndex/Users/trn24/Documents/MHealth/MHealth/Assets.xcassets(indexPath.row).valueForKey("ddate") as! String
+//            cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
+//            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
         }
         
         
