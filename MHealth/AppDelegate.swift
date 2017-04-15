@@ -16,16 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        let navigationBarApp = UINavigationBar.appearance()
-        navigationBarApp.tintColor = UIColor.redColor()
+        navigationBarApp.tintColor = UIColor.blackColor()
         navigationBarApp.barTintColor = UIColor.redColor()
         navigationBarApp.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
         
         
+        
         let shadow:NSShadow = NSShadow()
-        shadow.shadowColor = UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
-        shadow.shadowOffset = CGSizeMake(0, 1)
         
+        shadow.shadowColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.8)
+        shadow.shadowOffset = CGSizeMake(0, 1);
         
+        navigationBarApp.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor(red: CGFloat(245.0 / 255.0), green: CGFloat(245.0 / 255.0), blue: CGFloat(245.0 / 255.0), alpha: CGFloat(1.0)),
+            NSShadowAttributeName : shadow,
+            NSFontAttributeName : UIFont(name: "Verdana-Bold", size: CGFloat(21.0))!]
+            
         return true
     }
 

@@ -178,7 +178,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         Time.dataSource = self
         Time.delegate = self
         
-        Donationlabel.hidden = true
+      
 
         let n:Networking = Networking()
         let reach = Reach()
