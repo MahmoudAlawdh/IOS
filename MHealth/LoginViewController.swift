@@ -51,7 +51,7 @@ class LoginViewController: UIViewController , NetworkCaller {
         for Donor in resp {
             //print(Donor)
             if Donor.valueForKey("email")! as! String == username.text! && Donor.valueForKey("password")! as! String == password.text! {
-                print(Donor)
+                print(Donor)// big problem  validate the keys first before using it
                 donor.firstName = Donor.valueForKey("firstName")! as! String
                 donor.lastName = Donor.valueForKey("lastName")! as! String
                 donor.birthDate = Donor.valueForKey("birthDate")! as! String
@@ -80,6 +80,13 @@ class LoginViewController: UIViewController , NetworkCaller {
         if flag == 0{
         username.textColor = UIColor.redColor()
         password.textColor = UIColor.redColor()
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Enter Correct Email or Password")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            login.enabled = true
+            return
+
+            
         }
 
     }

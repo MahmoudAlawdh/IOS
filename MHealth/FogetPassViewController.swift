@@ -17,12 +17,14 @@ class FogetPassViewController: UIViewController , NetworkCaller{
 
     @IBOutlet weak var email: UITextField!
     
+    @IBOutlet var CivilID: UITextField!
     @IBOutlet weak var lblMsg: UILabel!
     
     @IBAction func confirm(sender: AnyObject) {
         
         
         let Donoremail:String = email.text!
+        let donorID:String = CivilID.text!
         let networkManager:Networking = Networking()
         //networkManager.logging = true
         let reach = Reach()
@@ -31,8 +33,23 @@ class FogetPassViewController: UIViewController , NetworkCaller{
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
-        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail , "civilid":donor.civilID] , reqId: 5, caller: self)
+        networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail , "civilid":donorID] , reqId: 5, caller: self)
         }
+        
+        if !Validator().ValidateEmail(Donoremail) || !Validator().ValidateCivil(CivilID.text!) {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: " Please Enter Your Civil ID and Email Correct")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            confirm.enabled = true
+            return
+        
+
+        }else{
+            let alert:UIAlertController = Alert().showeAlert("Success", msg: " Success An email was sent to you  ")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            confirm.enabled = true
+            return        }
 
     }
 
@@ -48,7 +65,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
         
     } else {
 
-    lblMsg.text = " wrong email"
+        lblMsg.text = " error  "
     
     }
     
@@ -62,6 +79,7 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
     
     @IBOutlet var confirm: UIButton!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 

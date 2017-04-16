@@ -224,7 +224,7 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             dit["bloodType"] = donor.bloodtype
             dit["birthDate"] = "2017-01-01T00:00:00Z"
             dit["donorId"] = donor.donorID
-            dit["imgURL"] = donor.img
+          //  dit["imgURL"] = donor.img
             dit["status"] = true
             
             

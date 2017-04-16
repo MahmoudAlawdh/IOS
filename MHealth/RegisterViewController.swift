@@ -11,6 +11,7 @@ import Whisper
 
 class RegisterViewController: UIViewController , NetworkCaller {
     
+    var flag = 0
     
     
     @IBOutlet var civilID: UILabel!
@@ -55,7 +56,9 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     @IBAction func RegisterAction(sender: AnyObject) {
         
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+        let donorEmail = Email.text
+        
+        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
         Whisper(message, to: self.navigationController!,action:.Show)
         
         
@@ -72,17 +75,25 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dit["birthDate"] = "2017-01-01T00:00:00Z"
         
     
-        if firstname.text == nil || firstname.text == "" || ID.text == nil || ID.text == "" || password.text == nil || password.text == ""   {
+        if !Validator().ValidateEmail(donorEmail!) || firstname.text == nil || firstname.text == "" || ID.text == nil || ID.text == "" || password.text == nil || password.text == ""   {
+            
+            flag = 1
             
             //lblMsg.text = "All fields are required."
             
         } else {
-            
+            flag = 0
             
         }
 
         
-        
+        if flag == 1{
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            regs.enabled = true
+            return
+        }
         
         
         let reach = Reach()

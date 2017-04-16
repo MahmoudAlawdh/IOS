@@ -10,14 +10,27 @@ import UIKit
 
 class Donations: UIViewController {
 
+    @IBOutlet var upcoming: UIButton!
+    
+    @IBOutlet var campaigns: UIButton!
+    
+    @IBOutlet var Mydonations: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       upcoming.layer.borderWidth = 2.0
+        upcoming.layer.masksToBounds = true
+        upcoming.layer.borderColor = UIColor.blackColor().CGColor
+        
+        campaigns.layer.borderWidth = 2.0
+        campaigns.layer.masksToBounds = true
+        campaigns.layer.borderColor = UIColor.blackColor().CGColor
+        
+        Mydonations.layer.borderWidth = 2.0
+        Mydonations.layer.masksToBounds = true
+        Mydonations.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {
