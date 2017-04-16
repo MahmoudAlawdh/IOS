@@ -37,7 +37,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
         }
         
         if !Validator().ValidateEmail(Donoremail) || !Validator().ValidateCivil(CivilID.text!) {
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: " Please Enter Your Civil ID and Email Correct")
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: " Please Enter Your Civil ID and Email Correctly ")
             
             self.presentViewController(alert, animated: true, completion: nil)
             confirm.enabled = true

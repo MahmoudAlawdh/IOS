@@ -57,10 +57,12 @@ class RegisterViewController: UIViewController , NetworkCaller {
     @IBAction func RegisterAction(sender: AnyObject) {
         
         let donorEmail = Email.text
+        let Civil = ID.text
         
         let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
         Whisper(message, to: self.navigationController!,action:.Show)
-        
+       
+
         
         var dit = [String: AnyObject]()
         dit["civilId"] = ID.text
@@ -74,7 +76,14 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dit["bloodType"] = bloodType.text
         dit["birthDate"] = "2017-01-01T00:00:00Z"
         
-    
+        if !Validator().ValidateCivil(Civil!) {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            regs.enabled = true
+            return
+
+        }
         if !Validator().ValidateEmail(donorEmail!) || firstname.text == nil || firstname.text == "" || ID.text == nil || ID.text == "" || password.text == nil || password.text == ""   {
             
             flag = 1

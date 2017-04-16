@@ -5,7 +5,7 @@
 //  Created by trn2 on 3/5/17.
 //  Copyright © 2017 PIFSS. All rights reserved.
 //
-
+import SwiftSpinner
 import UIKit
 import Whisper
 class LoginViewController: UIViewController , NetworkCaller {
@@ -26,8 +26,13 @@ class LoginViewController: UIViewController , NetworkCaller {
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
             let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
+           SwiftSpinner.hide()
+           
+
         }else{
             self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
+            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+
         }
         
     }
@@ -66,7 +71,6 @@ class LoginViewController: UIViewController , NetworkCaller {
                 donor.state = Donor.valueForKey("status")! as! Int
               //  donor.img = Donor.valueForKey("imgURL") as! String
                 
-                
                 let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController
                 self.presentViewController(c, animated: false, completion: nil)
 
@@ -85,7 +89,7 @@ class LoginViewController: UIViewController , NetworkCaller {
             self.presentViewController(alert, animated: true, completion: nil)
             login.enabled = true
             return
-
+            SwiftSpinner.hide()
             
         }
 

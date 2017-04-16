@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftSpinner
 class MyPreviousDonation: UITableViewController, NetworkCaller {
     
     var networkManager : Networking = Networking()
@@ -21,7 +21,7 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
-        // Uncomment the following line to preserve selection between presentations
+        SwiftSpinner.hide()        // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -70,10 +70,11 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
         
         let cell:CustomePrevious = self.tableView.dequeueReusableCellWithIdentifier("previous") as! CustomePrevious
         if flag == true {
-//            cell.Donations.text = "Previous Donation"
-//            cell.Date.text = data.objectAtIndex/Users/trn24/Documents/MHealth/MHealth/Assets.xcassets(indexPath.row).valueForKey("ddate") as! String
-//            cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
-//            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
+            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+          cell.Donations.text = "Previous Donation"
+           // cell.Date.text = data.objectAtIndex/Users/trn24/Documents/MHealth/MHealth/Assets.xcassets(indexPath.row).valueForKey("ddate") as! String
+                cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
+            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
         }
         
         

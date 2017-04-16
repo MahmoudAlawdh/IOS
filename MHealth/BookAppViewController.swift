@@ -35,7 +35,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBAction func Confirm(sender: AnyObject) {
         let n:Networking = Networking()
         var dit = [String: AnyObject]()
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
         Whisper(message, to: self.navigationController!,action:.Show)
         if UserDonation == "Blood Cells"{
         dit["day"] = UserDay.Days+"T00:00:00Z"

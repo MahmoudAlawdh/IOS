@@ -5,7 +5,7 @@
 //  Created by trn24 on 4/10/17.
 //  Copyright © 2017 PIFSS. All rights reserved.
 //
-
+import SwiftSpinner
 import UIKit
 
 class UpcomingTableVC: UITableViewController , NetworkCaller {
@@ -50,15 +50,18 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
     func setArrayResponse(resp: NSArray, reqId: Int) {
         flag = true
         
+
         for item in resp{
+           // SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
             if item.valueForKey("status") as! String == "pending"{
-                if item.valueForKey("donorCivilid") as! String == donor.civilID{
+            //    if item.valueForKey("donorCivilid") as! String == donor.civilID{
                     data.addObject(item)
-                }
+               
+          //      }
             }
         }
         self.tableView.reloadData()
-        
+        SwiftSpinner.hide()
     }
     
     
@@ -87,7 +90,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         
         let cell:CustomeUpcomingTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("upcoming") as! CustomeUpcomingTableViewCell
         if flag == true {
-            
+            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
             cell.UpcomingTableView.text = "Upcoming Appointment"
             cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
             cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String

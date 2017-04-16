@@ -148,10 +148,10 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
         
         let s:UIButton = sender as! UIButton
       
-        
+            s.setTitle("Save", forState: .Normal)
         
 
-        if s.currentTitle! == "Edit" || s.currentTitle == "تحرير"{
+        if s.titleLabel?.text == "Edit" || s.titleLabel?.text == "تحرير"{
             NameField.userInteractionEnabled = true
             LNameField.userInteractionEnabled = true
             EmailField.userInteractionEnabled = true
@@ -160,10 +160,16 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             BloodTypeField.userInteractionEnabled = true
             NationalityField.userInteractionEnabled = true
             BirthDate.userInteractionEnabled = true
+            if s.titleLabel?.text == "Edit"{
+                s.titleLabel?.text = "Save"
+            }
+            else{
+                s.titleLabel?.text == "t5zen"
+            }
             
-                    }
+        }
         else{
-            
+
             // update profile with database
             
             let n:Networking = Networking()
@@ -187,9 +193,9 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
                 let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
                 Whisper(message, to: self.navigationController!,action:.Show)
                 
-            }else{
-            n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/" + "\(donor.donorID)", httpMethod: "PUT", jsonData: dit, reqId: 0, caller: self)
-            }
+                }else{
+                n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/" + "\(donor.donorID)", httpMethod: "PUT", jsonData: dit, reqId: 0, caller: self)
+                }
             
             
             NameField.userInteractionEnabled = false
@@ -200,6 +206,9 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             BloodTypeField.userInteractionEnabled = false
             NationalityField.userInteractionEnabled = false
             BirthDate.userInteractionEnabled = false
+            
+
+            
                    }
         
     }
