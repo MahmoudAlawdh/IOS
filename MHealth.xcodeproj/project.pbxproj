@@ -96,6 +96,8 @@
 		8822E6811E6E98F1006B8317 /* DoneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
 		8822E6851E6FFB6A006B8317 /* Branchs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branchs.swift; sourceTree = "<group>"; };
 		882575F81EA362A00072C724 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8829953F1EA4A79F00AE0F39 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		882995401EA4A79F00AE0F39 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52CC04F81E6B2F2500BC93A9 /* Base */,
+				8829953F1EA4A79F00AE0F39 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				52CC04FD1E6B2F2600BC93A9 /* Base */,
+				882995401EA4A79F00AE0F39 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
