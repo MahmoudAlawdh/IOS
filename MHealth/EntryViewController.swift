@@ -8,14 +8,21 @@ class EntryViewController: VideoSplashViewController {
     @IBAction func ArabicButton(sender: AnyObject) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setValue("ar", forKey: "lang" )
+        NSUserDefaults.standardUserDefaults().setValue("ar", forKey: Const.UserDefaultsKeys.langKey)
+        NSUserDefaults.standardUserDefaults().setObject(["ar"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
-        userDefaults.valueForKey("lang")
+        
+     
     }
     
     @IBAction func EnglishButton(sender: AnyObject) {
+
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.setValue("en", forKey: "lang")
-        
+        userDefaults.setValue("en", forKey: "lang" )
+        NSUserDefaults.standardUserDefaults().setValue("en", forKey: Const.UserDefaultsKeys.langKey)
+        NSUserDefaults.standardUserDefaults().setObject(["en"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
     }
     

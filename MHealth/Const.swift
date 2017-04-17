@@ -24,7 +24,7 @@ class Const: NSObject {
     }
     
     struct UserDefaultsKeys {
-        let langKey = "lang"
+        static let langKey = "lang"
         
     }
 }
