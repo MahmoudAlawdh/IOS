@@ -8,6 +8,7 @@
 
 import UIKit
 import Whisper
+import HTYTextField
 class FogetPassViewController: UIViewController , NetworkCaller{
     
 //    
@@ -15,16 +16,16 @@ class FogetPassViewController: UIViewController , NetworkCaller{
 //    self.displayMessage(successMessage)
     // return
 
-    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var email: HTYTextField?
     
-    @IBOutlet var CivilID: UITextField!
+    @IBOutlet var CivilID: HTYTextField?
     @IBOutlet weak var lblMsg: UILabel!
     
     @IBAction func confirm(sender: AnyObject) {
         
         
-        let Donoremail:String = email.text!
-        let donorID:String = CivilID.text!
+        let Donoremail:String = email!.text!
+        let donorID:String = CivilID!.text!
         let networkManager:Networking = Networking()
         //networkManager.logging = true
         let reach = Reach()
@@ -36,7 +37,7 @@ class FogetPassViewController: UIViewController , NetworkCaller{
         networkManager.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor/reset/"+Donoremail, httpMethod: "GET" , jsonData:["email": Donoremail , "civilid":donorID] , reqId: 5, caller: self)
         }
         
-        if !Validator().ValidateEmail(Donoremail) || !Validator().ValidateCivil(CivilID.text!) {
+        if !Validator().ValidateEmail(Donoremail) || !Validator().ValidateCivil(CivilID!.text!) {
             let alert:UIAlertController = Alert().showeAlert("Error", msg: " Please Enter Your Civil ID and Email Correctly ")
             
             self.presentViewController(alert, animated: true, completion: nil)
@@ -53,7 +54,10 @@ class FogetPassViewController: UIViewController , NetworkCaller{
 
     }
 
-
+    override func viewDidAppear(animated: Bool) {
+        email!.rightPlaceholder = "Enter Your Email"
+        CivilID!.rightPlaceholder = "Enter Your Civil Id"
+    }
 
 func setArrayResponse(resp: NSArray, reqId: Int) {
 }

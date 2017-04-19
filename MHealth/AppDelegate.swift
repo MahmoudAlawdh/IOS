@@ -15,12 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let mainColor: UIColor = UIColor ( red: CGFloat(191/255.0), green: CGFloat(32/255.0), blue: CGFloat(47/255.0), alpha: CGFloat(1.0))
        let navigationBarApp = UINavigationBar.appearance()
-        navigationBarApp.tintColor = UIColor.blackColor()
-        navigationBarApp.barTintColor = UIColor.redColor()
-        navigationBarApp.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.blackColor()]
+        navigationBarApp.tintColor = UIColor.whiteColor()
+        navigationBarApp.barTintColor = mainColor
+        navigationBarApp.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         
-        
+        UITabBar.appearance().tintColor = mainColor
         
         let shadow:NSShadow = NSShadow()
         

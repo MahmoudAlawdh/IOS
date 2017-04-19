@@ -19,18 +19,19 @@ class Donations: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let mainColor: UIColor = UIColor ( red: CGFloat(191/255.0), green: CGFloat(32/255.0), blue: CGFloat(47/255.0), alpha: CGFloat(1.0))
        upcoming.layer.borderWidth = 2.0
         upcoming.layer.masksToBounds = true
-        upcoming.layer.borderColor = UIColor.blackColor().CGColor
+        upcoming.layer.borderColor = mainColor.CGColor
+        
         
         campaigns.layer.borderWidth = 2.0
         campaigns.layer.masksToBounds = true
-        campaigns.layer.borderColor = UIColor.blackColor().CGColor
+        campaigns.layer.borderColor = mainColor.CGColor
         
         Mydonations.layer.borderWidth = 2.0
         Mydonations.layer.masksToBounds = true
-        Mydonations.layer.borderColor = UIColor.blackColor().CGColor
+        Mydonations.layer.borderColor = mainColor.CGColor
     }
 
     override func didReceiveMemoryWarning() {

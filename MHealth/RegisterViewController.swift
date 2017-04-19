@@ -8,12 +8,22 @@
 
 import UIKit
 import Whisper
+import HTYTextField
 
 class RegisterViewController: UIViewController , NetworkCaller {
-    
+    var dateFormatter = NSDateFormatter()
     var flag = 0
     
+    @IBAction func PickerAction(sender: AnyObject) {
+       
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        var strDate = dateFormatter.stringFromDate(DatePicker.date)
+        self.selectedDate.text = strDate
+    }
+    @IBOutlet var PickerAction: UIDatePicker!
+    @IBOutlet var DatePicker: UIDatePicker!
     
+    @IBOutlet var selectedDate: UILabel!
     @IBOutlet var civilID: UILabel!
     
     @IBOutlet var first: UILabel!
@@ -30,19 +40,19 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     @IBOutlet var bloodT: UILabel!
     
-    @IBOutlet weak var ID: UITextField!
-    @IBOutlet weak var firstname: UITextField!
+    @IBOutlet weak var ID: HTYTextField?
+    @IBOutlet weak var firstname: HTYTextField?
     
-    @IBOutlet weak var lastname: UITextField!
-    @IBOutlet weak var nationality: UITextField!
+    @IBOutlet weak var lastname: HTYTextField?
+    @IBOutlet weak var nationality: HTYTextField?
     
-    @IBOutlet weak var Email: UITextField!
+    @IBOutlet weak var Email: HTYTextField?
     
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var password: HTYTextField?
     
-    @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var phone: HTYTextField?
     
-    @IBOutlet weak var bloodType: UITextField!
+    @IBOutlet weak var bloodType: HTYTextField?
 
     @IBOutlet var regs: UIButton!
     
@@ -56,8 +66,8 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     @IBAction func RegisterAction(sender: AnyObject) {
         
-        let donorEmail = Email.text
-        let Civil = ID.text
+        let donorEmail = Email!.text
+        let Civil = ID!.text
         
         let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
         Whisper(message, to: self.navigationController!,action:.Show)
@@ -65,16 +75,16 @@ class RegisterViewController: UIViewController , NetworkCaller {
 
         
         var dit = [String: AnyObject]()
-        dit["civilId"] = ID.text
-        dit["firstName"] = firstname.text
-        dit["lastName"] = lastname.text
-        dit["password"] = password.text
-        dit["nationality"] = nationality.text
-        dit["email"] = Email.text
-        dit["phoneNumber"] = phone.text
+        dit["civilId"] = ID!.text
+        dit["firstName"] = firstname!.text
+        dit["lastName"] = lastname!.text
+        dit["password"] = password!.text
+        dit["nationality"] = nationality!.text
+        dit["email"] = Email!.text
+        dit["phoneNumber"] = phone!.text
         dit["gender"] = String(gender.selectedSegmentIndex)
-        dit["bloodType"] = bloodType.text
-        dit["birthDate"] = "2017-01-01T00:00:00Z"
+        dit["bloodType"] = bloodType!.text
+        dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)+"T00:00:00Z"
         
         if !Validator().ValidateCivil(Civil!) {
             let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
@@ -84,7 +94,7 @@ class RegisterViewController: UIViewController , NetworkCaller {
             return
 
         }
-        if !Validator().ValidateEmail(donorEmail!) || firstname.text == nil || firstname.text == "" || ID.text == nil || ID.text == "" || password.text == nil || password.text == ""   {
+        if !Validator().ValidateEmail(donorEmail!) || firstname!.text == nil || firstname!.text == "" || ID!.text == nil || ID!.text == "" || password!.text == nil || password!.text == ""   {
             
             flag = 1
             
@@ -124,12 +134,18 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
-        
-     
-        
-
+    }
+    override func viewDidAppear(animated: Bool) {
+    
+        ID!.rightPlaceholder = "Civil ID"
+        firstname!.rightPlaceholder = "First Name"
+        lastname!.rightPlaceholder = "Last Name"
+        password!.rightPlaceholder = "Password"
+        Email!.rightPlaceholder = "Example@xyz.com"
+        nationality!.rightPlaceholder = "Nationality"
+        bloodType!.rightPlaceholder = "Blood Type"
+        phone!.rightPlaceholder = "Phone Number"
         
     }
     

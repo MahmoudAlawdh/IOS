@@ -6,5 +6,5 @@ pod 'ObjectMapper', '~> 1.3'
 pod 'VideoSplashKit'
 pod 'Whisper', '~> 2.0'
 pod 'SwiftSpinner', '~> 0.6'
-
+pod 'HTYTextField'
 end

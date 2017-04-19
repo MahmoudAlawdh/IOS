@@ -16,10 +16,10 @@ class NotfcationVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
             let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
-            SwiftSpinner.hide()
+            //SwiftSpinner.hide()
         }else{
         networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/bbnotification", params: ["donorCivilid": 23], reqId: 1, caller: self)
-        SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+        //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
         TableView.delegate = self
         TableView.dataSource = self
         

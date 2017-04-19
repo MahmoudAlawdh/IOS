@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.1.5)
+  - HTYTextField (1.1)
   - ObjectMapper (1.3.0)
   - SwiftSpinner (0.9.5)
   - SwiftyJSON (2.3.2)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.1.4)
+  - HTYTextField
   - ObjectMapper (~> 1.3)
   - SwiftSpinner (~> 0.6)
   - SwiftyJSON (~> 2.3.2)
@@ -16,12 +18,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  HTYTextField: 2b867b89a6bc15bca8a809737f45736eddcf6500
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   SwiftSpinner: c6585a0ae5c67eb33e737695cce88f0262008cce
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   VideoSplashKit: 0aa63d0bb37c5bd357de3e6a2a13dea5acad4d66
   Whisper: 18b574de21a089c0d664b115f26e0d9ccbbadbab
 
-PODFILE CHECKSUM: bc8b09dd69ea60c6619691d7029c1817e2019009
+PODFILE CHECKSUM: 72ab9c56ed8440e2a2d4eae4fbabf4646db667e3
 
 COCOAPODS: 1.2.0

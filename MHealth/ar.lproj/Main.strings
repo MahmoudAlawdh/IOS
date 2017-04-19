@@ -1,4 +1,7 @@
 
+/* Class = "UILabel"; text = "7- Avoid heavy lifting strenuous exercise, and hazardous work (e.g construction workers, Truck drivers of heavy machine operators) for 12 hours. "; ObjectID = "1F3-do-v6T"; */
+"1F3-do-v6T.text" = "   تفادي حمل الأوزان الثقيلة أو ممارسة أي نوع من أنواع الرياضات العنيفة وكذلك الأعمال الشاقة مثل أعمال البناء أو الغوص أو قيادة سيارة النقل الثقيلة لمدة اثنتي عشرة ساعة بعد التبرع.";
+
 /* Class = "UITabBarItem"; title = "My Donations"; ObjectID = "1Rz-Dd-0uf"; */
 "1Rz-Dd-0uf.title" = "تبرعاتي";
 
@@ -26,9 +29,6 @@
 /* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "3s1-ZW-oQf"; */
 "3s1-ZW-oQf.normalTitle" = "تسجيل الخروج";
 
-/* Class = "UITextView"; text = "Do you feel you don’t have much to offer? You have the most precious resource of all: the ability to save a life by donating blood! Help share this invaluable gift with someone in need."; ObjectID = "3tX-CQ-dgT"; */
-"3tX-CQ-dgT.text" = "هل تشعر أنك لا تملك الكثير لتقدمه؟ لديك أثمن الموارد للجميع: القدرة على إنقاذ حياة من خلال التبرع بالدم! مساعدة حصة هذه هدية لا تقدر بثمن مع شخص في حاجة إليها.";
-
 /* Class = "UITextField"; placeholder = "Enter Your Civil ID"; ObjectID = "49p-Bh-ugw"; */
 "49p-Bh-ugw.placeholder" = "ادخل الرقم المدني";
 
@@ -40,6 +40,9 @@
 
 /* Class = "UILabel"; text = "Campaigns"; ObjectID = "67P-5W-VSd"; */
 "67P-5W-VSd.text" = "الحملات";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "68s-BW-7r7"; */
+"68s-BW-7r7.normalTitle" = "التالي";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "68s-BW-7r7"; */
 "68s-BW-7r7.normalTitle" = "التالي";
@@ -72,6 +75,9 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8qL-Bc-UNk"; */
 "8qL-Bc-UNk.normalTitle" = "التالي";
 
+/* Class = "UILabel"; text = "A blood donation: every 8 weeks, up to 6 times a year\nTwo units of red blood cells: every 16 weeks, up to three times a year\nPlatelets: every two weeks, up to 24 times a year"; ObjectID = "9uI-VZ-T4t"; */
+"9uI-VZ-T4t.text" = "1-     التبرع بالدم: كل 8 أسابيع تصل إلى 6 مرات في السنة   -2 التبرع بخلايا الدم الحمراء : كل 16 أسابيع إلى 3 مرات في السنة  -3 التبرع بالصفائح الدموية: كل 2 أسابيع تصل إلى 24 مرات في السنة";
+
 /* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "AcP-kP-M32"; */
 "AcP-kP-M32.title" = "التالي";
 
@@ -80,6 +86,10 @@
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Ak8-Kx-0zv"; */
 "Ak8-Kx-0zv.title" = "الرجوع";
+
+/* Class = "UILabel"; text = "11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.\n\nPlatelet transfusion is a lifesaving medical treatment for Cancer patients, organ or bone marrow transplant patients, victims of traumatic injuries, and patients undergoing open heart surgeries\n\n“ 70 minutes of your time once every month can save one of these patients”\n“Please help by being a regular platelet donor”\n                                                      \n      Don’t forget to take appointment for your next donation \n Thank you "; ObjectID = "Auc-kw-dhY"; */
+"Auc-kw-dhY.text" =  "التبرع بالصفائح الدموية يساعد على إنقاذ حياة مرضى السرطان، والمرضى الأعضاء أو زرع نخاع العظام ع، ضحايا الإصابات، والمرضى الذين يخضعون لجراحات القلب المفتوح. 70 دقيقة من وقتك مرة واحدة كل شهر يمكن أن ينقذ واحد من هؤلاء المرضى الرجاء المساعدة من خلال كونها المانحة الصفائح الدموية العادية  لا تنس أن تأخذ موعد لتبرعك المقبل شكرا";
+
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "BEn-u7-yoY"; */
 "BEn-u7-yoY.title" = "الرجوع";
@@ -93,26 +103,26 @@
 /* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "Ccr-hO-QZX"; */
 "Ccr-hO-QZX.title" = "بعد التبرع";
 
+/* Class = "UILabel"; text = " 4- Be in the good health and consult the physician if you are taking any medications that       may interfere with blood donation such as antibiotics or any of the medications on the medications on the medication deferral list (Attached)\n5- Consults the physician if you have any chronic condition or surgery that may affect the your health or affect the safety of blood \n6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery \n7- You should wait at least 3 days after any dental procedure, before donating blood\n8- Please inform the physician if you had blood transfusion before. \n"; ObjectID = "Cl4-pW-fWr"; */
+"Cl4-pW-fWr.text" = " أن تكون في صحة جيدة و في حال تناول الأدوية التي قد تتعارض مع التبرع بالدم مثل المضادات الحيوية أو أي من الأدوية الموجودة بقائمة المرفقة برجاء استشارة الطبيب. استشير الطبيب إذا كان لديك  أي مرض مزمن أو كنت خضعت لجراحة قد تؤثر على صحتك أو تؤثر على سلامة الدم.    بالنسبة للسيدات: ألا تكون حاملا أو في فترة الدورة الشهرية ,أن يكون قد مضى 6 أسابيع على الأقل بعد الولادة.   يجب الانتظار 3 أيام على الأقل بعد أي إجراء بالأسنان,قبل التبرع بالدم.    يرجى إبلاغ الطبيب إذا كنت قد تلقيت دم في السابق.  برجاء إحضار بطاقتك المدنية الأصلية على أن تكون سارية في يوم التبرع بالدم.";
+
+/* Class = "UILabel"; text = "What are the requirement to donate blood?"; ObjectID = "D5F-tD-p4a"; */
+"D5F-tD-p4a.text" = "من يستطيع أن تبرع بالدم؟ ";
+
 /* Class = "UILabel"; text = "How Often can I give blood?"; ObjectID = "DKS-dM-jXS"; */
 "DKS-dM-jXS.text" = "كم مرة يمكنني التبرع بالدم؟";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "DLA-29-C3b"; */
 "DLA-29-C3b.normalTitle" = "التالي";
 
-/* Class = "UITextView"; text = "1- Healthy donors whom ages between 17 - 70 Years old \n2- Citizens or residents who have valid residency \n3- Donor’s weight shall be  50 Kg                                                                    "; ObjectID = "EOO-xV-9lE"; */
-"EOO-xV-9lE.text" = " المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول   يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام. ";
-
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Efc-6i-f56"; */
 "Efc-6i-f56.title" = "الرجوع";
 
+/* Class = "UILabel"; text = "1- healthy donors between the age of 17 - 70 years old \n2- Citizens or residents who have a valid residence\n3- the donor weight must be at least 50 kg"; ObjectID = "Euc-DH-OUO"; */
+"Euc-DH-OUO.text" =  " المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول.  يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام ";
+
 /* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "ExK-h8-Kqg"; */
 "ExK-h8-Kqg.normalTitle" = "الخروج";
-
-/* Class = "UITextView"; text = "1- Whole Blood Donation: every 8 weeks up to 6 times per year\n2- Double red blood cells donation: every 16 weeks up to 3 times per year\n3- Platelets donation: every 2 weeks up to 24 times per year\n"; ObjectID = "F0n-xS-85X"; */
-"F0n-xS-85X.text" = "1-     التبرع بالدم: كل 8 أسابيع تصل إلى 6 مرات في السنة   -2 التبرع بخلايا الدم الحمراء : كل 16 أسابيع إلى 3 مرات في السنة  -3 التبرع بالصفائح الدموية: كل 2 أسابيع تصل إلى 24 مرات في السنة";
-
-/* Class = "UITextView"; text = " 1- Sleep at least 6-8 hours on the night before the day of donation\n 2- Drink plenty of fluids\n 3- Have healthy light meals (fat free) on the day of donation "; ObjectID = "F8P-AI-eeA"; */
-"F8P-AI-eeA.text" = " النوم 6-8 ساعات على الأقل قبل يوم التبرع.  شرب الكثير من السوائل.    أكل وجبات خفيفة صحية (خالية من الدهون) في يوم التبرع.";
 
 /* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "FQW-6j-E4x"; */
 "FQW-6j-E4x.title" = "التالي";
@@ -123,17 +133,15 @@
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "GB7-UR-51W"; */
 "GB7-UR-51W.placeholder" = "الاسم الاخير";
 
-/* Class = "UITextView"; text = "YOUR HONESTY AND CONCERN ARE THE GREATEST PROTECTION TO OUR BLOOD SUPPLY THAT YOU CAN OFFER. \n\nEVERY TIME YOU DONATE, YOU ARE GIVING ANOTHER PERSON A CHANCE TO LIVE.\n\n\nTHE ONLY SOURCE OF SAFE BLOOD IS A HEALTHY VOLUNTEER DONOR.\nPLEASE HELP BY BEING A REGULAR BLOOD DONOR.\n\n\nBlood Bank Locations: \nCentral Blood Bank ( Jabriya ) \nBlood bank branches: \nAdan Hospital Blood Bank branch\nJahra Hospital Blood Bank branch\nAsima Blood Bank branch\nNational Guard Blood Bank branch\n"; ObjectID = "GNK-9H-hbG"; */
-"GNK-9H-hbG.text" = "أمانتك و حرصك هما الضمان الوحيد لجعل نقل الدم عملية آمنة. في كل مرة تتبرع فيها تساعد في إنقاذ حياة شخص آخر بحاجة ماسة إلى دمك. هناك مصدر واحد فقط للدم هو ....... أنت ,ساعدنا وكن متبرع منتظم عناوين بنك الدم المركز الرئيسي: بنك الدم المركزي بالجابرية بنك الدم - فرع مستشفى العدان بنك الدم - فرع مستشفى الجهراء بنك الدم – فرع العاصمة بنك الدم – فرع الحرس الوطني شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى";
-
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "GPC-u7-gIs"; */
 "GPC-u7-gIs.title" = "الرجوع";
 
 /* Class = "UIButton"; normalTitle = "      Can i Donate !"; ObjectID = "Gx4-0g-Zb2"; */
 "Gx4-0g-Zb2.normalTitle" = "هل أستطيع التبرع؟";
 
-/* Class = "UITextView"; text = "7- Avoid heavy lifting strenuous exercise, and hazardous work (e.g construction workers, Truck drivers of heavy machine operators) for 12 hours. "; ObjectID = "Hu7-NZ-TVs"; */
-"Hu7-NZ-TVs.text" = "   تفادي حمل الأوزان الثقيلة أو ممارسة أي نوع من أنواع الرياضات العنيفة وكذلك الأعمال الشاقة مثل أعمال البناء أو الغوص أو قيادة سيارة النقل الثقيلة لمدة اثنتي عشرة ساعة بعد التبرع.";
+/* Class = "UILabel"; text = "1- Sleeping 6-8 hours at least on the day before the donation.\n2-  Drink plenty of fluids and Eating Healthy snacks (fat free) in the day of donation\n3- You must be in good health , and in case of taking drugs that can affect the donation process please consult the doctor\n4- For women: Not to be pregnant or during the menstrual cycle, it should be at least 6 weeks after giving birth\n5- Consult the doctor if you have any chronic illness or if you had an surgery that might affect your health or affect the blood.\n6- You must wait at least three days after any procedure with your teeth before donating\n7- Please inform your doctor if you had any blood transfusion in the past\n8- Please bring your original Civil Id to be valid in the blood donation day"; ObjectID = "HuC-ph-dhp"; */
+"HuC-ph-dhp.text" = "   النوم 6-8 ساعات على الأقل قبل يوم التبرع.    شرب الكثير من السوائل.   أكل وجبات خفيفة صحية (خالية من الدهون) في يوم التبرع.     أن تكون في صحة جيدة و في حال تناول الأدوية التي قد تتعارض مع التبرع بالدم مثل المضادات الحيوية أو أي من الأدوية الموجودة بقائمة المرفقة برجاء استشارة الطبيب.    استشير الطبيب إذا كان لديك  أي مرض مزمن أو كنت خضعت لجراحة قد تؤثر على صحتك أو تؤثر على سلامة الدم.    بالنسبة للسيدات: ألا تكون حاملا أو في فترة الدورة الشهرية ,أن يكون قد مضى 6 أسابيع على الأقل بعد الولادة.   يجب الانتظار 3 أيام على الأقل بعد أي إجراء بالأسنان,قبل التبرع بالدم.    يرجى إبلاغ الطبيب إذا كنت قد تلقيت دم في السابق    برجاء إحضار بطاقتك المدنية الأصلية على أن تكون سارية في يوم التبرع بالدم";
+
 
 /* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "Hyz-56-bKJ"; */
 "Hyz-56-bKJ.normalTitle" = "الخروج";
@@ -150,12 +158,8 @@
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "IiK-Fq-X3H"; */
 "IiK-Fq-X3H.normalTitle" = "تسجيل";
 
-/* Class = "UITextView"; text = "We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:\n\n1- Sleep at least 6 hours on the day before donation.\n2- Be in good health and avoid certain medications such as:\n    a. Aspirin, or products containing aspirin, for at least 5 days before your appointment\n    b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment \n     c. Antibiotics for at least seven days before your appointment \n    d. If you are taking any other medications, please inform the physician \n"; ObjectID = "Jeq-HK-Lbs"; */
-"Jeq-HK-Lbs.text" = "ونود أن نعرب عن شكرنا وامتناننا لتعاونكم معنا من خلال تقديم لبنك الدم هدية ذات مغزى لجميع المرضى في المستشفيات الكويتية. لجعل تبرعك  قيماَ يرجى اتباع التعليمات التالية: 1- النوم 6-8 ساعات على الأقل قبل يوم التبرع  2- كن في صحة جيدة وتجنب بعض الأدوية مثل:  الأسبرين، أو المنتجات التي تحتوي على الأسبرين، لمدة 5 أيام على الأقل قبل الموعد المحدد.  الأدوية غير المسكنة - الستيرويدية، وأدوية التهابات مضاد (مثل ايبوبروفين) لمدة 48 ساعة قبل موعدك .   المضادات الحيوية لمدة سبعة أيام على الأقل قبل الموعد المحدد.  إذا كنت تأخذ أي أدوية أخرى، الرجاء إبلاغ الطبيب.";
-
-
-/* Class = "UITextView"; text = "By : Mahmoud  , Shikha , Zainab Karam"; ObjectID = "Jyh-9r-WQC"; */
-"Jyh-9r-WQC.text" = "By : Mahmoud  , Shikha , Zainab Karam";
+/* Class = "UILabel"; text = "Post Donation Instructions \nThank you for donating your blood today, which will help patients who are in desperate need to your blood. "; ObjectID = "KOx-56-lzN"; */
+"KOx-56-lzN.text" =  "شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى وبما أننا نهتم بسلامتكم";
 
 /* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "L9F-z7-5FG"; */
 "L9F-z7-5FG.title" = "بعد التبرع";
@@ -166,27 +170,29 @@
 /* Class = "UISegmentedControl"; Leh-aQ-pTw.segmentTitles[1] = "Female"; ObjectID = "Leh-aQ-pTw"; */
 "Leh-aQ-pTw.segmentTitles[1]" = "انثى";
 
+/* Class = "UILabel"; text = "1- Healthy donors whom ages between 17 - 70 Years old \n2- Citizens or residents who have valid residency \n3- Donor’s weight shall be  50 Kg   "; ObjectID = "LlG-YZ-mAl"; */
+"LlG-YZ-mAl.text" =  " المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول   يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام. ";
+
 /* Class = "UIButton"; normalTitle = "English"; ObjectID = "Llr-gw-srJ"; */
 "Llr-gw-srJ.normalTitle" = "English";
-
-/* Class = "UITextView"; text = "Are we care about your health, we advise you to read and follow these instructions.\n1. Keep laying on donation chair for 5 minutes then stand up slowly, and don’t leave the donation area before being released by your attending nurse.\n2. You are welcomed in our refreshment area. The resting period of 15 minutes after blood donation is actually the time to observe you for any possible donor juice before reactions. \n3. Drink your juice before leaving. It is important to drink extra fluids in the first 4 hours following donation. Increase fluid intake for the next 3 days to help you restore your body fluid. \n"; ObjectID = "Ltj-iQ-XxD"; */
-"Ltj-iQ-XxD.text" = "نرجو منك اتباع التعليمات التالية:   البقاء جالسا على كرسي التبرع لمدة خمس دقائق على الأقل ثم النهوض ببطء ولا تترك غرفة التبرع قبل أن نسمح لك بذلك.  أنت مدعو كي تجلس في منطقة الاستراحة لمدة خمسة عشر دقيقة تكون خلالها تحت الملاحظة الطبية ويجب عليك اخبار الطاقم الطبي في حال شعورك بالتعب     من فضلك تناول العصير المقدم إليك قبل مغادرتك المكان واحرص على تناول كمية كافية من السوائل خلال الأربع ساعات الأولى التالية للتبرع وأيضا خلال الثلاث أيام التالية وذلك لتعويض ما فقده جسمك أثناء التبرع بالدم.";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "Lwc-tb-ZPA"; */
 "Lwc-tb-ZPA.normalTitle" = "تسجيل";
 
-/* Class = "UITextView"; text = "To help blood centers serve their communities."; ObjectID = "M1J-CZ-R4h"; */
-"M1J-CZ-R4h.text" = "مساعدة مراكز الدم لخدمة مجتمعاتهم.";
+/* Class = "UILabel"; text = "12- As part of the blood bank responsibilities is to ensure the safety and efficiency of your donation, please contact Central Blood Bank if: \n - You get bruising larger than 5 cm in diameter, redness, swelling or pain in the vein puncture site.  \nTingling in your fingers or arms.\n - You have an injury or a complication related to your donation. \n - You have fever or feeling unwell within two days of your donation.                                                                              - You have any doubt about your donation or if you remember something that may affect the safety of blood you donated."; ObjectID = "M3g-Ha-p0G"; */
+"M3g-Ha-p0G.text" = "حرصا منا على سلامتك وسلامة المرضى الذين سوف ينقل لهم دمك نرجو منك مراجعة بنك الدم او الاتصال على الرقم المكتوب على النشرة في حالة:  حدوث كدمة أكبر من 5 سم أو احمرار أو تورم  أو ألم في مكان التبرع.   الشعور بألم أو وخز في أصابعك أو ذراعيك.  إذا كان لديك أي شكوى ناتجة عن عملية التبرع.   إذا ارتفعت درجة حرارة جسمك، أو أصيبت بالإعياء خلال اليومين التاليين للتبرع.    إذا تذكرت أي شيء قد يكون له تأثير على سلامة دمك.";
+
+/* Class = "UILabel"; text = "1- Whole Blood Donation: it takes about 10 minutes\n2- Double red blood cells donation: it takes about 45 minutes\n3- Platelets donation; donation 60 - 9- minutes depending on the height and eight of the donor, platelet count and Hematocrit level"; ObjectID = "MH1-Bf-Obk"; */
+"MH1-Bf-Obk.text" = "1- التبرع بالدم: يستغرق حوالي 10 دقيقة2- التبرع بخلايا الدم الحمراء: يستغرق حوالي 45 دقيقة3-     التبرع بالصفائح الدموية : التبرع يستغرق حوالي 60-90 دقيقة اعتمادا على الطول ووزن المتبرع وعددالصفائح الدموية";
 
 /* Class = "UITextField"; placeholder = "Enter Your Password"; ObjectID = "Mhv-pX-mxI"; */
 "Mhv-pX-mxI.placeholder" = "نسيت كلمة السر؟";
 
+/* Class = "UILabel"; text = "1- Healthy donors whom ages between 17 - 70 Years old \n2- Citizens or residents who have valid residency \n3- Donor’s weight shall be  50 Kg            "; ObjectID = "MmS-Ur-lBk"; */
+"MmS-Ur-lBk.text" = " المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول   يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام. ";
+
 /* Class = "UIButton"; normalTitle = "Branch"; ObjectID = "Mtx-Uh-LqY"; */
 "Mtx-Uh-LqY.normalTitle" = "الفرع";
-
-/* Class = "UITextView"; text = "\n 4- Be in the good health and consult the physician if you are taking any medications that       may interfere with blood donation such as antibiotics or any of the medications on the medications on the medication deferral list (Attached)\n5- Consults the physician if you have any chronic condition or surgery that may affect the your health or affect the safety of blood \n6- Females should not be pregnant nor menstruating, and should wait at least 6 weeks after delivery \n7- You should wait at least 3 days after any dental procedure, before donating blood\n8- Please inform the physician if you had blood transfusion before. \n"; ObjectID = "Mzf-Yf-W6H"; */
-"Mzf-Yf-W6H.text" = " أن تكون في صحة جيدة و في حال تناول الأدوية التي قد تتعارض مع التبرع بالدم مثل المضادات الحيوية أو أي من الأدوية الموجودة بقائمة المرفقة برجاء استشارة الطبيب. استشير الطبيب إذا كان لديك  أي مرض مزمن أو كنت خضعت لجراحة قد تؤثر على صحتك أو تؤثر على سلامة الدم.    بالنسبة للسيدات: ألا تكون حاملا أو في فترة الدورة الشهرية ,أن يكون قد مضى 6 أسابيع على الأقل بعد الولادة.   يجب الانتظار 3 أيام على الأقل بعد أي إجراء بالأسنان,قبل التبرع بالدم.    يرجى إبلاغ الطبيب إذا كنت قد تلقيت دم في السابق.  برجاء إحضار بطاقتك المدنية الأصلية على أن تكون سارية في يوم التبرع بالدم.";
-
 
 /* Class = "UITabBarItem"; title = "Book "; ObjectID = "NPf-ZA-pxf"; */
 "NPf-ZA-pxf.title" = "احجز";
@@ -203,11 +209,8 @@
 /* Class = "UIButton"; normalTitle = "   Confirm"; ObjectID = "Oee-Yh-Ce5"; */
 "Oee-Yh-Ce5.normalTitle" = "تاكيد   ";
 
-/* Class = "UITextView"; text = "Thank you for donating your blood today, which will help patients who are in desperate need to your blood."; ObjectID = "Oic-D3-I3x"; */
-"Oic-D3-I3x.text" = "شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى وبما أننا نهتم بسلامتكم";
-
-/* Class = "UITextView"; text = "This will help to prevent bruising, improve healing of the needle puncture site, and allowing your body to compensate for the blood loss.                                                                                    8- If you noticed bruises on vein puncture site, follow these steps:\n   - Day 1: Wrap ice in a clean moist cloth and apply to the site for 15-20 minutes, 3-4 times during the day. \n   - Day 2,3 and 4: Apply a warm moist cloth to the site for 15-20 minutes, 3-4 times every day , you will notice color changes of the bruised area in the next   10 days.\n\n"; ObjectID = "Orl-9p-ZA1"; */
-"Orl-9p-ZA1.text" = " في حالة ظهور كدمات في مكان التبرع يرجى اتباع التالي:   في اليوم الأول: ضع بعض قطع من الثلج في قطعة من القماش نظيفة ثم ابقها على موضع الكدمة لمدة 15 – 20 دقيقة 3 الى 4 مرات في اليوم. من اليوم الثاني وحتى الرابع: ضع قطعة من القماش مبللة بالماء الدافىء على موضع الكدمة لمدة 15 دقيقة 3 الى 4 مرات يوميا ولا تقلق إن لاحظت حدوث تغير في لون الكدمة أو زيادة في مساحتها وسوف تختفي تدريجيا خلال العشرة ايام التالية.";
+/* Class = "UILabel"; text = "Blood donors are essential to the blood supply. Kuwait Blood Centers rely on donors like you to help save lives."; ObjectID = "Of7-WM-SuY"; */
+"Of7-WM-SuY.text" =  "المتبرعون بالدم ضروريون لإمدادات الدم. تعتمد مراكز الدم في الكويت على المانحين مثلك للمساعدة في إنقاذ الأرواح.";
 
 /* Class = "UITextField"; placeholder = "Enter Your Civil ID"; ObjectID = "PSK-NA-V9O"; */
 "PSK-NA-V9O.placeholder" = "ادخل الرقم المدني";
@@ -220,6 +223,12 @@
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "R30-N9-KAK"; */
 "R30-N9-KAK.text" = "Label";
+
+/* Class = "UILabel"; text = "Do you feel you don’t have much to offer? You have the most precious resource of all: the ability to save a life by donating blood! Help share this invaluable gift with someone in need."; ObjectID = "RKx-m4-LJJ"; */
+"RKx-m4-LJJ.text" =  "هل تشعر أنك لا تملك الكثير لتقدمه؟ لديك أثمن الموارد للجميع: القدرة على إنقاذ حياة من خلال التبرع بالدم! مساعدة حصة هذه هدية لا تقدر بثمن مع شخص في حاجة إليها.";
+
+/* Class = "UILabel"; text = "PER DONATION INSTRUCTIONS \nFOR APHERESIS PLATELETS DONORS"; ObjectID = "Rce-5j-ibG"; */
+"Rce-5j-ibG.text" = "تعليمات ما قبل التبرع لفصل مكونات الدم";
 
 /* Class = "UILabel"; text = "Donors"; ObjectID = "S0K-jN-0pL"; */
 "S0K-jN-0pL.text" = "المتبرعين";
@@ -237,16 +246,20 @@
 "Sfa-Sf-8tt.normalTitle" = "عملية التبرع ";
 
 /* Class = "UIButton"; normalTitle = "SEND"; ObjectID = "Syx-w9-eyj"; */
-"Syx-w9-eyj.normalTitle" = "ارسل";;
-
-/* Class = "UITextView"; text = "Post Donation Instructions \nThank you for donating your blood today, which will help patients who are in desperate need to your blood. "; ObjectID = "TS3-Dz-1Ly"; */
-"TS3-Dz-1Ly.text" = "شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى وبما أننا نهتم بسلامتكم";
+"Syx-w9-eyj.normalTitle" = "ارسل";
 
 /* Class = "UILabel"; text = "Who can Donate blood?"; ObjectID = "UAQ-El-IeV"; */
 "UAQ-El-IeV.text" = "من يستطيع أن تبرع بالدم؟";
 
 /* Class = "UINavigationItem"; title = "After Donation"; ObjectID = "VQv-cs-xlK"; */
 "VQv-cs-xlK.title" = "بعد التبرع";
+
+/* Class = "UILabel"; text = " 9-  If you experience dizziness or lightheadedness or feel like you are going to faint, sit  down with your head between your knees or lie down with your legs elevated as soon as possible to avoid a potential fall and/or injury. Remain in this position until the condition improves . If symptoms persist, return to the blood bank or seek medical advice.\n 10-  As a part of our routine procedure, the blood bank will test your donation to detect any blood transmitted infections.\n 11- In some instances when the infection is in its early phase (window period), our routine tests may fail to reveal the presence of such infection. Therefore, if you have any doubts about the safety of your blood, please call the Central Blood Bank at the at the number provided, as soon as possible and tell the physician in charge that you don’t want your donation to be used for transfusion without the need to explain or to give any reasons. All information provided by you will be confidential."; ObjectID = "Veh-V7-cW6"; */
+"Veh-V7-cW6.text" = "  إذا شعرت بدوار أو زغللة: اجلس مع وضع رأسك بين الركبتين أو استلقي فورا على سطح مستو مع رفع القدمين أعلى من مستوى الرأس أبقى على هذا الوضع حتى زوال الأعراض.  حرصا على سلامتك وسلامة المرضى الذين سوف ينقل لهم دمك سيقوم بنك الدم بفحص دمك للكشف عن الأمراض التي يمكن أن تنتقل عن طريق الدم.  أحيانا تعجز التحاليل المعملية عن اكتشاف المرض لو كانت الإصابة به مبكرة لذا فإن كان لديك شك بخصوص سلامة المرضى نرجو منك الاتصال ببنك الدم والتحدث مع الطبيب المختصر وابلاغه برقمك المدني واعلم انك لست مضطرا لذكر ايه اسباب وسيتم التعامل مع بياناتك بسرية تامة.";
+
+
+/* Class = "UILabel"; text = "This will help to prevent bruising, improve healing of the needle puncture site, and allowing your body to compensate for the blood loss.                                                                                    8- If you noticed bruises on vein puncture site, follow these steps:\n   - Day 1: Wrap ice in a clean moist cloth and apply to the site for 15-20 minutes, 3-4 times during the day. \n   - Day 2,3 and 4: Apply a warm moist cloth to the site for 15-20 minutes, 3-4 times every day , you will notice color changes of the bruised area in the next   10 days."; ObjectID = "VqS-Ke-dny"; */
+"VqS-Ke-dny.text" =   " في حالة ظهور كدمات في مكان التبرع يرجى اتباع التالي:   في اليوم الأول: ضع بعض قطع من الثلج في قطعة من القماش نظيفة ثم ابقها على موضع الكدمة لمدة 15 – 20 دقيقة 3 الى 4 مرات في اليوم. من اليوم الثاني وحتى الرابع: ضع قطعة من القماش مبللة بالماء الدافىء على موضع الكدمة لمدة 15 دقيقة 3 الى 4 مرات يوميا ولا تقلق إن لاحظت حدوث تغير في لون الكدمة أو زيادة في مساحتها وسوف تختفي تدريجيا خلال العشرة ايام التالية.";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "WHw-dh-Mw7"; */
 "WHw-dh-Mw7.normalTitle" = "التالي";
@@ -262,9 +275,6 @@
 
 /* Class = "UINavigationItem"; title = "Book Donation Appointment"; ObjectID = "YeA-wi-uhk"; */
 "YeA-wi-uhk.title" = "احجز موعد للتبرع";
-
-/* Class = "UITextView"; text = "      PER DONATION INSTRUCTIONS \nFOR APHERESIS PLATELETS DONORS"; ObjectID = "Yfn-iF-03z"; */
-"Yfn-iF-03z.text" = "تعليمات ما قبل التبرع لفصل مكونات الدم";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Yfw-q1-H5Z"; */
 "Yfw-q1-H5Z.title" = "الاعدادات";
@@ -287,17 +297,14 @@
 /* Class = "UILabel"; text = "Label"; ObjectID = "a9R-R8-1cX"; */
 "a9R-R8-1cX.text" = "Label";
 
-/* Class = "UITextView"; text = "A blood donation: every 8 weeks, up to 6 times a year\nTwo units of red blood cells: every 16 weeks, up to three times a year\nPlatelets: every two weeks, up to 24 times a year"; ObjectID = "ao6-4i-p7F"; */
-"ao6-4i-p7F.text" = "التبرع بالدم: كل 8 أسابيع تصل إلى 6 مرات في السنة.     التبرع بخلايا الدم الحمراء : كل 16 أسابيع إلى 3 مرات في السنة.    التبرع بالصفائح الدموية: كل 2 أسابيع تصل إلى 24 مرات في السنة من يستطيع أن تبرع بالدم؟     المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول.  يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام";
+/* Class = "UILabel"; text = "YOUR HONESTY AND CONCERN ARE THE GREATEST PROTECTION TO OUR BLOOD SUPPLY THAT YOU CAN OFFER. \n\nEVERY TIME YOU DONATE, YOU ARE GIVING ANOTHER PERSON A CHANCE TO LIVE.\n\n\nTHE ONLY SOURCE OF SAFE BLOOD IS A HEALTHY VOLUNTEER DONOR.\nPLEASE HELP BY BEING A REGULAR BLOOD DONOR.\n\n\nBlood Bank Locations: \nCentral Blood Bank ( Jabriya ) \nBlood bank branches: \nAdan Hospital Blood Bank branch\nJahra Hospital Blood Bank branch\nAsima Blood Bank branch\nNational Guard Blood Bank branch"; ObjectID = "aDf-Q3-kxn"; */
+"aDf-Q3-kxn.text" = "أمانتك و حرصك هما الضمان الوحيد لجعل نقل الدم عملية آمنة. في كل مرة تتبرع فيها تساعد في إنقاذ حياة شخص آخر بحاجة ماسة إلى دمك. هناك مصدر واحد فقط للدم هو ....... أنت ,ساعدنا وكن متبرع منتظم عناوين بنك الدم المركز الرئيسي: بنك الدم المركزي بالجابرية بنك الدم - فرع مستشفى العدان بنك الدم - فرع مستشفى الجهراء بنك الدم – فرع العاصمة بنك الدم – فرع الحرس الوطني شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى";
 
 /* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "b1Q-e3-sSd"; */
 "b1Q-e3-sSd.title" = "التالي";
 
 /* Class = "UINavigationItem"; title = "Donation Process"; ObjectID = "b9e-Zj-m8T"; */
 "b9e-Zj-m8T.title" = "عملية التبرع";
-
-/* Class = "UITextView"; text = "12- As part of the blood bank responsibilities is to ensure the safety and efficiency of your donation, please contact Central Blood Bank if: \n - You get bruising larger than 5 cm in diameter, redness, swelling or pain in the vein puncture site.  \nTingling in your fingers or arms.\n - You have an injury or a complication related to your donation. \n - You have fever or feeling unwell within two days of your donation.                                                                              - You have any doubt about your donation or if you remember something that may affect the safety of blood you donated.\n"; ObjectID = "bM9-yE-HqP"; */
-"bM9-yE-HqP.text" = "حرصا منا على سلامتك وسلامة المرضى الذين سوف ينقل لهم دمك نرجو منك مراجعة بنك الدم او الاتصال على الرقم المكتوب على النشرة في حالة:  حدوث كدمة أكبر من 5 سم أو احمرار أو تورم  أو ألم في مكان التبرع.   الشعور بألم أو وخز في أصابعك أو ذراعيك.  إذا كان لديك أي شكوى ناتجة عن عملية التبرع.   إذا ارتفعت درجة حرارة جسمك، أو أصيبت بالإعياء خلال اليومين التاليين للتبرع.    إذا تذكرت أي شيء قد يكون له تأثير على سلامة دمك.";
 
 /* Class = "UINavigationItem"; title = "Login"; ObjectID = "bXu-Xr-NEi"; */
 "bXu-Xr-NEi.title" = "تسجيل الدخول";
@@ -310,6 +317,9 @@
 
 /* Class = "UIButton"; normalTitle = "Done"; ObjectID = "boZ-YG-AHS"; */
 "boZ-YG-AHS.normalTitle" = "تم";
+
+/* Class = "UILabel"; text = "1- Whole Blood Donation: every 8 weeks up to 6 times per year\n2- Double red blood cells donation: every 16 weeks up to 3 times per year\n3- Platelets donation: every 2 weeks up to 24 times per year"; ObjectID = "bqE-0R-xl1"; */
+"bqE-0R-xl1.text" = "1-     التبرع بالدم: كل 8 أسابيع تصل إلى 6 مرات في السنة   -2 التبرع بخلايا الدم الحمراء : كل 16 أسابيع إلى 3 مرات في السنة  -3 التبرع بالصفائح الدموية: كل 2 أسابيع تصل إلى 24 مرات في السنة";
 
 /* Class = "UILabel"; text = "Upcoming Donations"; ObjectID = "brc-Hf-IRT"; */
 "brc-Hf-IRT.text" = "المواعيد القادمة";
@@ -329,6 +339,9 @@
 /* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "cpv-zG-XVN"; */
 "cpv-zG-XVN.title" = "التالي";
 
+/* Class = "UILabel"; text = "3- Drink plenty of fluids three to four hours before donating platelets.\n4- Eat healthy light food (fat free), like fruits and vegetables, and do not skip a meal on the day before donation. \n5- On the day of donation, your breakfast shall include: Toast, Jam and Honey, Biscuits without cream. \n6- We also suggest that you increase your consumption of Calcium-rich foods (dairy products) or take a Calcium supplement the evening before your donation and also and also the morning of your donation .\n7- Wear comfortable clothes with sleeves that can be easily rolled up above the elbow.\n8- Apheresis Donation procedure usually takes 60 - 90 minutes, so please go to toilet just before starting donation to avoid interruption of the procedure                      9- Refrain from smoking for at least 30 minutes before donation\n10- Bring your Civil ID with you on the day of the donation"; ObjectID = "crE-Ho-MjU"; */
+"crE-Ho-MjU.text" = "شرب الكثير من السوائل 3-4 ساعات قبل التبرع بالصفائح الدموية.  أكل وجبة صحية (خالية من الدهون)، مثل الفواكه والخضروات، ولا تخطي وجبة في اليوم قبل التبرع.  في يوم التبرع، يجب أن تتضمن وجبة الإفطار: توست، المربى والعسل والبسكويت بدون كريم. نقترح عليك أيضا أن زيادة الاستهلاك الخاص من الأطعمة الغنية بالكالسيوم (منتجات الألبان) أو اتخاذ مكملات غذائية تحتوي على كالسيوم في الليلة ما قبل التبرع وأيضا وأيضا صباح تبرعك. 7- ارتداء ملابس مريحة مع الأكمام التي يمكن إرجاع بسهولة فوق الكوع.   فصل مكونات الدم التبرع عادة ما يستغرق 60-90 دقيقة، لذا يرجى الذهاب إلى دورة المياه قبل بدء التبرع لتجنب انقطاع الإجراء. الامتناع عن التدخين لمدة 30 دقيقة على الأقل قبل التبرع. الدقة والصدق ضرورية في الإجابة على الاستبيان من أجل سلامة الدم. سيتم التعامل مع جميع المعلومات التي قدمتها سكون في كامل الخصوصية. إحضار البطاقة المدنية معك في يوم التبرع.";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "dFq-eb-2FR"; */
 "dFq-eb-2FR.text" = "Label";
 
@@ -344,14 +357,20 @@
 /* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "eG3-m4-PVV"; */
 "eG3-m4-PVV.normalTitle" = "الخروج";
 
+/* Class = "UILabel"; text = "To help blood centers serve their communities."; ObjectID = "eRM-5Y-njr"; */
+"eRM-5Y-njr.text" =  "مساعدة مراكز الدم لخدمة مجتمعاتهم.";
+
+/* Class = "UILabel"; text = "Are we care about your health, we advise you to read and follow these instructions.\n1. Keep laying on donation chair for 5 minutes then stand up slowly, and don’t leave the donation area before being released by your attending nurse.\n2. You are welcomed in our refreshment area. The resting period of 15 minutes after blood donation is actually the time to observe you for any possible donor juice before reactions. \n3. Drink your juice before leaving. It is important to drink extra fluids in the first 4 hours following donation. Increase fluid intake for the next 3 days to help you restore your body fluid. "; ObjectID = "eac-An-2Eq"; */
+"eac-An-2Eq.text" = "نرجو منك اتباع التعليمات التالية:   البقاء جالسا على كرسي التبرع لمدة خمس دقائق على الأقل ثم النهوض ببطء ولا تترك غرفة التبرع قبل أن نسمح لك بذلك.  أنت مدعو كي تجلس في منطقة الاستراحة لمدة خمسة عشر دقيقة تكون خلالها تحت الملاحظة الطبية ويجب عليك اخبار الطاقم الطبي في حال شعورك بالتعب     من فضلك تناول العصير المقدم إليك قبل مغادرتك المكان واحرص على تناول كمية كافية من السوائل خلال الأربع ساعات الأولى التالية للتبرع وأيضا خلال الثلاث أيام التالية وذلك لتعويض ما فقده جسمك أثناء التبرع بالدم.";
+
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "f9Q-He-bBg"; */
 "f9Q-He-bBg.title" = "الخروج";
 
 /* Class = "UINavigationItem"; title = "Before Donation"; ObjectID = "fIi-H5-bb4"; */
 "fIi-H5-bb4.title" = "قبل التبرع";
 
-/* Class = "UITextView"; text = "11- Accuracy and honesty are essential in answering the donor history questionnaire for the safety of blood. All information provided by you will be handled in privacy.\n\nPlatelet transfusion is a lifesaving medical treatment for Cancer patients, organ or bone marrow transplant patients, victims of traumatic injuries, and patients undergoing open heart surgeries\n\n“ 70 minutes of your time once every month can save one of these patients”\n“Please help by being a regular platelet donor”\n                                                      \n      Don’t forget to take appointment for your next donation \n                                     Thank you \n\n\n"; ObjectID = "gdZ-da-iWO"; */
-"gdZ-da-iWO.text" = "التبرع بالصفائح الدموية يساعد على إنقاذ حياة مرضى السرطان، والمرضى الأعضاء أو زرع نخاع العظام ع، ضحايا الإصابات، والمرضى الذين يخضعون لجراحات القلب المفتوح. 70 دقيقة من وقتك مرة واحدة كل شهر يمكن أن ينقذ واحد من هؤلاء المرضى الرجاء المساعدة من خلال كونها المانحة الصفائح الدموية العادية  لا تنس أن تأخذ موعد لتبرعك المقبل شكرا";
+/* Class = "UILabel"; text = "By : Mahmoud  , Shikha , Zainab Karam"; ObjectID = "g8y-DH-MwF"; */
+"g8y-DH-MwF.text" = "By : Mahmoud  , Shikha , Zainab Karam";
 
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "hOB-hB-blY"; */
 "hOB-hB-blY.normalTitle" = "تسجيل الدخول";
@@ -377,20 +396,11 @@
 /* Class = "UILabel"; text = "Who We Help?"; ObjectID = "j2h-Rh-MFs"; */
 "j2h-Rh-MFs.text" =  "من المستفيد؟";
 
-/* Class = "UITextView"; text = "1- Sleeping 6-8 hours at least on the day before the donation.\n2-  Drink plenty of fluids and Eating Healthy snacks (fat free) in the day of donation\n3- You must be in good health , and in case of taking drugs that can affect the donation process please consult the doctor\n4- For women: Not to be pregnant or during the menstrual cycle, it should be at least 6 weeks after giving birth\n5- Consult the doctor if you have any chronic illness or if you had an surgery that might affect your health or affect the blood.\n6- You must wait at least three days after any procedure with your teeth before donating\n7- Please inform your doctor if you had any blood transfusion in the past\n8- Please bring your original Civil Id to be valid in the blood donation day\n"; ObjectID = "j8s-dX-mLY"; */
-"j8s-dX-mLY.text" = "   النوم 6-8 ساعات على الأقل قبل يوم التبرع.    شرب الكثير من السوائل.   أكل وجبات خفيفة صحية (خالية من الدهون) في يوم التبرع.     أن تكون في صحة جيدة و في حال تناول الأدوية التي قد تتعارض مع التبرع بالدم مثل المضادات الحيوية أو أي من الأدوية الموجودة بقائمة المرفقة برجاء استشارة الطبيب.    استشير الطبيب إذا كان لديك  أي مرض مزمن أو كنت خضعت لجراحة قد تؤثر على صحتك أو تؤثر على سلامة الدم.    بالنسبة للسيدات: ألا تكون حاملا أو في فترة الدورة الشهرية ,أن يكون قد مضى 6 أسابيع على الأقل بعد الولادة.   يجب الانتظار 3 أيام على الأقل بعد أي إجراء بالأسنان,قبل التبرع بالدم.    يرجى إبلاغ الطبيب إذا كنت قد تلقيت دم في السابق    برجاء إحضار بطاقتك المدنية الأصلية على أن تكون سارية في يوم التبرع بالدم";
-
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "jA1-Nv-SG1"; */
 "jA1-Nv-SG1.title" = "الرجوع";
 
-/* Class = "UITextView"; text = "3- Drink plenty of fluids three to four hours before donating platelets.\n4- Eat healthy light food (fat free), like fruits and vegetables, and do not skip a meal on the day before donation. \n5- On the day of donation, your breakfast shall include: Toast, Jam and Honey, Biscuits without cream. \n6- We also suggest that you increase your consumption of Calcium-rich foods (dairy products) or take a Calcium supplement the evening before your donation and also and also the morning of your donation .\n7- Wear comfortable clothes with sleeves that can be easily rolled up above the elbow.\n8- Apheresis Donation procedure usually takes 60 - 90 minutes, so please go to toilet just before starting donation to avoid interruption of the procedure                      9- Refrain from smoking for at least 30 minutes before donation\n10- Bring your Civil ID with you on the day of the donation\n"; ObjectID = "jL3-ax-64F"; */
-"jL3-ax-64F.text" = "شرب الكثير من السوائل 3-4 ساعات قبل التبرع بالصفائح الدموية.  أكل وجبة صحية (خالية من الدهون)، مثل الفواكه والخضروات، ولا تخطي وجبة في اليوم قبل التبرع.  في يوم التبرع، يجب أن تتضمن وجبة الإفطار: توست، المربى والعسل والبسكويت بدون كريم. نقترح عليك أيضا أن زيادة الاستهلاك الخاص من الأطعمة الغنية بالكالسيوم (منتجات الألبان) أو اتخاذ مكملات غذائية تحتوي على كالسيوم في الليلة ما قبل التبرع وأيضا وأيضا صباح تبرعك. 7- ارتداء ملابس مريحة مع الأكمام التي يمكن إرجاع بسهولة فوق الكوع.   فصل مكونات الدم التبرع عادة ما يستغرق 60-90 دقيقة، لذا يرجى الذهاب إلى دورة المياه قبل بدء التبرع لتجنب انقطاع الإجراء. الامتناع عن التدخين لمدة 30 دقيقة على الأقل قبل التبرع. الدقة والصدق ضرورية في الإجابة على الاستبيان من أجل سلامة الدم. سيتم التعامل مع جميع المعلومات التي قدمتها سكون في كامل الخصوصية. إحضار البطاقة المدنية معك في يوم التبرع.";
-
 /* Class = "UITabBarItem"; title = "Profile"; ObjectID = "jm6-0z-748"; */
 "jm6-0z-748.title" ="الملف الشخصي";
-
-/* Class = "UITextView"; text = "How do i need to prepare for the day of donation?"; ObjectID = "kZH-i5-KZ6"; */
-"kZH-i5-KZ6.text" = "كيف يمكنني التحضير ليوم التبرع؟";
 
 /* Class = "UITextField"; placeholder = "Nationality"; ObjectID = "kdb-qv-dSW"; */
 "kdb-qv-dSW.placeholder" = "الجنسية";
@@ -406,6 +416,10 @@
 
 /* Class = "UILabel"; text = "My Donations"; ObjectID = "mAU-oE-Nod"; */
 "mAU-oE-Nod.text" = "تبرعاتي";
+
+/* Class = "UILabel"; text = "We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:\n\n1- Sleep at least 6 hours on the day before donation.\n2- Be in good health and avoid certain medications such as:\n    a. Aspirin, or products containing aspirin, for at least 5 days before your appointment\n    b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment \n     c. Antibiotics for at least seven days before your appointment \n    d. If you are taking any other medications, please inform the physician \n"; ObjectID = "mlK-WS-92N"; */
+"mlK-WS-92N.text" = "ونود أن نعرب عن شكرنا وامتناننا لتعاونكم معنا من خلال تقديم لبنك الدم هدية ذات مغزى لجميع المرضى في المستشفيات الكويتية. لجعل تبرعك  قيماَ يرجى اتباع التعليمات التالية: 1- النوم 6-8 ساعات على الأقل قبل يوم التبرع  2- كن في صحة جيدة وتجنب بعض الأدوية مثل:  الأسبرين، أو المنتجات التي تحتوي على الأسبرين، لمدة 5 أيام على الأقل قبل الموعد المحدد.  الأدوية غير المسكنة - الستيرويدية، وأدوية التهابات مضاد (مثل ايبوبروفين) لمدة 48 ساعة قبل موعدك .   المضادات الحيوية لمدة سبعة أيام على الأقل قبل الموعد المحدد.  إذا كنت تأخذ أي أدوية أخرى، الرجاء إبلاغ الطبيب.";
+
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "mui-af-O6e"; */
 "mui-af-O6e.text" = "Label";
@@ -428,14 +442,14 @@
 /* Class = "UILabel"; text = "3 Lives"; ObjectID = "pzR-cW-F2e"; */
 "pzR-cW-F2e.text" = "حياة ٣ اشخاص";
 
+/* Class = "UILabel"; text = "Thank you for donating your blood today, which will help patients who are in desperate need to your blood."; ObjectID = "qa6-A7-Fs2"; */
+"qa6-A7-Fs2.text" =  "شكرا لتبرعك اليوم فبهذا تساعد من هم بحاجة ماسة الى دمك من المرضى وبما أننا نهتم بسلامتكم";
+
 /* Class = "UIButton"; normalTitle = "Exit"; ObjectID = "qbV-kV-z8Y"; */
 "qbV-kV-z8Y.normalTitle" = "الخروج";
 
 /* Class = "UILabel"; text = "Blood Type: "; ObjectID = "qm7-cf-zkE"; */
 "qm7-cf-zkE.text" = "فصيلة الدم";
-
-/* Class = "UITextView"; text = "What are the requirement to donate blood?"; ObjectID = "qus-Wh-Dar"; */
-"qus-Wh-Dar.text" = "من يستطيع أن تبرع بالدم؟ ";
 
 /* Class = "UILabel"; text = "Forget Your Password ?"; ObjectID = "qyH-gC-S7p"; */
 "qyH-gC-S7p.text" = "نسيت كلمة السر؟";
@@ -455,9 +469,6 @@
 /* Class = "UIBarButtonItem"; title = "Next"; ObjectID = "swR-dL-CAo"; */
 "swR-dL-CAo.title" = "التالي";
 
-/* Class = "UITextView"; text = "\n1- Whole Blood Donation: it takes about 10 minutes\n2- Double red blood cells donation: it takes about 45 minutes\n3- Platelets donation; donation 60 - 9- minutes depending on the height and eight of the donor, platelet count and Hematocrit level"; ObjectID = "tSv-gz-SsK"; */
-"tSv-gz-SsK.text" = "1- التبرع بالدم: يستغرق حوالي 10 دقيقة2- التبرع بخلايا الدم الحمراء: يستغرق حوالي 45 دقيقة3-     التبرع بالصفائح الدموية : التبرع يستغرق حوالي 60-90 دقيقة اعتمادا على الطول ووزن المتبرع وعددالصفائح الدموية";
-
 /* Class = "UIButton"; normalTitle = "العربية"; ObjectID = "tfz-Bg-TX5"; */
 "tfz-Bg-TX5.normalTitle" = "العربية";
 
@@ -466,9 +477,6 @@
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "uN5-sh-Ojf"; */
 "uN5-sh-Ojf.normalTitle" = "التالي";
-/* Class = "UITextView"; text = " 9-  If you experience dizziness or lightheadedness or feel like you are going to faint, sit  down with your head between your knees or lie down with your legs elevated as soon as possible to avoid a potential fall and/or injury. Remain in this position until the condition improves . If symptoms persist, return to the blood bank or seek medical advice.\n 10-  As a part of our routine procedure, the blood bank will test your donation to detect any blood transmitted infections.\n 11- In some instances when the infection is in its early phase (window period), our routine tests may fail to reveal the presence of such infection. Therefore, if you have any doubts about the safety of your blood, please call the Central Blood Bank at the at the number provided, as soon as possible and tell the physician in charge that you don’t want your donation to be used for transfusion without the need to explain or to give any reasons. All information provided by you will be confidential.\n    \n                  "; ObjectID = "udd-9R-8vP"; */
-"udd-9R-8vP.text" = "  إذا شعرت بدوار أو زغللة: اجلس مع وضع رأسك بين الركبتين أو استلقي فورا على سطح مستو مع رفع القدمين أعلى من مستوى الرأس أبقى على هذا الوضع حتى زوال الأعراض.  حرصا على سلامتك وسلامة المرضى الذين سوف ينقل لهم دمك سيقوم بنك الدم بفحص دمك للكشف عن الأمراض التي يمكن أن تنتقل عن طريق الدم.  أحيانا تعجز التحاليل المعملية عن اكتشاف المرض لو كانت الإصابة به مبكرة لذا فإن كان لديك شك بخصوص سلامة المرضى نرجو منك الاتصال ببنك الدم والتحدث مع الطبيب المختصر وابلاغه برقمك المدني واعلم انك لست مضطرا لذكر ايه اسباب وسيتم التعامل مع بياناتك بسرية تامة.";
-
 
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "vl8-kP-69z"; */
 "vl8-kP-69z.title" = "الرجوع";
@@ -479,20 +487,17 @@
 /* Class = "UILabel"; text = "End Date: "; ObjectID = "wBd-LR-gB9"; */
 "wBd-LR-gB9.text" = "النهاية ";
 
+/* Class = "UILabel"; text = "How do i need to prepare for the day of donation?"; ObjectID = "wib-V1-I5R"; */
+"wib-V1-I5R.text" = "كيف يمكنني التحضير ليوم التبرع؟";
+
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "wkf-OA-Gfm"; */
 "wkf-OA-Gfm.normalTitle" = "التالي";
-
-/* Class = "UITextView"; text = "1- healthy donors between the age of 17 - 70 years old \n2- Citizens or residents who have a valid residence\n3- the donor weight must be at least 50 kg"; ObjectID = "wrq-kS-QjL"; */
-"wrq-kS-QjL.text" = " المتبرعين الأصحاء الذين تتراوح أعمارهم بين 17-70 سنة من العمر.  المواطنين أو المقيمين الذين لديهم إقامة سارية المفعول.  يجب أن يكون وزن المتبرع ≤ 50 كيلو غرام ";
-
-/* Class = "UITextView"; text = "4- You should eat iron rich food for the next few days after donation.\n5- Do not smoke for the next two hours. \n6- Keep your bandage dry and in place for the next 4 hours. If bleeding occurs from vein puncture site, raise your arm above your head and apply moderate pressure to the bleeding site until it stops and replace bandage for additional 4 hours.\n"; ObjectID = "xbB-RR-Hy2"; */
-"xbB-RR-Hy2.text" = " يجب التركيز على الأطعمة الغنية بالحديد في الأيام التالية للتبرع.    إذا كنت مدخنا لا تدخن لمدة ساعتين بعد التبرع لأن استنشاق الدخان  يحفز الدم للذهاب إلى الرئتين مما يسبب حالة من الدوار والشحوب   احرص على إبقاء الضماد الطبي في مكان التبرع جافا لمدة أربع ساعات مع العلم بأنه ليس من المعتاد حدوث نزيف من مكان ولكن ان حدث ذلك فإنه يجب عليك رفع ذراعك بحيث يكون في مستوى أعلى من الرأس مع الضغط بشكل كاف على موضع النزف حتى يتوقف ثم قم باستبدال الضماد الطبي ولا تزيله الا بعد اربع ساعات.";
 
 /* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "xdf-HG-kwG"; */
 "xdf-HG-kwG.placeholder" = "الهاتف";
 
-/* Class = "UITextView"; text = "Blood donors are essential to the blood supply. Kuwait Blood Centers rely on donors like you to help save lives."; ObjectID = "xwZ-Kh-J5Q"; */
-"xwZ-Kh-J5Q.text" = "المتبرعون بالدم ضروريون لإمدادات الدم. تعتمد مراكز الدم في الكويت على المانحين مثلك للمساعدة في إنقاذ الأرواح.";
+/* Class = "UILabel"; text = "4- You should eat iron rich food for the next few days after donation.\n5- Do not smoke for the next two hours. \n6- Keep your bandage dry and in place for the next 4 hours. If bleeding occurs from vein puncture site, raise your arm above your head and apply moderate pressure to the bleeding site until it stops and replace bandage for additional 4 hours."; ObjectID = "xvH-7s-PZB"; */
+"xvH-7s-PZB.text" = " يجب التركيز على الأطعمة الغنية بالحديد في الأيام التالية للتبرع.    إذا كنت مدخنا لا تدخن لمدة ساعتين بعد التبرع لأن استنشاق الدخان  يحفز الدم للذهاب إلى الرئتين مما يسبب حالة من الدوار والشحوب   احرص على إبقاء الضماد الطبي في مكان التبرع جافا لمدة أربع ساعات مع العلم بأنه ليس من المعتاد حدوث نزيف من مكان ولكن ان حدث ذلك فإنه يجب عليك رفع ذراعك بحيث يكون في مستوى أعلى من الرأس مع الضغط بشكل كاف على موضع النزف حتى يتوقف ثم قم باستبدال الضماد الطبي ولا تزيله الا بعد اربع ساعات.";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "y53-rs-znr"; */
 "y53-rs-znr.text" = "Label";

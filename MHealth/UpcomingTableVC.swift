@@ -61,7 +61,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
             }
         }
         self.tableView.reloadData()
-        SwiftSpinner.hide()
+       // SwiftSpinner.hide()
     }
     
     
@@ -90,7 +90,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         
         let cell:CustomeUpcomingTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("upcoming") as! CustomeUpcomingTableViewCell
         if flag == true {
-            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+            //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
             cell.UpcomingTableView.text = "Upcoming Appointment"
             cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
             cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String

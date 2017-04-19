@@ -8,10 +8,11 @@
 import SwiftSpinner
 import UIKit
 import Whisper
+import HTYTextField
 class LoginViewController: UIViewController , NetworkCaller {
     var flag = 0
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: HTYTextField?
+    @IBOutlet weak var username: HTYTextField?
     
     @IBOutlet var register: UIButton!
     @IBOutlet var login: UIButton!
@@ -26,12 +27,12 @@ class LoginViewController: UIViewController , NetworkCaller {
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
             let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
-           SwiftSpinner.hide()
+           //SwiftSpinner.hide()
            
 
         }else{
             self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
-            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+            //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
 
         }
         
@@ -55,7 +56,7 @@ class LoginViewController: UIViewController , NetworkCaller {
         
         for Donor in resp {
             //print(Donor)
-            if Donor.valueForKey("email")! as! String == username.text! && Donor.valueForKey("password")! as! String == password.text! {
+            if Donor.valueForKey("email")! as? String == username?.text! && Donor.valueForKey("password")! as? String == password?.text! {
                 print(Donor)// big problem  validate the keys first before using it
                 donor.firstName = Donor.valueForKey("firstName")! as! String
                 donor.lastName = Donor.valueForKey("lastName")! as! String
@@ -82,14 +83,14 @@ class LoginViewController: UIViewController , NetworkCaller {
             
         }
         if flag == 0{
-        username.textColor = UIColor.redColor()
-        password.textColor = UIColor.redColor()
+        username!.textColor = UIColor.redColor()
+        password!.textColor = UIColor.redColor()
             let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Enter Correct Email or Password")
             
             self.presentViewController(alert, animated: true, completion: nil)
             login.enabled = true
             return
-            SwiftSpinner.hide()
+            //SwiftSpinner.hide()
             
         }
 
@@ -99,7 +100,11 @@ class LoginViewController: UIViewController , NetworkCaller {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   override func viewDidAppear(animated: Bool) {
+        username!.rightPlaceholder = "example@xyz.com"
+        password!.rightPlaceholder = "password"
     
+    }
 
     /*
     // MARK: - Navigation

@@ -9,9 +9,24 @@
 import UIKit
 import Whisper
 class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,NetworkCaller {
-
+var dateFormatter = NSDateFormatter()
     @IBOutlet var img: UIImageView!
+    @IBOutlet var DatePicker: UIDatePicker!
+    @IBOutlet var SelectedDate: UILabel!
     @IBOutlet var Logout: UIButton!
+    
+    @IBAction func PickerAction(sender: AnyObject) {
+        
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        var strDate = dateFormatter.stringFromDate(DatePicker.date)
+        self.SelectedDate.text = strDate
+        
+    }
+    
+    
+    
+    
+    
     @IBAction func Logout(sender: AnyObject) {
 
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -159,7 +174,7 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             Phone.userInteractionEnabled = true
             BloodTypeField.userInteractionEnabled = true
             NationalityField.userInteractionEnabled = true
-            BirthDate.userInteractionEnabled = true
+            SelectedDate.userInteractionEnabled = true
             if s.titleLabel?.text == "Edit"{
                 s.titleLabel?.text = "Save"
             }
@@ -183,7 +198,7 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             dit["phoneNumber"] = Phone.text
             dit["gender"] = donor.gender
             dit["bloodType"] = BloodTypeField.text
-            dit["birthDate"] = "2017-01-01T00:00:00Z"
+            dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)
             dit["donorId"] = donor.donorID
             dit["status"] = true
             
@@ -205,7 +220,7 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             Phone.userInteractionEnabled = false
             BloodTypeField.userInteractionEnabled = false
             NationalityField.userInteractionEnabled = false
-            BirthDate.userInteractionEnabled = false
+     //       BirthDate.userInteractionEnabled = false
             
 
             
@@ -217,8 +232,8 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             print(reqId)
         if(reqId == 0)
         {
-            print(resp.valueForKey("imgPath") as! String);
-        donor.img =  resp.valueForKey("imgPath") as! String
+      //      print(resp.valueForKey("imgPath") as! String);
+       // donor.img =  resp.valueForKey("imgPath") as! String
             let n:Networking = Networking()
             var dit = [String: AnyObject]()
             
@@ -231,9 +246,9 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
             dit["phoneNumber"] = donor.phoneNumber
             dit["gender"] = donor.gender
             dit["bloodType"] = donor.bloodtype
-            dit["birthDate"] = "2017-01-01T00:00:00Z"
+            dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)
             dit["donorId"] = donor.donorID
-          //  dit["imgURL"] = donor.img
+            dit["imgURL"] = ""
             dit["status"] = true
             
             
@@ -312,9 +327,9 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
         BloodTypeField.userInteractionEnabled = false
         NationalityField.text = donor.nationality
         NationalityField.userInteractionEnabled = false
-        BirthDate.text = donor.birthDate
-        BirthDate.userInteractionEnabled = false
-        loadImageFromUrl(donor.img, view: img)
+        SelectedDate.text = donor.birthDate
+        SelectedDate.userInteractionEnabled = false
+        //loadImageFromUrl(donor.img, view: img)
         
         
    
