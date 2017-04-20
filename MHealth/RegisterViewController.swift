@@ -19,6 +19,7 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dateFormatter.dateFormat = "dd-MM-yyyy"
         var strDate = dateFormatter.stringFromDate(DatePicker.date)
         self.selectedDate.text = strDate
+        print(strDate)
     }
     @IBOutlet var PickerAction: UIDatePicker!
     @IBOutlet var DatePicker: UIDatePicker!
@@ -84,7 +85,10 @@ class RegisterViewController: UIViewController , NetworkCaller {
         dit["phoneNumber"] = phone!.text
         dit["gender"] = String(gender.selectedSegmentIndex)
         dit["bloodType"] = bloodType!.text
-        dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)+"T00:00:00Z"
+        dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)
+        dit["imgURL"] = " "
+        dit["status"] = true
+        dit["deleted"] = false
         
         if !Validator().ValidateCivil(Civil!) {
             let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
@@ -122,11 +126,13 @@ class RegisterViewController: UIViewController , NetworkCaller {
             
         }else{
          let n:Networking = Networking()
-        n.AMJSONDictionary("http://34.196.107.188:8080/mHealthWS/ws/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+            print(dit)
+        n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
         }
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
-        
+        print("resp:")
+        print(resp)
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {

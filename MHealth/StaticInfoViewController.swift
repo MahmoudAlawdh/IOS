@@ -50,7 +50,24 @@ class StaticInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        var mainColor: UIColor = UIColor ( red: CGFloat(191/255.0), green: CGFloat(32/255.0), blue: CGFloat(47/255.0), alpha: CGFloat(1.0))
+        DonProcess.layer.borderWidth = 2.0
+        DonProcess.layer.masksToBounds = true
+        DonProcess.layer.borderColor = mainColor.CGColor
+        
+        
+        AfterDon.layer.borderWidth = 2.0
+        AfterDon.layer.masksToBounds = true
+        AfterDon.layer.borderColor = mainColor.CGColor
+        
+        BeforDon.layer.borderWidth = 2.0
+        BeforDon.layer.masksToBounds = true
+        BeforDon.layer.borderColor = mainColor.CGColor
+        
+        CanDon.layer.borderWidth = 2.0
+        CanDon.layer.masksToBounds = true
+        CanDon.layer.borderColor = mainColor.CGColor
+
     }
     
     override func didReceiveMemoryWarning() {
