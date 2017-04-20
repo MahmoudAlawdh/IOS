@@ -1690,7 +1690,7 @@ FOR APHERESIS PLATELETS DONORS</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mlK-WS-92N">
                                 <rect key="frame" x="6" y="218" width="363" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
+                                <string key="text">We would like to express our thanks and gratitude for your cooperation with us by offering the blood bank this meaningful gift to all patients in Kuwait Hospitals. To make your donation valuable for transfusion please follow these instructions:
 
 1- Sleep at least 6 hours on the day before donation.
 2- Be in good health and avoid certain medications such as:
@@ -1698,7 +1698,7 @@ FOR APHERESIS PLATELETS DONORS</string>
     b. Analgesic non - Steroidal, Anti- Inflammatory medications ( such as Ibuprofen ) for 48 hours before your appointment 
      c. Antibiotics for at least seven days before your appointment 
     d. If you are taking any other medications, please inform the physician 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1755,13 +1755,13 @@ FOR APHERESIS PLATELETS DONORS</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="crE-Ho-MjU">
                                 <rect key="frame" x="9" y="118" width="357" height="507"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">3- Drink plenty of fluids three to four hours before donating platelets.
+                                <string key="text">3- Drink plenty of fluids three to four hours before donating platelets.
 4- Eat healthy light food (fat free), like fruits and vegetables, and do not skip a meal on the day before donation. 
 5- On the day of donation, your breakfast shall include: Toast, Jam and Honey, Biscuits without cream. 
 6- We also suggest that you increase your consumption of Calcium-rich foods (dairy products) or take a Calcium supplement the evening before your donation and also and also the morning of your donation .
 7- Wear comfortable clothes with sleeves that can be easily rolled up above the elbow.
 8- Apheresis Donation procedure usually takes 60 - 90 minutes, so please go to toilet just before starting donation to avoid interruption of the procedure 9- Refrain from smoking for at least 30 minutes before donation
-10- Bring your Civil ID with you on the day of the donation</mutableString>
+10- Bring your Civil ID with you on the day of the donation</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1874,10 +1874,10 @@ Thank you for donating your blood today, which will help patients who are in des
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eac-An-2Eq">
                                 <rect key="frame" x="13" y="208" width="355" height="386"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Are we care about your health, we advise you to read and follow these instructions.
+                                <string key="text">Are we care about your health, we advise you to read and follow these instructions.
 1. Keep laying on donation chair for 5 minutes then stand up slowly, and don’t leave the donation area before being released by your attending nurse.
 2. You are welcomed in our refreshment area. The resting period of 15 minutes after blood donation is actually the time to observe you for any possible donor juice before reactions. 
-3. Drink your juice before leaving. It is important to drink extra fluids in the first 4 hours following donation. Increase fluid intake for the next 3 days to help you restore your body fluid. </mutableString>
+3. Drink your juice before leaving. It is important to drink extra fluids in the first 4 hours following donation. Increase fluid intake for the next 3 days to help you restore your body fluid. </string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2063,11 +2063,11 @@ Thank you for donating your blood today, which will help patients who are in des
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M3g-Ha-p0G">
                                 <rect key="frame" x="8" y="32" width="359" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">12- As part of the blood bank responsibilities is to ensure the safety and efficiency of your donation, please contact Central Blood Bank if: 
+                                <string key="text">12- As part of the blood bank responsibilities is to ensure the safety and efficiency of your donation, please contact Central Blood Bank if: 
  - You get bruising larger than 5 cm in diameter, redness, swelling or pain in the vein puncture site.  
 Tingling in your fingers or arms.
  - You have an injury or a complication related to your donation. 
- - You have fever or feeling unwell within two days of your donation.  - You have any doubt about your donation or if you remember something that may affect the safety of blood you donated.</mutableString>
+ - You have fever or feeling unwell within two days of your donation.  - You have any doubt about your donation or if you remember something that may affect the safety of blood you donated.</string>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2903,7 +2903,7 @@ National Guard Blood Bank branch</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="287" id="XtW-Gi-32b" customClass="CustomTVC" customModule="MHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="287"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="287"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XtW-Gi-32b" id="3hb-Jh-fh1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
