@@ -9,15 +9,24 @@
 import UIKit
 
 class StaticInfoViewController: UIViewController {
+    @IBOutlet var videos: UIButton!
     
-
+    @IBOutlet var videoButton: UIButton!
+   
     @IBOutlet var DonProcess: UIButton!
+    @IBAction func VideoAction(sender: AnyObject) {
+        let c:UINavigationController = (self.storyboard?.instantiateViewControllerWithIdentifier("V")) as! UINavigationController
+        
+        self.presentViewController(c, animated: false, completion: nil)
+        
+    }
     
     @IBOutlet var CanDon: UIButton!
     
     @IBOutlet var BeforDon: UIButton!
     
     @IBOutlet var AfterDon: UIButton!
+  
     
 
     @IBAction func DonationProcess(sender: AnyObject) {
@@ -67,12 +76,18 @@ class StaticInfoViewController: UIViewController {
         CanDon.layer.borderWidth = 2.0
         CanDon.layer.masksToBounds = true
         CanDon.layer.borderColor = mainColor.CGColor
-
+        
+        
+        videoButton.layer.borderWidth = 2.0
+        videoButton.layer.masksToBounds = true
+        videoButton.layer.borderColor = mainColor.CGColor
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
     
 

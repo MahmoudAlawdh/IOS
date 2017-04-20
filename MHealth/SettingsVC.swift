@@ -17,11 +17,50 @@ class SettingsVC: UIViewController {
         userDefaults.valueForKey("lang")
         
         
+        //send alert to exit app
+        let alertControlle:UIAlertController = UIAlertController(title: NSLocalizedString("Note", comment: ""), message: NSLocalizedString("To Apply Changes must restart the app", comment: ""), preferredStyle: .Alert)
+        
+        let action:UIAlertAction =  UIAlertAction(title: "Later", style: .Cancel, handler: { (UIAlertAction) in
+            //                let loginVC:LoginVC = self.storyboard?.instantiateViewControllerWithIdentifier("LoginController") as! LoginVC
+            //                self.navigationController?.pushViewController(loginVC, animated: true)
+            self.navigationController?.popViewControllerAnimated(true)
+            
+        })
+        
+        let actionExit:UIAlertAction =  UIAlertAction(title: "Exit Now", style: .Destructive, handler: { (UIAlertAction) in
+            exit(0)
+        })
+        
+        alertControlle.addAction(action)
+        alertControlle.addAction(actionExit)
+        self.presentViewController(alertControlle, animated: true, completion: nil)
+        
     }
+    
+    
     @IBAction func EnglishButton(sender: AnyObject) {
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setValue("en", forKey: "lang")
+        
+        //send alert to exit app
+        let alertControlle:UIAlertController = UIAlertController(title: NSLocalizedString("Note", comment: ""), message: NSLocalizedString("To Apply Changes must restart the app", comment: ""), preferredStyle: .Alert)
+        
+        let action:UIAlertAction =  UIAlertAction(title: "Later", style: .Cancel, handler: { (UIAlertAction) in
+            //                let loginVC:LoginVC = self.storyboard?.instantiateViewControllerWithIdentifier("LoginController") as! LoginVC
+            //                self.navigationController?.pushViewController(loginVC, animated: true)
+            self.navigationController?.popViewControllerAnimated(true)
+            
+        })
+        
+        let actionExit:UIAlertAction =  UIAlertAction(title: "Exit Now", style: .Destructive, handler: { (UIAlertAction) in
+            exit(0)
+        })
+        
+        alertControlle.addAction(action)
+        alertControlle.addAction(actionExit)
+        self.presentViewController(alertControlle, animated: true, completion: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
