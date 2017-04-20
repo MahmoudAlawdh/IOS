@@ -9,7 +9,7 @@
 import UIKit
 import Whisper
 import HTYTextField
-class FogetPassViewController: UIViewController , NetworkCaller{
+class FogetPassViewController: UIViewController , NetworkCaller, UITextFieldDelegate{
     
 //    
 //    let successMessage = “Email message was sent to you at ”
@@ -79,14 +79,22 @@ func setDictResponse(resp: NSDictionary, reqId: Int) {
 }
 
 
-
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     @IBOutlet var confirm: UIButton!
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        email?.delegate = self
+        
+        CivilID?.delegate = self
        
     }
 

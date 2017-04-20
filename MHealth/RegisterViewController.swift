@@ -10,7 +10,7 @@ import UIKit
 import Whisper
 import HTYTextField
 
-class RegisterViewController: UIViewController , NetworkCaller {
+class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var dateFormatter = NSDateFormatter()
     var flag = 0
     
@@ -140,6 +140,19 @@ class RegisterViewController: UIViewController , NetworkCaller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ID?.delegate = self
+        firstname?.delegate = self
+        
+        lastname?.delegate = self
+        nationality?.delegate = self
+        
+        Email?.delegate = self
+        
+        password?.delegate = self
+        
+        phone?.delegate = self
+        
+        bloodType?.delegate = self
         
     }
     override func viewDidAppear(animated: Bool) {
@@ -153,6 +166,14 @@ class RegisterViewController: UIViewController , NetworkCaller {
         bloodType!.rightPlaceholder = "Blood Type"
         phone!.rightPlaceholder = "Phone Number"
         
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {

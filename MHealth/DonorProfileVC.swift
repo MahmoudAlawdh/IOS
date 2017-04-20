@@ -8,7 +8,7 @@
 
 import UIKit
 import Whisper
-class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,NetworkCaller {
+class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePickerControllerDelegate,NetworkCaller , UITextFieldDelegate{
 var dateFormatter = NSDateFormatter()
     @IBOutlet var img: UIImageView!
     @IBOutlet var DatePicker: UIDatePicker!
@@ -25,7 +25,13 @@ var dateFormatter = NSDateFormatter()
     
     
     
-    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func Logout(sender: AnyObject) {
 
@@ -40,7 +46,6 @@ var dateFormatter = NSDateFormatter()
     @IBOutlet var Phone: UITextField!
     @IBOutlet var BloodTypeField: UITextField!
     @IBOutlet var NationalityField: UITextField!
-    @IBOutlet var BirthDate: UITextField!    
     
     @IBOutlet var UpdateImage: UIButton!
     
@@ -313,6 +318,16 @@ var dateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NameField.delegate = self
+        LNameField.delegate = self
+        EmailField.delegate = self
+        passwordField.delegate = self
+        Phone.delegate = self
+        BloodTypeField.delegate = self
+        NationalityField.delegate = self
+        
+        
         NameField.text = donor.firstName
         NameField.userInteractionEnabled = false
         LNameField.text = donor.lastName

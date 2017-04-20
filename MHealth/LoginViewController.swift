@@ -9,7 +9,7 @@ import SwiftSpinner
 import UIKit
 import Whisper
 import HTYTextField
-class LoginViewController: UIViewController , NetworkCaller {
+class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var flag = 0
     @IBOutlet weak var password: HTYTextField?
     @IBOutlet weak var username: HTYTextField?
@@ -42,8 +42,18 @@ class LoginViewController: UIViewController , NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        password?.delegate = self
+        username?.delegate = self
+        
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
         
