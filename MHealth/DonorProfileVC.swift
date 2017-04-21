@@ -15,6 +15,10 @@ var dateFormatter = NSDateFormatter()
     @IBOutlet var SelectedDate: UILabel!
     @IBOutlet var Logout: UIButton!
     
+    
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+
+    
     @IBAction func PickerAction(sender: AnyObject) {
         
         dateFormatter.dateFormat = "dd-MM-yyyy"
@@ -106,41 +110,10 @@ var dateFormatter = NSDateFormatter()
             Silent(self.navigationController!, after: 3.0)
         }else{
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
             let params:[String:AnyObject] = ["appID": "donor" , "imgData": strBase64]
             let networkManager: Networking = Networking()
 
             networkManager.AMPostDictData("http://34.196.107.188:8081/MhealthWeb/addimg", params: params, reqId: 0, caller: self)
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
         }
@@ -259,7 +232,7 @@ var dateFormatter = NSDateFormatter()
             
             let reach = Reach()
             if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
                 Whisper(message, to: self.navigationController!,action:.Show)
                 
             }else{

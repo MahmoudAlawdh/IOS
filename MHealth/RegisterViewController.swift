@@ -13,6 +13,9 @@ import HTYTextField
 class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var dateFormatter = NSDateFormatter()
     var flag = 0
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+    var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
+    
     
     @IBAction func PickerAction(sender: AnyObject) {
        
@@ -70,9 +73,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         let donorEmail = Email!.text
         let Civil = ID!.text
         
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
-        Whisper(message, to: self.navigationController!,action:.Show)
-       
+    
 
         
         var dit = [String: AnyObject]()
@@ -90,25 +91,23 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["status"] = true
         dit["deleted"] = false
         
-        if !Validator().ValidateCivil(Civil!) {
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            regs.enabled = true
-            return
-
-        }
-        if !Validator().ValidateEmail(donorEmail!) || firstname!.text == nil || firstname!.text == "" || ID!.text == nil || ID!.text == "" || password!.text == nil || password!.text == ""   {
+      
+        if !Validator().ValidateEmail(donorEmail!) || firstname!.text == nil || firstname!.text == "" || ID!.text == nil || ID!.text == "" || password!.text == nil || password!.text == "" || !Validator().ValidateCivil(Civil!)   {
             
             flag = 1
             
             //lblMsg.text = "All fields are required."
-            
+         
         } else {
             flag = 0
-            
-        }
+         
+            let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+            Whisper(message, to: self.navigationController!,action:.Show)
+               
 
+        }
+        
+      
         
         if flag == 1{
             let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
@@ -121,7 +120,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{

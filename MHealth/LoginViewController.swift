@@ -18,19 +18,28 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
     @IBOutlet var login: UIButton!
     
     @IBOutlet var forgetpassword: UIButton!
-    
+     var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
    
-    
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+
     
     @IBAction func donorLogin(sender: AnyObject) {
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor:mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
            //SwiftSpinner.hide()
            
 
         }else{
+            
+            let message = Message(title: "Connected", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+            Whisper(message, to: self.navigationController!, action: .Show)
+            Silent(self.navigationController!, after: 3.0)
+            SwiftSpinner.show("loading..").addTapHandler({
+                SwiftSpinner.hide()
+                }, subtitle: "Tap to hide while connecting! Click here please ")
+             
             self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
             //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
 
@@ -56,7 +65,7 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
-        
+       
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
@@ -100,7 +109,7 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
             self.presentViewController(alert, animated: true, completion: nil)
             login.enabled = true
             return
-            //SwiftSpinner.hide()
+            SwiftSpinner.hide()
             
         }
 
@@ -113,7 +122,7 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
    override func viewDidAppear(animated: Bool) {
         username!.rightPlaceholder = "example@xyz.com"
         password!.rightPlaceholder = "password"
-    
+        SwiftSpinner.hide()
     }
 
     /*

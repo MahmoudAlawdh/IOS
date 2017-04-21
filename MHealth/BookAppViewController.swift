@@ -23,6 +23,11 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBOutlet var T: UIButton!
     @IBOutlet var Donationlabel: UILabel!
     
+    
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+
+     var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
+    
     let DonationTypeData = ["RBCS","Blood Cells"]
     let day:NSMutableArray = NSMutableArray()
     let time = ["8 AM - 10 AM","10 AM - 12 PM","12 PM - 2 PM","2 PM - 4 PM"]
@@ -35,7 +40,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBAction func Confirm(sender: AnyObject) {
         let n:Networking = Networking()
         var dit = [String: AnyObject]()
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
+        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
         Whisper(message, to: self.navigationController!,action:.Show)
         if UserDonation == "Blood Cells"{
         dit["day"] = UserDay.Days+"T00:00:00Z"
@@ -50,7 +55,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
@@ -67,7 +72,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             
             let reach = Reach()
             if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor , images: nil)
                 Whisper(message, to: self.navigationController!,action:.Show)
                 
             }else{
@@ -183,7 +188,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         let n:Networking = Networking()
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
