@@ -9,6 +9,7 @@
 import UIKit
 import Whisper
 import HTYTextField
+import SwiftSpinner
 
 class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var dateFormatter = NSDateFormatter()
@@ -17,32 +18,32 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
     var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
     
     
-    @IBAction func PickerAction(sender: AnyObject) {
-       
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        var strDate = dateFormatter.stringFromDate(DatePicker.date)
-        self.selectedDate.text = strDate
-        print(strDate)
-    }
+//    @IBAction func PickerAction(sender: AnyObject) {
+//       
+//        //dateFormatter.dateFormat = "dd-MM-yyyy"
+//        //var strDate = dateFormatter.stringFromDate(DatePicker.date)
+//        //self.selectedDate.text = strDate
+//       // print(strDate)
+//    }
     @IBOutlet var PickerAction: UIDatePicker!
     @IBOutlet var DatePicker: UIDatePicker!
-    
-    @IBOutlet var selectedDate: UILabel!
-    @IBOutlet var civilID: UILabel!
-    
-    @IBOutlet var first: UILabel!
-    
-    @IBOutlet var last: UILabel!
-    
-    @IBOutlet var nation: UILabel!
-    
-    @IBOutlet var emaill: UILabel!
-    
-    @IBOutlet var pass: UILabel!
-    
-    @IBOutlet var phonNUm: UILabel!
-    
-    @IBOutlet var bloodT: UILabel!
+//    
+//    @IBOutlet var selectedDate: UILabel!
+//    @IBOutlet var civilID: UILabel!
+//    
+//    @IBOutlet var first: UILabel!
+//    
+//    @IBOutlet var last: UILabel!
+//    
+//    @IBOutlet var nation: UILabel!
+//    
+//    @IBOutlet var emaill: UILabel!
+//    
+//    @IBOutlet var pass: UILabel!
+//    
+//    @IBOutlet var phonNUm: UILabel!
+//    
+//    @IBOutlet var bloodT: UILabel!
     
     @IBOutlet weak var ID: HTYTextField?
     @IBOutlet weak var firstname: HTYTextField?
@@ -62,9 +63,15 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
     
    
 
-    @IBOutlet var gg: UILabel!
+//    @IBOutlet var gg: UILabel!
     
     
+    @IBAction func PickerAction(sender: UIDatePicker) {
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+                var strDate = dateFormatter.stringFromDate(DatePicker.date)
+                //self.selectedDate.text = strDate
+                print("\(strDate)T00:00:00Z" )
+    }
     
     @IBOutlet var gender: UISegmentedControl!
     
@@ -75,7 +82,6 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         
     
 
-        
         var dit = [String: AnyObject]()
         dit["civilId"] = ID!.text
         dit["firstName"] = firstname!.text
@@ -84,9 +90,20 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["nationality"] = nationality!.text
         dit["email"] = Email!.text
         dit["phoneNumber"] = phone!.text
-        dit["gender"] = String(gender.selectedSegmentIndex)
-        dit["bloodType"] = bloodType!.text
-        dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)
+        
+        if gender.selectedSegmentIndex == 0 {
+            dit["gender"] = "m"
+        }else{
+            dit["gender"] = "f"
+        }
+        
+        dit["bloodType"] = strBloodType
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        var strDate = dateFormatter.stringFromDate(DatePicker.date)
+        strDate = "\(strDate)T00:00:00Z"
+        
+        dit["birthDate"] = strDate
         dit["imgURL"] = " "
         dit["status"] = true
         dit["deleted"] = false
@@ -109,13 +126,6 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         
       
         
-        if flag == 1{
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            regs.enabled = true
-            return
-        }
         
         
         let reach = Reach()
@@ -124,14 +134,48 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
+            SwiftSpinner.show(NSLocalizedString("Connecting...", comment: ""))
+
          let n:Networking = Networking()
+            print("request register")
             print(dit)
         n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
         }
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
+       SwiftSpinner.hide()
+        
         print("resp:")
         print(resp)
+
+        
+        if (resp.valueForKey("errorMsgEn") != nil) {
+            let errorCode:Int = resp.valueForKey("errorCode") as! Int
+            let result:String = resp.valueForKey("errorMsgEn") as! String
+            
+            if errorCode == 406 {
+                let alert:UIAlertController = Alert().showeAlert("Error", msg: "Email already used")
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else if result == "Accepted"{
+            
+                let alertControlle:UIAlertController = UIAlertController(title: "Confirm", message: "Regirstration is successful. Thank you", preferredStyle: .Alert)
+                
+                //UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                let action:UIAlertAction =  UIAlertAction(title: "OK", style: .Cancel, handler: { (UIAlertAction) in
+                    self.navigationController?.popViewControllerAnimated(true)
+                })
+                alertControlle.addAction(action)
+                self.presentViewController(alertControlle, animated: true, completion: nil)
+            }else{
+              
+                let alert:UIAlertController = Alert().showeAlert("Error", msg: "Can't register right now")
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }else{
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Connection Failed")
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
@@ -152,6 +196,8 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         phone?.delegate = self
         
         bloodType?.delegate = self
+        
+        DatePicker.maximumDate = NSDate()
         
     }
     override func viewDidAppear(animated: Bool) {
