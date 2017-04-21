@@ -7,4 +7,5 @@ pod 'VideoSplashKit'
 pod 'Whisper', '~> 2.0'
 pod 'SwiftSpinner', '~> 0.6'
 pod 'HTYTextField'
+pod 'SDWebImage', '~>3.8'
 end

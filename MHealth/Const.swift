@@ -11,12 +11,18 @@ import UIKit
 class Const: NSObject {
 
     struct URLs {
-        static let BASE:String = "http://34.196.107.188:8080/mHealthWS/ws"
-        static let donar:String = BASE + "/donor"
-        static let EditStatus:String = BASE + "/newdonationrecord/editStatus"
-        static let BBAdmin:String = BASE + "/bbadmin"
+        //static let BASE:String = "http://34.196.107.188:8080/mHealthWS/ws"
+        static let BASE:String = "http://34.196.107.188:8081/MhealthWeb/webresources/"
+       
+        static let donar:String = BASE + "donor"
+        static let EditStatus:String = BASE + "newdonationrecord/editStatus"
+        static let BBAdmin:String = BASE + "bbadmin"
 
-        static let donationRecord:String = BASE + "/newdonationrecord"
+        static let donationRecord:String = BASE + "newdonationrecord"
+        
+        static let login:String = Const.URLs.donar + "/login"
+        static let UploadImage:String = "http://34.196.107.188:8081/MhealthWeb/addimgtogallery"
+
     }
     
     struct Files {
@@ -25,6 +31,6 @@ class Const: NSObject {
     
     struct UserDefaultsKeys {
         static let langKey = "lang"
-        
+        static let donorProfile = "donorProfile"
     }
 }
