@@ -24,6 +24,43 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
 
     
     @IBAction func donorLogin(sender: AnyObject) {
+        
+        let email:String = self.username!.text!
+        let password:String = self.password!.text!
+        
+        let valid:Validator = Validator()
+        
+        
+        if !valid.ValidateEmail(email) {
+            
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please enter a valid e-mail")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+
+            return
+        }
+        if password == "" {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please enter a password")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        
+        if password.characters.count < 8 {
+      
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "password must be more than 8 characters")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+            
+        }
+        let values:[String:AnyObject] = ["username":email, "password":password]
+        
+        
+        
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
             let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor:mainColor, images: nil)
@@ -32,17 +69,12 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
            
 
         }else{
-            
-            let message = Message(title: "Connected", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
-            Whisper(message, to: self.navigationController!, action: .Show)
-            Silent(self.navigationController!, after: 3.0)
-            SwiftSpinner.show("loading..").addTapHandler({
-                SwiftSpinner.hide()
-                }, subtitle: "Tap to hide while connecting! Click here please ")
-             
-            self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
-            //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+           // self.networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donor", params: [:], reqId: 0, caller: self)
 
+            print("request")
+            print(values)
+            self.networkManager.AMJSONDictionary(Const.URLs.login, httpMethod: "POST", jsonData: values, reqId: 1, caller: self)
         }
         
     }
@@ -65,14 +97,61 @@ class LoginViewController: UIViewController , NetworkCaller, UITextFieldDelegate
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
-       
+        SwiftSpinner.hide()
+        
+        print("Login:")
+        print(resp)
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: Const.UserDefaultsKeys.donorProfile)
+        if (resp.valueForKey("errorMsgEn") == nil){
+          
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Connection to server Error")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+            //alert
+        }
+        
+        let responseMessage:String = resp.valueForKey("errorMsgEn") as! String
+        
+        if responseMessage != "Done" {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Invalid email or password")
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+        
+        
+        let donorProfile:NSDictionary = resp.valueForKey("items") as! NSDictionary
+        
+        NSUserDefaults.standardUserDefaults().setObject(donorProfile, forKey: Const.UserDefaultsKeys.donorProfile)
+        
+        donor.firstName = donorProfile.valueForKey("firstName")! as! String
+        donor.lastName = donorProfile.valueForKey("lastName")! as! String
+        donor.birthDate = donorProfile.valueForKey("birthDate")! as! String
+        donor.bloodtype = donorProfile.valueForKey("bloodType")! as! String
+        donor.civilID = donorProfile.valueForKey("civilId")! as! String
+        donor.donorID = donorProfile.valueForKey("donorId")! as! Int
+        donor.email = donorProfile.valueForKey("email")! as! String
+        donor.gender = donorProfile.valueForKey("gender")! as! String
+        donor.nationality = donorProfile.valueForKey("nationality")! as! String
+        donor.password = donorProfile.valueForKey("password")! as! String
+        donor.phoneNumber = donorProfile.valueForKey("phoneNumber")! as! String
+        donor.state = donorProfile.valueForKey("status")! as! Int
+        if donorProfile.valueForKey("imgURL") != nil {
+            donor.img = donorProfile.valueForKey("imgURL") as! String
+        }
+        
+        let c:UITabBarController = (self.storyboard?.instantiateViewControllerWithIdentifier("home")) as! UITabBarController
+        self.presentViewController(c, animated: false, completion: nil)
+
+
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
         
-        
-        
-        
+        SwiftSpinner.hide()
+
         for Donor in resp {
             //print(Donor)
             if Donor.valueForKey("email")! as? String == username?.text! && Donor.valueForKey("password")! as? String == password?.text! {

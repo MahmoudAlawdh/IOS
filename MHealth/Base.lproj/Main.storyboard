@@ -559,7 +559,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="upcoming" rowHeight="120" id="KCg-DG-TPj" customClass="CustomeUpcomingTableViewCell" customModule="MHealth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCg-DG-TPj" id="h24-Oe-CGS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
@@ -636,7 +636,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="previous" editingAccessoryType="detailButton" id="Zfd-Ep-Stg">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfd-Ep-Stg" id="eGk-Xk-5N0">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
@@ -835,7 +835,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Campaigns" editingAccessoryType="detailButton" rowHeight="49" id="UBE-Eo-NS3" customClass="CustomeCampaigns" customModule="MHealth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBE-Eo-NS3" id="Icz-bM-fkn">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="48"/>
@@ -2469,7 +2469,7 @@ National Guard Blood Bank branch</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@xyz.com" clearsOnBeginEditing="YES" minimumFontSize="17" id="ppO-Ts-hGa" customClass="HTYTextField" customModule="HTYTextField">
+                            <textField opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@xyz.com" minimumFontSize="17" id="ppO-Ts-hGa" customClass="HTYTextField" customModule="HTYTextField">
                                 <rect key="frame" x="53" y="336" width="313" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
