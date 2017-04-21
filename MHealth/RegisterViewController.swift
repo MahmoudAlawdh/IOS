@@ -97,7 +97,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
             dit["gender"] = "f"
         }
         
-        dit["bloodType"] = strBloodType
+        dit["bloodType"] = bloodType!.text
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
         var strDate = dateFormatter.stringFromDate(DatePicker.date)
@@ -108,21 +108,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["status"] = true
         dit["deleted"] = false
         
-      
-        if !Validator().ValidateEmail(donorEmail!) || firstname!.text == nil || firstname!.text == "" || ID!.text == nil || ID!.text == "" || password!.text == nil || password!.text == "" || !Validator().ValidateCivil(Civil!)   {
-            
-            flag = 1
-            
-            //lblMsg.text = "All fields are required."
-         
-        } else {
-            flag = 0
-         
-            let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
-            Whisper(message, to: self.navigationController!,action:.Show)
-               
-
-        }
+     
         
       
         
