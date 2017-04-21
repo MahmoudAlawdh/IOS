@@ -222,7 +222,7 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
                 SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
                 s.setTitle("Edit", forState: .Normal)
                 
-                networkManagr.AMJSONDictionary(Const.URLs.donar + "\(donor.donorID)", httpMethod: "PUT", jsonData: updatedProfile!, reqId: 0, caller: self)
+                networkManagr.AMJSONDictionary(Const.URLs.donar + "/\(donor.donorID)", httpMethod: "PUT", jsonData: updatedProfile!, reqId: 0, caller: self)
             }
         }
         
