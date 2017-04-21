@@ -10,11 +10,13 @@
             <objects>
                 <tabBarController storyboardIdentifier="home" id="kse-Ae-fwn" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RT5-Yq-WEQ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="IXb-4F-KsY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="LmI-C5-Pfy" kind="relationship" relationship="viewControllers" id="8N4-tB-2X2"/>
@@ -35,7 +37,7 @@
         <scene sceneID="oEJ-KE-O68">
             <objects>
                 <navigationController id="LmI-C5-Pfy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Book " image="hand-holding-up-a-clock" id="NPf-ZA-pxf"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Book " image="hand-holding-up-a-clock" id="NPf-ZA-pxf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZJ-0y-QJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -427,7 +429,7 @@
                                 <rect key="frame" x="28" y="302" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diabetes-50" id="DYo-f1-xqm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Water-50" id="DYo-f1-xqm">
                                 <rect key="frame" x="30" y="338" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -832,7 +834,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Campaigns" rowHeight="49" id="UBE-Eo-NS3" customClass="CustomeCampaigns" customModule="MHealth" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Campaigns" editingAccessoryType="detailButton" rowHeight="49" id="UBE-Eo-NS3" customClass="CustomeCampaigns" customModule="MHealth" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBE-Eo-NS3" id="Icz-bM-fkn">
@@ -1291,7 +1293,7 @@
         <scene sceneID="p3T-dv-goQ">
             <objects>
                 <navigationController id="l8K-tz-Y3W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="information-button" id="IeE-Kc-IlR"/>
+                    <tabBarItem key="tabBarItem" title="Help" image="Help-25" selectedImage="Help-25" id="IeE-Kc-IlR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTI-YA-lrP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3138,10 +3140,10 @@ National Guard Blood Bank branch</string>
         <image name="Blood-Donation-Blood-Bag-Blood-Drive.jpg.600x315_q80_crop-smart" width="600" height="315"/>
         <image name="Blood_Bank" width="385" height="237"/>
         <image name="Create New-64" width="64" height="64"/>
-        <image name="Diabetes-50" width="50" height="50"/>
         <image name="Gender Neutral User-50" width="50" height="50"/>
         <image name="Gender-50" width="50" height="50"/>
         <image name="Geography-50" width="50" height="50"/>
+        <image name="Help-25" width="25" height="25"/>
         <image name="ID Card-50" width="50" height="50"/>
         <image name="Marker-50" width="50" height="50"/>
         <image name="Message" width="50" height="50"/>
@@ -3160,7 +3162,6 @@ National Guard Blood Bank branch</string>
         <image name="blood-transfusion" width="32" height="32"/>
         <image name="bloodprocessing3.0531" width="725" height="498"/>
         <image name="hand-holding-up-a-clock" width="32" height="32"/>
-        <image name="information-button" width="32" height="32"/>
         <image name="line-png-32" width="500" height="200"/>
         <image name="settings" width="32" height="32"/>
         <image name="share (1)" width="24" height="24"/>

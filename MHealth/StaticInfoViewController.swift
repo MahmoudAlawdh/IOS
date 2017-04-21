@@ -59,6 +59,7 @@ class StaticInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         var mainColor: UIColor = UIColor ( red: CGFloat(191/255.0), green: CGFloat(32/255.0), blue: CGFloat(47/255.0), alpha: CGFloat(1.0))
         DonProcess.layer.borderWidth = 2.0
         DonProcess.layer.masksToBounds = true

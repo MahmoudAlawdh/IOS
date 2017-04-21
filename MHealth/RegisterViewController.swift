@@ -13,6 +13,10 @@ import SwiftSpinner
 
 class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var dateFormatter = NSDateFormatter()
+    var flag = 0
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+    var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
+    
     
 //    @IBAction func PickerAction(sender: AnyObject) {
 //       
@@ -76,43 +80,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         let donorEmail = Email!.text
         let Civil = ID!.text
         
-        if !Validator().ValidateCivil(Civil!) {
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            return
-            
-        }else if !Validator().ValidateEmail(donorEmail!) {
-            
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Enter a valid email")
-            self.presentViewController(alert, animated: true, completion: nil)
-            return
-            
-        }else if password!.text!.characters.count < 8 {
-            
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "password must be more than 8 characters")
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-            return
-        }else if firstname!.text == "" || ID!.text == "" ||  password!.text == "" || lastname?.text == "" || nationality?.text == "" || phone?.text == "" {
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
-            self.presentViewController(alert, animated: true, completion: nil)
-            return
-        }
     
-        var strBloodType:String = (bloodType?.text)!
-        strBloodType = strBloodType.uppercaseString
-        print(strBloodType)
-        if strBloodType != "A+" && strBloodType != "A-" && strBloodType != "B+" && strBloodType != "B-" && strBloodType  != "O+" && strBloodType != "O-" && strBloodType != "AB+" && strBloodType != "AB-"{
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please enter a valid blood type. (A+,A-,B+,B-,O+,O-,AB+,AB-)")
-            self.presentViewController(alert, animated: true, completion: nil)
-            return
-        }
-//
-//        
-//        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
-//        Whisper(message, to: self.navigationController!,action:.Show)
-//       
 
         var dit = [String: AnyObject]()
         dit["civilId"] = ID!.text
@@ -129,7 +97,7 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
             dit["gender"] = "f"
         }
         
-        dit["bloodType"] = strBloodType
+        dit["bloodType"] = bloodType!.text
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
         var strDate = dateFormatter.stringFromDate(DatePicker.date)
@@ -140,12 +108,15 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["status"] = true
         dit["deleted"] = false
         
+     
+        
+      
         
         
         
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{

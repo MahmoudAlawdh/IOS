@@ -15,7 +15,8 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var oldTable: UITableView!
     
     @IBOutlet weak var upcomingTable: UITableView!
-    
+    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
+
     var myDonation = [" Donation Time", " Donation Time "]
     var networkManager : Networking = Networking()
     
@@ -44,7 +45,7 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor(), images: nil)
+            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{

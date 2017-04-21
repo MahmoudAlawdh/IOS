@@ -27,6 +27,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
+        SwiftSpinner.hide()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -50,9 +51,12 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
     func setArrayResponse(resp: NSArray, reqId: Int) {
         flag = true
         
-
+        
         for item in resp{
-           // SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+            SwiftSpinner.show("loading..").addTapHandler({
+                SwiftSpinner.hide()
+                }, subtitle: "Tap to hide while connecting! Click here please ")
+
             if item.valueForKey("status") as! String == "pending"{
             //    if item.valueForKey("donorCivilid") as! String == donor.civilID{
                     data.addObject(item)
@@ -61,7 +65,7 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
             }
         }
         self.tableView.reloadData()
-       // SwiftSpinner.hide()
+            SwiftSpinner.hide()
     }
     
     
