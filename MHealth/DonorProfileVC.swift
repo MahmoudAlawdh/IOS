@@ -18,10 +18,6 @@ class DonorProfileVC: UIViewController,UINavigationControllerDelegate, UIImagePi
     @IBOutlet var SelectedDate: UILabel!
     @IBOutlet var Logout: UIButton!
     
-    
-    var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
-
-    
     @IBAction func PickerAction(sender: AnyObject) {
         
         dateFormatter.dateFormat = "yyyy-MM-dd"
