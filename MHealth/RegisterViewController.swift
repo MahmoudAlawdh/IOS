@@ -9,37 +9,37 @@
 import UIKit
 import Whisper
 import HTYTextField
+import SwiftSpinner
 
 class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDelegate {
     var dateFormatter = NSDateFormatter()
-    var flag = 0
     
-    @IBAction func PickerAction(sender: AnyObject) {
-       
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        var strDate = dateFormatter.stringFromDate(DatePicker.date)
-        self.selectedDate.text = strDate
-        print(strDate)
-    }
+//    @IBAction func PickerAction(sender: AnyObject) {
+//       
+//        //dateFormatter.dateFormat = "dd-MM-yyyy"
+//        //var strDate = dateFormatter.stringFromDate(DatePicker.date)
+//        //self.selectedDate.text = strDate
+//       // print(strDate)
+//    }
     @IBOutlet var PickerAction: UIDatePicker!
     @IBOutlet var DatePicker: UIDatePicker!
-    
-    @IBOutlet var selectedDate: UILabel!
-    @IBOutlet var civilID: UILabel!
-    
-    @IBOutlet var first: UILabel!
-    
-    @IBOutlet var last: UILabel!
-    
-    @IBOutlet var nation: UILabel!
-    
-    @IBOutlet var emaill: UILabel!
-    
-    @IBOutlet var pass: UILabel!
-    
-    @IBOutlet var phonNUm: UILabel!
-    
-    @IBOutlet var bloodT: UILabel!
+//    
+//    @IBOutlet var selectedDate: UILabel!
+//    @IBOutlet var civilID: UILabel!
+//    
+//    @IBOutlet var first: UILabel!
+//    
+//    @IBOutlet var last: UILabel!
+//    
+//    @IBOutlet var nation: UILabel!
+//    
+//    @IBOutlet var emaill: UILabel!
+//    
+//    @IBOutlet var pass: UILabel!
+//    
+//    @IBOutlet var phonNUm: UILabel!
+//    
+//    @IBOutlet var bloodT: UILabel!
     
     @IBOutlet weak var ID: HTYTextField?
     @IBOutlet weak var firstname: HTYTextField?
@@ -59,9 +59,15 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
     
    
 
-    @IBOutlet var gg: UILabel!
+//    @IBOutlet var gg: UILabel!
     
     
+    @IBAction func PickerAction(sender: UIDatePicker) {
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+                var strDate = dateFormatter.stringFromDate(DatePicker.date)
+                //self.selectedDate.text = strDate
+                print("\(strDate)T00:00:00Z" )
+    }
     
     @IBOutlet var gender: UISegmentedControl!
     
@@ -70,11 +76,44 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         let donorEmail = Email!.text
         let Civil = ID!.text
         
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
-        Whisper(message, to: self.navigationController!,action:.Show)
-       
+        if !Validator().ValidateCivil(Civil!) {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+            
+        }else if !Validator().ValidateEmail(donorEmail!) {
+            
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Enter a valid email")
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+            
+        }else if password!.text!.characters.count < 8 {
+            
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "password must be more than 8 characters")
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+        }else if firstname!.text == "" || ID!.text == "" ||  password!.text == "" || lastname?.text == "" || nationality?.text == "" || phone?.text == "" {
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+    
+        var strBloodType:String = (bloodType?.text)!
+        strBloodType = strBloodType.uppercaseString
+        print(strBloodType)
+        if strBloodType != "A+" && strBloodType != "A-" && strBloodType != "B+" && strBloodType != "B-" && strBloodType  != "O+" && strBloodType != "O-" && strBloodType != "AB+" && strBloodType != "AB-"{
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please enter a valid blood type. (A+,A-,B+,B-,O+,O-,AB+,AB-)")
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
+        }
+//
+//        
+//        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: UIColor.blueColor(), images: nil)
+//        Whisper(message, to: self.navigationController!,action:.Show)
+//       
 
-        
         var dit = [String: AnyObject]()
         dit["civilId"] = ID!.text
         dit["firstName"] = firstname!.text
@@ -83,40 +122,25 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["nationality"] = nationality!.text
         dit["email"] = Email!.text
         dit["phoneNumber"] = phone!.text
-        dit["gender"] = String(gender.selectedSegmentIndex)
-        dit["bloodType"] = bloodType!.text
-        dit["birthDate"] = dateFormatter.stringFromDate(DatePicker.date)
+        
+        if gender.selectedSegmentIndex == 0 {
+            dit["gender"] = "m"
+        }else{
+            dit["gender"] = "f"
+        }
+        
+        dit["bloodType"] = strBloodType
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        var strDate = dateFormatter.stringFromDate(DatePicker.date)
+        strDate = "\(strDate)T00:00:00Z"
+        
+        dit["birthDate"] = strDate
         dit["imgURL"] = " "
         dit["status"] = true
         dit["deleted"] = false
         
-        if !Validator().ValidateCivil(Civil!) {
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Your Civil Id is Wrong")
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            regs.enabled = true
-            return
-
-        }
-        if !Validator().ValidateEmail(donorEmail!) || firstname!.text == nil || firstname!.text == "" || ID!.text == nil || ID!.text == "" || password!.text == nil || password!.text == ""   {
-            
-            flag = 1
-            
-            //lblMsg.text = "All fields are required."
-            
-        } else {
-            flag = 0
-            
-        }
-
         
-        if flag == 1{
-            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Please Fill in all fields")
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-            regs.enabled = true
-            return
-        }
         
         
         let reach = Reach()
@@ -125,14 +149,48 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
+            SwiftSpinner.show(NSLocalizedString("Connecting...", comment: ""))
+
          let n:Networking = Networking()
+            print("request register")
             print(dit)
         n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/donor", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
         }
     }
     func setDictResponse(resp: NSDictionary, reqId: Int) {
+       SwiftSpinner.hide()
+        
         print("resp:")
         print(resp)
+
+        
+        if (resp.valueForKey("errorMsgEn") != nil) {
+            let errorCode:Int = resp.valueForKey("errorCode") as! Int
+            let result:String = resp.valueForKey("errorMsgEn") as! String
+            
+            if errorCode == 406 {
+                let alert:UIAlertController = Alert().showeAlert("Error", msg: "Email already used")
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else if result == "Accepted"{
+            
+                let alertControlle:UIAlertController = UIAlertController(title: "Confirm", message: "Regirstration is successful. Thank you", preferredStyle: .Alert)
+                
+                //UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                let action:UIAlertAction =  UIAlertAction(title: "OK", style: .Cancel, handler: { (UIAlertAction) in
+                    self.navigationController?.popViewControllerAnimated(true)
+                })
+                alertControlle.addAction(action)
+                self.presentViewController(alertControlle, animated: true, completion: nil)
+            }else{
+              
+                let alert:UIAlertController = Alert().showeAlert("Error", msg: "Can't register right now")
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }else{
+            let alert:UIAlertController = Alert().showeAlert("Error", msg: "Connection Failed")
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
@@ -153,6 +211,8 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         phone?.delegate = self
         
         bloodType?.delegate = self
+        
+        DatePicker.maximumDate = NSDate()
         
     }
     override func viewDidAppear(animated: Bool) {
