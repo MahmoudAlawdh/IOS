@@ -108,11 +108,8 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         dit["status"] = true
         dit["deleted"] = false
         
-     
-        
       
-        
-        
+       
         
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
@@ -133,11 +130,13 @@ class RegisterViewController: UIViewController , NetworkCaller, UITextFieldDeleg
         
         print("resp:")
         print(resp)
-
+        
+        
         
         if (resp.valueForKey("errorMsgEn") != nil) {
             let errorCode:Int = resp.valueForKey("errorCode") as! Int
             let result:String = resp.valueForKey("errorMsgEn") as! String
+            
             
             if errorCode == 406 {
                 let alert:UIAlertController = Alert().showeAlert("Error", msg: "Email already used")
