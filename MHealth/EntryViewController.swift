@@ -29,7 +29,7 @@ class EntryViewController: VideoSplashViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("transtion2", ofType: "mp4")!)
+        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("final", ofType: "mp4")!)
         self.videoFrame = view.frame
         self.fillMode = .ResizeAspectFill
         self.alwaysRepeat = true

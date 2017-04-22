@@ -22,11 +22,11 @@
                         <segue destination="LmI-C5-Pfy" kind="relationship" relationship="viewControllers" id="8N4-tB-2X2"/>
                         <segue destination="oJa-Qw-FbX" kind="relationship" relationship="viewControllers" id="5HF-Ni-rN2"/>
                         <segue destination="ONn-M3-HWV" kind="relationship" relationship="viewControllers" id="Kqx-en-o1z"/>
-                        <segue destination="fCY-Fg-9hb" kind="relationship" relationship="viewControllers" id="JQV-dn-ISk"/>
                         <segue destination="l8K-tz-Y3W" kind="relationship" relationship="viewControllers" id="QDZ-sE-ohc"/>
-                        <segue destination="DQD-Nl-dLJ" kind="relationship" relationship="viewControllers" id="zzb-9o-eRN"/>
                         <segue destination="LUU-w1-EEB" kind="relationship" relationship="viewControllers" id="Fvc-fj-qWj"/>
+                        <segue destination="DQD-Nl-dLJ" kind="relationship" relationship="viewControllers" id="zzb-9o-eRN"/>
                         <segue destination="6va-k0-er2" kind="relationship" relationship="viewControllers" id="MIM-qW-DWN"/>
+                        <segue destination="fCY-Fg-9hb" kind="relationship" relationship="viewControllers" id="JQV-dn-ISk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZt-pg-h23" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -312,13 +312,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYv-Sv-Va2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651.5" y="4508.5"/>
+            <point key="canvasLocation" x="706.5" y="4500.5"/>
         </scene>
-        <!--Profile-->
+        <!--My Profile-->
         <scene sceneID="Bd2-N6-r5u">
             <objects>
                 <navigationController id="ONn-M3-HWV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="jm6-0z-748"/>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="user" id="jm6-0z-748"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DBc-Ri-sd4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -522,6 +522,26 @@
                                     <action selector="PickerAction:" destination="IuK-Vf-UgD" eventType="valueChanged" id="45z-O3-BLU"/>
                                 </connections>
                             </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star-50" id="8ET-vC-Vcn">
+                                <rect key="frame" x="197" y="74" width="34" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star-50" id="bcn-3h-hi7">
+                                <rect key="frame" x="239" y="74" width="34" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star-50" id="bOx-j5-i9Y">
+                                <rect key="frame" x="280" y="74" width="34" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star-50" id="4FS-we-PgO">
+                                <rect key="frame" x="322" y="74" width="34" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star Filled-50" id="BXe-dQ-OFg">
+                                <rect key="frame" x="155" y="74" width="34" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99772843069999995" green="0.99772843069999995" blue="0.99772843069999995" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -547,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMA-0G-jzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98.5" y="4552.5"/>
+            <point key="canvasLocation" x="128.5" y="4500.5"/>
         </scene>
         <!--Upcoming TableVC-->
         <scene sceneID="d1G-ZN-sgY">
@@ -559,7 +579,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="upcoming" rowHeight="120" id="KCg-DG-TPj" customClass="CustomeUpcomingTableViewCell" customModule="MHealth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCg-DG-TPj" id="h24-Oe-CGS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
@@ -636,7 +656,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="previous" editingAccessoryType="detailButton" id="Zfd-Ep-Stg">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zfd-Ep-Stg" id="eGk-Xk-5N0">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
@@ -823,7 +843,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRs-WY-4W0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1024.5" y="4473.5"/>
+            <point key="canvasLocation" x="-1014.5" y="4524.5"/>
         </scene>
         <!--Table CampaignVC-->
         <scene sceneID="DB3-w6-Dbe">
@@ -835,7 +855,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Campaigns" editingAccessoryType="detailButton" rowHeight="49" id="UBE-Eo-NS3" customClass="CustomeCampaigns" customModule="MHealth" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBE-Eo-NS3" id="Icz-bM-fkn">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="48"/>
@@ -915,7 +935,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qIi-WM-ysq">
-                                <rect key="frame" x="39" y="425" width="316" height="53"/>
+                                <rect key="frame" x="37" y="414" width="318" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
@@ -982,6 +1002,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JBB-0S-Sz3">
+                                <rect key="frame" x="315" y="385" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1049,7 +1076,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DI2-5p-38P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1578.5" y="4530.5"/>
+            <point key="canvasLocation" x="-1546.5" y="4524.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="0BU-Rc-kMi">
@@ -1289,11 +1316,11 @@
             </objects>
             <point key="canvasLocation" x="-1618.5" y="737.5"/>
         </scene>
-        <!--Help-->
+        <!--Instructions-->
         <scene sceneID="p3T-dv-goQ">
             <objects>
                 <navigationController id="l8K-tz-Y3W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Help" image="Help-25" selectedImage="Help-25" id="IeE-Kc-IlR"/>
+                    <tabBarItem key="tabBarItem" title="Instructions" image="Help-25" selectedImage="Help-25" id="IeE-Kc-IlR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTI-YA-lrP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1304,7 +1331,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evk-Gl-bz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1182.5" y="3682.5"/>
+            <point key="canvasLocation" x="1186.5" y="3653.5"/>
         </scene>
         <!--Donation Process-->
         <scene sceneID="bKW-dH-bO3">
@@ -2158,7 +2185,7 @@ National Guard Blood Bank branch</string>
             </objects>
             <point key="canvasLocation" x="3977.5" y="4718.5"/>
         </scene>
-        <!--Help-->
+        <!--Instructions-->
         <scene sceneID="uAU-nb-tBM">
             <objects>
                 <viewController storyboardIdentifier="InfoId" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kaX-YR-R8b" customClass="StaticInfoViewController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -2323,7 +2350,7 @@ National Guard Blood Bank branch</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Help" id="skM-C9-oZA"/>
+                    <navigationItem key="navigationItem" title="Instructions" id="skM-C9-oZA"/>
                     <connections>
                         <outlet property="AfterDon" destination="laZ-ad-0m1" id="Lmy-nn-lfM"/>
                         <outlet property="BeforDon" destination="bYr-o3-yur" id="tkJ-ba-fYQ"/>
@@ -2334,7 +2361,7 @@ National Guard Blood Bank branch</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMO-BR-QWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196.5" y="4530.5"/>
+            <point key="canvasLocation" x="1186.5" y="4500.5"/>
         </scene>
         <!--Videos-->
         <scene sceneID="wxW-xt-wdR">
@@ -2451,7 +2478,7 @@ National Guard Blood Bank branch</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWu-tR-HDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014.5" y="3668.5"/>
+            <point key="canvasLocation" x="-1019.5" y="3662.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="Oof-3H-HMN">
@@ -2707,7 +2734,7 @@ National Guard Blood Bank branch</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="0uM-6g-nuT">
-                                <rect key="frame" x="63" y="506" width="299" height="51"/>
+                                <rect key="frame" x="86" y="506" width="276" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="514270105.46340603">
                                     <!--2017-04-19 04:48:25 +0000-->
@@ -2716,12 +2743,19 @@ National Guard Blood Bank branch</string>
                                     <action selector="PickerAction:" destination="liT-dm-T5X" eventType="valueChanged" id="MGZ-2X-7VJ"/>
                                 </connections>
                             </datePicker>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Age-50" id="se4-xb-1vu">
-                                <rect key="frame" x="22" y="517" width="28" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="307_Central_Blood_Bank_Of_Kuwait_Logo1_-_Qu80_RT1600x1024-_OS1080x1080-_RD1080x1080-0" id="FA6-g5-utv">
                                 <rect key="frame" x="15" y="104" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="33c-9b-Zjw">
+                                <rect key="frame" x="10" y="530" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Age-50" id="se4-xb-1vu">
+                                <rect key="frame" x="35" y="500" width="28" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -2984,7 +3018,7 @@ National Guard Blood Bank branch</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHn-g1-5CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1546.5" y="3698.5"/>
+            <point key="canvasLocation" x="-1552.5" y="3668.5"/>
         </scene>
         <!--Settings-->
         <scene sceneID="t8c-YI-eZB">
@@ -3048,7 +3082,7 @@ National Guard Blood Bank branch</string>
                                                     <rect key="frame" x="245" y="8" width="115" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <state key="normal" title=" Share" image="Share 2-64">
+                                                    <state key="normal" title=" Share" image="Share Filled-50">
                                                         <color key="titleColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
@@ -3128,7 +3162,7 @@ National Guard Blood Bank branch</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8K6-uJ-a34" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2804.5" y="4508.5"/>
+            <point key="canvasLocation" x="-2816.5" y="4586.5"/>
         </scene>
     </scenes>
     <resources>
@@ -3139,6 +3173,8 @@ National Guard Blood Bank branch</string>
         <image name="Age-50" width="50" height="50"/>
         <image name="Blood-Donation-Blood-Bag-Blood-Drive.jpg.600x315_q80_crop-smart" width="600" height="315"/>
         <image name="Blood_Bank" width="385" height="237"/>
+        <image name="Christmas Star Filled-50" width="50" height="50"/>
+        <image name="Christmas Star-50" width="50" height="50"/>
         <image name="Create New-64" width="64" height="64"/>
         <image name="Gender Neutral User-50" width="50" height="50"/>
         <image name="Gender-50" width="50" height="50"/>
@@ -3149,7 +3185,6 @@ National Guard Blood Bank branch</string>
         <image name="Message" width="50" height="50"/>
         <image name="Password-50" width="50" height="50"/>
         <image name="Phone-50" width="50" height="50"/>
-        <image name="Share 2-64" width="64" height="64"/>
         <image name="Share Filled-50" width="50" height="50"/>
         <image name="Simulator Screen Shot Apr 20, 2017, 10.40.12 PM" width="667" height="375"/>
         <image name="Simulator Screen Shot Apr 20, 2017, 10.42.35 PM" width="667" height="375"/>

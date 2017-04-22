@@ -19,11 +19,8 @@
 		29FFBD411E9CB709003BF51C /* NotfcationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3D1E9CB709003BF51C /* NotfcationVC.swift */; };
 		29FFBD421E9CB709003BF51C /* NotifcationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */; };
 		29FFBD431E9CB709003BF51C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */; };
-		29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD441E9CDA6B003BF51C /* blood.mp4 */; };
 		29FFBD491E9CDDD1003BF51C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */; };
-		29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD621E9DFBB5003BF51C /* blod1.mp4 */; };
 		29FFBD6F1E9E0A0B003BF51C /* reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFBD6E1E9E0A0B003BF51C /* reach.swift */; };
-		29FFBD771E9E1913003BF51C /* transtion2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29FFBD761E9E1913003BF51C /* transtion2.mp4 */; };
 		52CC04F41E6B2F2400BC93A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */; };
 		52CC04F61E6B2F2400BC93A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC04F51E6B2F2400BC93A9 /* ViewController.swift */; };
 		52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC04F71E6B2F2500BC93A9 /* Main.storyboard */; };
@@ -45,6 +42,7 @@
 		882575F91EA362A00072C724 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882575F81EA362A00072C724 /* Alert.swift */; };
 		882DF5DA1EA8D963005FE15D /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882DF5D91EA8D963005FE15D /* VideoVC.swift */; };
 		882DF5E11EA93409005FE15D /* landscapeAVplayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882DF5E01EA93409005FE15D /* landscapeAVplayerController.swift */; };
+		88DA2A3A1EABB123000ECB4F /* final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88DA2A391EABB123000ECB4F /* final.mp4 */; };
 		EA0B43E61E715161009C33A8 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B43E51E715161009C33A8 /* Slot.swift */; };
 		EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABB51E9B704E00BF643F /* Donations.swift */; };
 		EA3EABDA1E9E273400BF643F /* CustomUpcomingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABD91E9E273400BF643F /* CustomUpcomingTableViewCell.swift */; };
@@ -73,11 +71,8 @@
 		29FFBD3D1E9CB709003BF51C /* NotfcationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotfcationVC.swift; sourceTree = "<group>"; };
 		29FFBD3E1E9CB709003BF51C /* NotifcationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifcationTVC.swift; sourceTree = "<group>"; };
 		29FFBD3F1E9CB709003BF51C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		29FFBD441E9CDA6B003BF51C /* blood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blood.mp4; sourceTree = "<group>"; };
 		29FFBD481E9CDDD1003BF51C /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		29FFBD621E9DFBB5003BF51C /* blod1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blod1.mp4; sourceTree = "<group>"; };
 		29FFBD6E1E9E0A0B003BF51C /* reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reach.swift; sourceTree = "<group>"; };
-		29FFBD761E9E1913003BF51C /* transtion2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = transtion2.mp4; sourceTree = "<group>"; };
 		52CC04F01E6B2F2300BC93A9 /* MHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC04F51E6B2F2400BC93A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +100,7 @@
 		882DF5DC1EA92E7C005FE15D /* movie2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie2.mp4; sourceTree = "<group>"; };
 		882DF5DD1EA931EA005FE15D /* movie1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie1.mp4; sourceTree = "<group>"; };
 		882DF5E01EA93409005FE15D /* landscapeAVplayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landscapeAVplayerController.swift; sourceTree = "<group>"; };
+		88DA2A391EABB123000ECB4F /* final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final.mp4; sourceTree = "<group>"; };
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
@@ -226,11 +222,9 @@
 		52CC050E1E6B411100BC93A9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				29FFBD761E9E1913003BF51C /* transtion2.mp4 */,
-				29FFBD621E9DFBB5003BF51C /* blod1.mp4 */,
+				88DA2A391EABB123000ECB4F /* final.mp4 */,
 				52CC05191E6B53D300BC93A9 /* PathsManager.swift */,
 				52CC05111E6B41C400BC93A9 /* Validator.swift */,
-				29FFBD441E9CDA6B003BF51C /* blood.mp4 */,
 				882DF5DB1EA8DD1F005FE15D /* movie3.mp4 */,
 				882DF5DD1EA931EA005FE15D /* movie1.mp4 */,
 				882DF5DC1EA92E7C005FE15D /* movie2.mp4 */,
@@ -324,11 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CC04FE1E6B2F2600BC93A9 /* LaunchScreen.storyboard in Resources */,
-				29FFBD631E9DFBB5003BF51C /* blod1.mp4 in Resources */,
-				29FFBD451E9CDA6B003BF51C /* blood.mp4 in Resources */,
+				88DA2A3A1EABB123000ECB4F /* final.mp4 in Resources */,
 				52CC04FB1E6B2F2600BC93A9 /* Assets.xcassets in Resources */,
 				52CC050C1E6B40FC00BC93A9 /* Podfile in Resources */,
-				29FFBD771E9E1913003BF51C /* transtion2.mp4 in Resources */,
 				52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
