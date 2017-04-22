@@ -38,9 +38,11 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
      flag = true
        for item in resp{
         if item.valueForKey("status") as! String == "accepted"{
-                if item.valueForKey("donorCivilid") as! String == donor.civilID{
+            
+            print(item)
+            //if item.valueForKey("donorCivilid") as! String == donor.civilID{
                    data.addObject(item)
-               }
+               //}
             }
       }
         self.tableView.reloadData()
@@ -61,7 +63,7 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0 //data.count
+        return 0//data.count
     }
 
     
