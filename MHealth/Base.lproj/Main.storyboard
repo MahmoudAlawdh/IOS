@@ -522,7 +522,7 @@
                                     <action selector="PickerAction:" destination="IuK-Vf-UgD" eventType="valueChanged" id="45z-O3-BLU"/>
                                 </connections>
                             </datePicker>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star-50" id="8ET-vC-Vcn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Christmas Star Filled-50" id="8ET-vC-Vcn">
                                 <rect key="frame" x="197" y="74" width="34" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1005,6 +1005,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JBB-0S-Sz3">
                                 <rect key="frame" x="315" y="385" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Share">
                                     <color key="titleColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

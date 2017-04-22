@@ -28,11 +28,11 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         super.viewDidLoad()
         self.tableView.reloadData()
         SwiftSpinner.hide()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         //Uncomment the following line to preserve selection between presentations
+        self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
         
@@ -58,10 +58,10 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
                 }, subtitle: "Tap to hide while connecting! Click here please ")
 
             if item.valueForKey("status") as! String == "pending"{
-            //    if item.valueForKey("donorCivilid") as! String == donor.civilID{
+               if item.valueForKey("donorCivilid") as! String == donor.civilID{
                     data.addObject(item)
                
-          //      }
+             }
             }
         }
         self.tableView.reloadData()

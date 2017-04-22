@@ -22,11 +22,11 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
         super.viewDidLoad()
         self.tableView.reloadData()
         SwiftSpinner.hide()        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//         networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
+         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
@@ -35,15 +35,15 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
-//        flag = true
-//        for item in resp{
-//            if item.valueForKey("status") as! String == "accepted"{
-//                if item.valueForKey("donorCivilid") as! String == donor.civilID{
-//                    data.addObject(item)
-//                }
-//            }
-//        }
-//        self.tableView.reloadData()
+     flag = true
+       for item in resp{
+        if item.valueForKey("status") as! String == "accepted"{
+                if item.valueForKey("donorCivilid") as! String == donor.civilID{
+                   data.addObject(item)
+               }
+            }
+      }
+        self.tableView.reloadData()
         
     }
 
