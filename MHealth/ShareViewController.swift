@@ -12,7 +12,10 @@ class ShareViewController: UIViewController {
 
     @IBAction func Share(sender: AnyObject) {
         
-        let activityAC = UIActivityViewController(activityItems: ["zainab"], applicationActivities: nil)
+        let message:String = "Download Donor app from the AppStore."
+
+        
+        let activityAC = UIActivityViewController(activityItems: [message], applicationActivities: nil)
        activityAC.popoverPresentationController?.sourceView = self.view
        
         self.presentViewController(activityAC, animated: true, completion: nil)

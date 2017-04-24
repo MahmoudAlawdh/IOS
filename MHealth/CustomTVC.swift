@@ -18,7 +18,10 @@ class CustomTVC: UITableViewCell{
     
     @IBOutlet var button: UIButton!
     @IBAction func shareButton(sender: AnyObject) {
-        let activityAC = UIActivityViewController(activityItems: ["Zainab"], applicationActivities: nil)
+        
+        let message:String = "\(notifcationText.text) \(titleText.text) \(descriptionText.text)"
+
+        let activityAC = UIActivityViewController(activityItems: [message], applicationActivities: nil)
         activityAC.popoverPresentationController?.sourceView = self
         zainab.presentViewController(activityAC, animated: true, completion: nil)
                

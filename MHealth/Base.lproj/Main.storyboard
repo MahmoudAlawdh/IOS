@@ -171,7 +171,7 @@
                                 <color key="textColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Lives" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pzR-cW-F2e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Lives" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.14999999999999999" id="pzR-cW-F2e">
                                 <rect key="frame" x="195" y="199" width="166" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="26"/>
@@ -569,7 +569,7 @@
             </objects>
             <point key="canvasLocation" x="128.5" y="4500.5"/>
         </scene>
-        <!--Upcoming TableVC-->
+        <!--Upcoming Donation-->
         <scene sceneID="d1G-ZN-sgY">
             <objects>
                 <tableViewController id="QEH-H0-kz0" customClass="UpcomingTableVC" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -592,21 +592,21 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a9R-R8-1cX">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a9R-R8-1cX">
                                             <rect key="frame" x="44" y="42" width="315" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eB7-k7-TK4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eB7-k7-TK4">
                                             <rect key="frame" x="44" y="83" width="170" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mui-af-O6e">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mui-af-O6e">
                                             <rect key="frame" x="248" y="86" width="119" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
@@ -618,7 +618,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Water-50" id="dwq-9V-i9p">
-                                            <rect key="frame" x="222" y="84" width="18" height="26"/>
+                                            <rect key="frame" x="226" y="88" width="18" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Age-50" id="ntY-nd-Ncy">
@@ -640,13 +640,13 @@
                             <outlet property="delegate" destination="QEH-H0-kz0" id="huv-yJ-HWQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uHj-1E-Q4t"/>
+                    <navigationItem key="navigationItem" title="Upcoming Donation" id="uHj-1E-Q4t"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSr-hH-BzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1510.5" y="5420.5"/>
         </scene>
-        <!--My Previous Donation-->
+        <!--Donations-->
         <scene sceneID="ZVc-AE-jGW">
             <objects>
                 <tableViewController id="uew-zW-AQ7" customClass="MyPreviousDonation" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -705,7 +705,7 @@
                             <outlet property="delegate" destination="uew-zW-AQ7" id="zbE-d3-cZ1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vWR-uY-YPA"/>
+                    <navigationItem key="navigationItem" title="Donations" id="vWR-uY-YPA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA3-Bk-eFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -845,7 +845,7 @@
             </objects>
             <point key="canvasLocation" x="-1014.5" y="4524.5"/>
         </scene>
-        <!--Table CampaignVC-->
+        <!--Campaigns-->
         <scene sceneID="DB3-w6-Dbe">
             <objects>
                 <tableViewController id="s7W-jO-p6x" customClass="TableCampaignVC" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -887,13 +887,13 @@
                             <outlet property="delegate" destination="s7W-jO-p6x" id="P5d-ST-RBj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LD6-NO-iaP"/>
+                    <navigationItem key="navigationItem" title="Campaigns" id="LD6-NO-iaP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rz-ab-eRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-975.5" y="5426.5"/>
         </scene>
-        <!--View Campaign-->
+        <!--Campaign Details-->
         <scene sceneID="gb5-aV-Tkw">
             <objects>
                 <viewController storyboardIdentifier="Campaigns" id="40m-Cu-RWf" customClass="ViewCampaign" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -1009,11 +1009,14 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareCampaign:" destination="40m-Cu-RWf" eventType="touchUpInside" id="CSM-HQ-R8d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="03v-tn-PtP"/>
+                    <navigationItem key="navigationItem" title="Campaign Details" id="03v-tn-PtP"/>
                     <connections>
                         <outlet property="BloodType" destination="HtS-CL-JC0" id="eOp-gy-beb"/>
                         <outlet property="EndDate" destination="wMK-uD-HFE" id="21u-lr-3yh"/>
@@ -3073,17 +3076,17 @@ National Guard Blood Bank branch</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="287" id="XtW-Gi-32b" customClass="CustomTVC" customModule="MHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="287"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="287"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XtW-Gi-32b" id="3hb-Jh-fh1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a7x-i3-keb">
-                                                    <rect key="frame" x="245" y="8" width="115" height="23"/>
+                                                    <rect key="frame" x="287" y="8" width="73" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <state key="normal" title=" Share" image="Share Filled-50">
+                                                    <state key="normal" title=" Share">
                                                         <color key="titleColor" red="0.72941176470000002" green="0.1215686275" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
@@ -3138,6 +3141,10 @@ National Guard Blood Bank branch</string>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Create New-64" id="DXq-tu-spN">
                                                     <rect key="frame" x="7" y="143" width="23" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Share Filled-50" id="zFv-ng-Grl">
+                                                    <rect key="frame" x="249" y="8" width="30" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>

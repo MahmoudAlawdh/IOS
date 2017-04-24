@@ -33,6 +33,16 @@ class ViewCampaign: UIViewController, NetworkCaller, MKMapViewDelegate {
     var llong:Double = 0.0
     var llat:Double = 0.0
 
+    @IBAction func shareCampaign(sender: UIButton) {
+        let message:String = "\(currentCamp.name) start in:\(currentCamp.startdate) to:\(currentCamp.enddate) in:\(currentCamp.locationName), \(currentCamp.bloodTypes)"
+        
+        let activityAC = UIActivityViewController(activityItems: [message], applicationActivities: nil)
+        activityAC.popoverPresentationController?.sourceView = self.view
+        
+        self.presentViewController(activityAC, animated: true, completion: nil)
+
+        
+    }
 
     @IBAction func btnEdit(sender: AnyObject) {
 
