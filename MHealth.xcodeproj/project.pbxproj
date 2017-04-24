@@ -43,6 +43,8 @@
 		882DF5DA1EA8D963005FE15D /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882DF5D91EA8D963005FE15D /* VideoVC.swift */; };
 		882DF5E11EA93409005FE15D /* landscapeAVplayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882DF5E01EA93409005FE15D /* landscapeAVplayerController.swift */; };
 		88DA2A3A1EABB123000ECB4F /* final.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88DA2A391EABB123000ECB4F /* final.mp4 */; };
+		DE838E151EADBFA300A3C018 /* PreviousDonationCTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE838E131EADBFA300A3C018 /* PreviousDonationCTVC.swift */; };
+		DE838E161EADBFA300A3C018 /* PreviousDonationCTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE838E141EADBFA300A3C018 /* PreviousDonationCTVC.xib */; };
 		EA0B43E61E715161009C33A8 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0B43E51E715161009C33A8 /* Slot.swift */; };
 		EA3EABB61E9B704E00BF643F /* Donations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABB51E9B704E00BF643F /* Donations.swift */; };
 		EA3EABDA1E9E273400BF643F /* CustomUpcomingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EABD91E9E273400BF643F /* CustomUpcomingTableViewCell.swift */; };
@@ -103,6 +105,8 @@
 		88DA2A391EABB123000ECB4F /* final.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = final.mp4; sourceTree = "<group>"; };
 		8CDB312C5DB17542FF3D2128 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E775B3980EE75173FA376 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
+		DE838E131EADBFA300A3C018 /* PreviousDonationCTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousDonationCTVC.swift; sourceTree = "<group>"; };
+		DE838E141EADBFA300A3C018 /* PreviousDonationCTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviousDonationCTVC.xib; sourceTree = "<group>"; };
 		EA0B43E51E715161009C33A8 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		EA3EABB51E9B704E00BF643F /* Donations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donations.swift; sourceTree = "<group>"; };
 		EA3EABD91E9E273400BF643F /* CustomUpcomingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUpcomingTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				52CC050D1E6B410B00BC93A9 /* Entities */,
 				52CC050A1E6B40A800BC93A9 /* Networking */,
 				52CC05091E6B408800BC93A9 /* ViewControllers */,
+				DE838E121EADBF3A00A3C018 /* Custom Cell */,
 				52CC04F31E6B2F2400BC93A9 /* AppDelegate.swift */,
 				52CC04F71E6B2F2500BC93A9 /* Main.storyboard */,
 				52CC04FA1E6B2F2600BC93A9 /* Assets.xcassets */,
@@ -255,6 +260,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DE838E121EADBF3A00A3C018 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE838E131EADBFA300A3C018 /* PreviousDonationCTVC.swift */,
+				DE838E141EADBFA300A3C018 /* PreviousDonationCTVC.xib */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,6 +333,7 @@
 			files = (
 				52CC04FE1E6B2F2600BC93A9 /* LaunchScreen.storyboard in Resources */,
 				88DA2A3A1EABB123000ECB4F /* final.mp4 in Resources */,
+				DE838E161EADBFA300A3C018 /* PreviousDonationCTVC.xib in Resources */,
 				52CC04FB1E6B2F2600BC93A9 /* Assets.xcassets in Resources */,
 				52CC050C1E6B40FC00BC93A9 /* Podfile in Resources */,
 				52CC04F91E6B2F2500BC93A9 /* Main.storyboard in Resources */,
@@ -370,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -380,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE838E151EADBFA300A3C018 /* PreviousDonationCTVC.swift in Sources */,
 				882DF5DA1EA8D963005FE15D /* VideoVC.swift in Sources */,
 				29FFBD401E9CB709003BF51C /* CustomTVC.swift in Sources */,
 				29FFBD411E9CB709003BF51C /* NotfcationVC.swift in Sources */,

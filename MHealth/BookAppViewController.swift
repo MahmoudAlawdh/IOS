@@ -8,6 +8,8 @@
 
 import UIKit
 import Whisper
+import SwiftSpinner
+
 class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate ,NetworkCaller{
     @IBOutlet var DonationType: UIPickerView!
     
@@ -25,8 +27,8 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     
     
     var mainColor: UIColor = UIColor ( red: CGFloat(255/255.0), green: CGFloat(186/255.0), blue: CGFloat(186/255.0), alpha: CGFloat(1.0))
-
-     var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
+    
+    var doneColor:UIColor = UIColor ( red: CGFloat(179/255.0), green: CGFloat(185/255.0), blue: CGFloat(255/255.0), alpha: CGFloat(1.0))
     
     let DonationTypeData = ["RBCS","Blood Cells"]
     let day:NSMutableArray = NSMutableArray()
@@ -40,27 +42,30 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBAction func Confirm(sender: AnyObject) {
         let n:Networking = Networking()
         var dit = [String: AnyObject]()
-        let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
-        Whisper(message, to: self.navigationController!,action:.Show)
+        
         if UserDonation == "Blood Cells"{
-        dit["day"] = UserDay.Days+"T00:00:00Z"
-        dit["branchId"] = UserBranch.branchId - 1
-        dit["isActive"] = 1
-        dit["isPast"] = 0
-        dit["isRegisteredUser"] = 1
-        dit["period"] = UserTime
-        dit["regUserId"] = donor.donorID
-        dit["siteUserId"] = 0
-        
-        
-        let reach = Reach()
-        if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
-            let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
-            Whisper(message, to: self.navigationController!,action:.Show)
+            dit["day"] = UserDay.Days+"T00:00:00Z"
+            dit["branchId"] = UserBranch.branchId - 1
+            dit["isActive"] = 1
+            dit["isPast"] = 0
+            dit["isRegisteredUser"] = 1
+            dit["period"] = UserTime
+            dit["regUserId"] = donor.donorID
+            dit["siteUserId"] = 0
             
-        }else{
-        n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/schedule/", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
-        }
+            
+            let reach = Reach()
+            if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
+                let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor, images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+                
+            }else{
+                print("request confirm")
+                print(dit)
+                SwiftSpinner.show(NSLocalizedString("Connecting...", comment: ""))
+
+                n.AMJSONDictionary(Const.URLs.Schedule, httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+            }
         }
         else{
             dit["ddate"] = UserDay.Days+"T00:00:00Z"
@@ -69,14 +74,17 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             dit["donorCivilid"] = donor.civilID
             dit["status"] = "pending"
             
-            
             let reach = Reach()
             if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
                 let message = Message(title: "No connection", textColor: UIColor.whiteColor(), backgroundColor: mainColor , images: nil)
                 Whisper(message, to: self.navigationController!,action:.Show)
                 
             }else{
-                n.AMJSONDictionary("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", httpMethod: "POST", jsonData: dit, reqId: 0, caller: self)
+                print("request confirm")
+                print(dit)
+                SwiftSpinner.show(NSLocalizedString("Connecting...", comment: ""))
+
+                n.AMJSONDictionary(Const.URLs.DonationRecord, httpMethod: "POST", jsonData: dit, reqId: 1, caller: self)
             }
             
         }
@@ -84,6 +92,26 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     var L:NSMutableArray = NSMutableArray()
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
+        print("response dic")
+        print(resp)
+        SwiftSpinner.hide()
+        if reqId == 0 {
+            if(resp.allKeys.count == 0){
+                let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+            }else{
+                let message = Message(title: "Error, try again", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+            }
+        }else if reqId == 1 {
+            if(resp.allKeys.count == 0){
+                let message = Message(title: "Done", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+            }else{
+                let message = Message(title: "Error, try again", textColor: UIColor.whiteColor(), backgroundColor: doneColor, images: nil)
+                Whisper(message, to: self.navigationController!,action:.Show)
+            }
+        }
         
     }
     func setArrayResponse(resp: NSArray, reqId: Int) {
@@ -109,18 +137,18 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
                     Whisper(message, to: self.navigationController!,action:.Show)
                     
                 }else{
-                n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/schedule/freeslots/" + "\(j.branchId)", params: [:], reqId: (j.branchId), caller: self)
+                    n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/schedule/freeslots/" + "\(j.branchId)", params: [:], reqId: (j.branchId), caller: self)
                 }
             }
             UserBranch = L.objectAtIndex(0) as! Branch
             
-        } 
+        }
         for i in L{
             let w:Branch = i as! Branch
             var counter = 0;
             if w.branchId == reqId{
                 for item in resp{
-
+                    
                     let i:NSDictionary = item as! NSDictionary
                     let d:Slot = Slot()
                     d.Days = i.valueForKey("day") as! String
@@ -134,16 +162,16 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             }
             
         }
-
+        
         Branchs.reloadAllComponents()
         Day.reloadAllComponents()
         Time.reloadAllComponents()
         
     }
-
+    
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-
+        
         switch pickerView.tag {
         case 1:
             UserDonation = DonationTypeData[row]
@@ -164,7 +192,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         
         
-
+        
     }
     
     @IBOutlet var conf: UIButton!
@@ -183,8 +211,8 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         Time.dataSource = self
         Time.delegate = self
         
-      
-
+        
+        
         let n:Networking = Networking()
         let reach = Reach()
         if reach.connectionStatus().description == ReachabilityStatus.Offline.description{
@@ -192,13 +220,13 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
-        n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: -1, caller: self)
+            n.AMGetArrayData("http://34.196.107.188:8080/mHealthWS/ws/bbbranch", params: [:], reqId: -1, caller: self)
         }
         
-       
         
-            }
-
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -216,7 +244,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
                 return (L.objectAtIndex(row) as! Branch).branchNameAr
             }
             return (L.objectAtIndex(row) as! Branch).branchNameEn
-
+            
         case 3:
             let d:Slot = UserBranch.day.objectAtIndex(row) as! Slot
             return d.Days
@@ -227,7 +255,7 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         }
     }
     
-
+    
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         switch pickerView.tag {
@@ -258,15 +286,15 @@ class BookAppViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
             return 0
         }
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -32,9 +32,9 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
+        networkManager.AMGetArrayData(Const.URLs.DonationRecord, params: [:], reqId: 1, caller: self)
         
 //        UpcomingTableView.delegate = self
 //        UpcomingTableView.dataSource = self
@@ -95,8 +95,18 @@ class UpcomingTableVC: UITableViewController , NetworkCaller {
         let cell:CustomeUpcomingTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("upcoming") as! CustomeUpcomingTableViewCell
         if flag == true {
             //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
-            cell.UpcomingTableView.text = "Upcoming Appointment"
-            cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
+            cell.UpcomingTableView.text = ""
+            //cell.Date.text = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
+            
+            
+            let time:String = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
+            let timetemp:[String] = time.characters.split{$0 == "T"}.map(String.init)
+            if timetemp.count == 2 {
+                cell.Date.text = timetemp[0]
+            }else{
+                cell.Date.text = ""
+            }
+            
             cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
             cell.Destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
         }

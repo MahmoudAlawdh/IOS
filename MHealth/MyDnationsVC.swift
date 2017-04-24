@@ -32,7 +32,9 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
-        
+        print("setDictResponse")
+        print(resp)
+
     }
     
     override func viewDidLoad() {
@@ -49,7 +51,7 @@ class MyDnationsVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             Whisper(message, to: self.navigationController!,action:.Show)
             
         }else{
-        networkManager.AMGetArrayData(Const.URLs.donationRecord + "/civilId" , params: ["donorCivilid": 23], reqId: 1, caller: self)
+        networkManager.AMGetArrayData(Const.URLs.DonationRecord + "/civilId" , params: ["donorCivilid": 23], reqId: 1, caller: self)
         }
     }
     

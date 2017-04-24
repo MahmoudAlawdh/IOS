@@ -20,21 +20,28 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.registerNib(UINib(nibName: "PreviousDonationCTVC", bundle: nil), forCellReuseIdentifier: "PreviousDonationCTVC")
+
+        
         self.tableView.reloadData()
         SwiftSpinner.hide()        // Uncomment the following line to preserve selection between presentations
          self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+         //self.navigationItem.rightBarButtonItem = self.editButtonItem()
       networkManager.AMGetArrayData("http://34.196.107.188:8081/MhealthWeb/webresources/donationrecord", params: [:], reqId: 1, caller: self)
     }
     
     func setDictResponse(resp: NSDictionary, reqId: Int) {
-        
+        print("setDictResponse")
+        print(resp)
         
     }
     
     func setArrayResponse(resp: NSArray, reqId: Int) {
+        print("setArrayResponse")
+        print(resp)
      flag = true
        for item in resp{
         if item.valueForKey("status") as! String == "accepted"{
@@ -63,20 +70,27 @@ class MyPreviousDonation: UITableViewController, NetworkCaller {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0//data.count
+        return data.count
     }
 
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell:CustomePrevious = self.tableView.dequeueReusableCellWithIdentifier("previous") as! CustomePrevious
+        let cell:PreviousDonationCTVC = (tableView.dequeueReusableCellWithIdentifier("PreviousDonationCTVC") as? PreviousDonationCTVC)!
+        
         if flag == true {
-            SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
-          cell.Donations.text = "Previous Donation"
-           // cell.Date.text = data.objectAtIndex/Users/trn24/Documents/MHealth/MHealth/Assets.xcassets(indexPath.row).valueForKey("ddate") as! String
-                cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as! String
-            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as! String
+            //SwiftSpinner.show(NSLocalizedString("Loading...", comment: ""))
+            let time:String = data.objectAtIndex(indexPath.row).valueForKey("ddate") as! String
+            let timetemp:[String] = time.characters.split{$0 == "T"}.map(String.init)
+            if timetemp.count == 2 {
+                cell.Date.text = timetemp[0]
+            }else{
+                cell.Date.text = ""
+            }
+            
+                cell.BloodType.text = data.objectAtIndex(indexPath.row).valueForKey("dnbloodtype") as? String
+            cell.destination.text = data.objectAtIndex(indexPath.row).valueForKey("donationdestination") as? String
         }
         
         
